@@ -70,8 +70,10 @@ A documentação do projeto é estruturada da seguinte forma:
 
 ### Personas
 
+**✳️✳️✳️Jose Augusto D'Ávilla✳️✳️✳️**
 ![Jose Augusto D'Ávilla](images/PersonaJose.jpg)
 
+**✳️✳️✳️Brenda Miranda✳️✳️✳️**
 ![Brenda Miranda](images/PersonaBrenda.jpg)
 
 # Product Design
@@ -95,11 +97,11 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ## Proposta de Valor
 
-##### Proposta para Persona XPTO ⚠️ EXEMPLO ⚠️
+##### Proposta para Persona Jose Augusto D'Ávilla
+![Jose Augusto D'Ávilla](images/propostaDeValorJose.jpg)
 
-![Jose Augusto D'Ávilla](images/propostaDeValorJose.jpg.png)
-
-![Brenda Miranda](images/propostaDeValorBrenda.jpg.png)
+##### Proposta para Persona Brenda Miranda
+![Brenda Miranda](images/propostaDeValorBrenda.jpg)
 
 ## Requisitos
 
@@ -150,15 +152,13 @@ Carrossel de imagens
 Rodapé
 ![Exemplo de wireframe](images/wireframe3.png)
 
-##### TELA SOBRE NÓS 
+##### TELA SOBRE  
 
-Descrição para a tela XPTO
+Informações sobre os desenvolvedores do site
 ![Exemplo de wireframe](images/wireframe4.png)
 
-Descrição para a tela XPTO
 ![Exemplo de wireframe](images/wireframe5.png)
 
-Descrição para a tela XPTO
 ![Exemplo de wireframe](images/wireframe6.png)
 
 ##### TELA MATÉRIAS
