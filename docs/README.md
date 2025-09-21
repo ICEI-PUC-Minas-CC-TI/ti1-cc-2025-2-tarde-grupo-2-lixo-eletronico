@@ -9,9 +9,9 @@ Informações básicas do projeto.
 
   * [Arthur Lucas Ramos Monteiro](https://github.com/Arthur-Monteiro-CC) 
   * [Sabrina](https://github.com/Sabrina-1) 
-  * [Kaique](https://github.com/Kaique-tec) 
-  * [Samuel](https://github.com/samuelfragosoye) 
-  * [Lucas](https://github.com/cicrano) 
+  * [Kaique Ribeiro Rezende](https://github.com/Kaique-tec) 
+  * [Samuel Teodoro Albuquerque Fragoso](https://github.com/samuelfragosoye) 
+  * [Lucas Gabriel de Oliveira](https://github.com/cicrano) 
 
 
 A documentação do projeto é estruturada da seguinte forma:
@@ -27,8 +27,6 @@ A documentação do projeto é estruturada da seguinte forma:
 ✅ [Documentação de Design Thinking (MIRO)](files/processo-dt.pdf)
 
 # Contexto
-
-Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa e público-alvo.
 
 ## Problema
 
@@ -72,63 +70,36 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
+![Jose Augusto D'Ávilla](images/PersonaJose.jpg)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
->
-> **Orientações**:
->
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+![Brenda Miranda](images/PersonaBrenda.jpg)
 
 # Product Design
 
 Nesse momento, vamos transformar os insights e validações obtidos em soluções tangíveis e utilizáveis. Essa fase envolve a definição de uma proposta de valor, detalhando a prioridade de cada ideia e a consequente criação de wireframes, mockups e protótipos de alta fidelidade, que detalham a interface e a experiência do usuário.
 
 ## Histórias de Usuários
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
+| EU COMO...`PERSONA` | QUERO/PRECISO ...`FUNCIONALIDADE`        | PARA ...`MOTIVO/VALOR`               |
+| --------------------- | ------------------------------------------ | -------------------------------------- |
 | José Augusto D'Ávila | Localizar(mapa) pontos de coleta próximos a empresa | Fazer o descarte dos aparelhos em desuso |
-
 | Brenda Miranda | Conteúdos informativos | Manter-se atualizada sobre melhores práticas ambientais |
-
 | Brenda Miranda | Interface intuitiva e objetiva nas informações | Não me sentir sobrecarregada com outras informações e encontrar o que preciso rapidamente |
-
 | José Augusto D'Ávila | Informações detalhadas sobre os pontos de coleta, como horários e tipos de materiais aceitos | Poder criar relatórios e alinhar as práticas da minha empresa |
-
 | José Augusto D'Ávila | Acesso a dados e informações sobre sustentabilidade de acordo com as metas propostas pelos ODS | Fazer o descarte dos aparelhos em desuso |
-
 | Brenda Miranda | Informações rápidas para eventuais duvidas (FAQ) | Sanar questionamentos e compartilhar o conhecimento com meus amigos |
-
 | José Augusto D'Ávila | Lista de pontos de coleta de lixo eletrônico | Estabelecer parcerias de redesignação dos dispositivos |
-
 | José Augusto D'Ávila | Filtrar os lugares  que são especializados em descarte eletrônico | Direcionar os eletrônicos para o tratamento correto no ciclo de reciclagem |
-
 | Brenda Miranda | Classificar empresas que adotam práticas sustentáveis | Validar sua responsabilidade social
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
->
-> **Orientações**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
 
 ## Proposta de Valor
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
-
 ##### Proposta para Persona XPTO ⚠️ EXEMPLO ⚠️
 
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
+![Jose Augusto D'Ávilla](images/propostaDeValorJose.jpg.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que nos ajuda a definir qual tipo de produto ou serviço melhor atende às personas definidas anteriormente.
+![Brenda Miranda](images/propostaDeValorBrenda.jpg.png)
 
 ## Requisitos
 
@@ -153,6 +124,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos não Funcionais
 
+| ID     | Descrição do Requisito                                   | Prioridade |
 | RNF-001 | O sistema deverá estar disponível em formato 7/24 | ALTA     |
 | RNF-002 | O site estará disponível em uma plataforma de hospedagem da internet    | ALTA      |
 | RNF-003 | O site deverá ser responsivo permitindo a visualização em outros dispositivos | MÉDIA     |
@@ -167,24 +139,54 @@ Artefatos relacionados com a interface e a interacão do usuário na proposta de
 
 Estes são os protótipos de telas do sistema.
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
+##### TELA HOME 
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
+Descrição do site
+![Exemplo de wireframe](images/wireframe.png)
+
+Carrossel de imagens
+![Exemplo de wireframe](images/wireframe2.png)
+
+Rodapé
+![Exemplo de wireframe](images/wireframe3.png)
+
+##### TELA SOBRE NÓS 
 
 Descrição para a tela XPTO
+![Exemplo de wireframe](images/wireframe4.png)
 
-![Exemplo de wireframe](images/exemplo-wireframe.png)
+Descrição para a tela XPTO
+![Exemplo de wireframe](images/wireframe5.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
->
-> **Orientações**:
->
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+Descrição para a tela XPTO
+![Exemplo de wireframe](images/wireframe6.png)
+
+##### TELA MATÉRIAS
+
+Notícias com o tema de sustentabilidade
+![Exemplo de wireframe](images/wireframe7.png)
+
+Vídeos
+![Exemplo de wireframe](images/wireframe8.png)
+
+##### TELA PONTOS DE COLETA
+
+Mapa com os pontos de coleta próximos
+![Exemplo de wireframe](images/wireframe9.png)
+
+Filtro de localização
+![Exemplo de wireframe](images/wireframe10.png)
+
+##### TELA AVALIA-NOS
+
+Sessão de avaliar as empresas parceiras
+![Exemplo de wireframe](images/wireframe11.png)
+
+##### TELA FEEDBACK
+
+Sessão de feedback sobre os pontos de coleta
+![Exemplo de wireframe](images/wireframe12.png)
+
 
 ### User Flow
 
