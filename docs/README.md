@@ -8,7 +8,7 @@ Informações básicas do projeto.
 * **Membros da equipe:**
 
   * [Arthur Lucas Ramos Monteiro](https://github.com/Arthur-Monteiro-CC) 
-  * [Sabrina](https://github.com/Sabrina-1) 
+  * [Sabrina Siqueira dos Santos](https://github.com/Sabrina-1) 
   * [Kaique Ribeiro Rezende](https://github.com/Kaique-tec) 
   * [Samuel Teodoro Albuquerque Fragoso](https://github.com/samuelfragosoye) 
   * [Lucas Gabriel de Oliveira](https://github.com/cicrano) 
@@ -110,6 +110,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos Funcionais
 
 | ID     | Descrição do Requisito                                   | Prioridade |
+| ------ | ---------------------------------------------------------- | ---------- |
 | RF-001 | Cadastro Pessoa Jurídica/Física | ALTA       |
 | RF-002 | Informativos(Matérias) | MÉDIA     |
 | RF-003  | FAQ (Perguntas Frequentes) | BAIXA |
@@ -127,6 +128,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos não Funcionais
 
 | ID     | Descrição do Requisito                                   | Prioridade |
+| ------ | ---------------------------------------------------------- | ---------- |
 | RNF-001 | O sistema deverá estar disponível em formato 7/24 | ALTA     |
 | RNF-002 | O site estará disponível em uma plataforma de hospedagem da internet    | ALTA      |
 | RNF-003 | O site deverá ser responsivo permitindo a visualização em outros dispositivos | MÉDIA     |
