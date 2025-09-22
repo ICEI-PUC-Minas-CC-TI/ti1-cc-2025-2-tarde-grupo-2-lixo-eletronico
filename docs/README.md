@@ -12,7 +12,7 @@ Informações básicas do projeto.
   * [Kaique Ribeiro Rezende](https://github.com/Kaique-tec) 
   * [Samuel Teodoro Albuquerque Fragoso](https://github.com/samuelfragosoye) 
   * [Lucas Gabriel de Oliveira](https://github.com/cicrano) 
-
+  * [Bernardo Augusto Germer Vicente]() 
 
 A documentação do projeto é estruturada da seguinte forma:
 
@@ -60,11 +60,18 @@ A documentação do projeto é estruturada da seguinte forma:
 # Product Discovery
 
 ## Etapa de Entendimento
+##### Matriz CSD
+![Matriz CSD](images/matrizCSD.jpg)
 
-> * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
-> * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
-> * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
+##### Mapa de stakeholders
+![Mapa de stakeholders](images/.jpg)
+
+##### Entrevistas qualitativas
+![Entrevistas qualitativas](images/entrevistaQualitativa.jpg)
+
+##### Highlights de pesquisa
+![Highlights de pesquisa](images/highlights.jpg)
+
 
 ## Etapa de Definição
 
@@ -119,8 +126,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-006 | Mapa interativo | ALTA |
 | RF-007 | Feedback (pontos de coleta) | MÉDIA |
 | RF-008 | Informativos(Carrossel) | MÉDIA |
-| RF-009 | Like
-(apoiar/classificar empresa) | MÉDIA |
+| RF-009 | Like(apoiar/classificar empresa) | MÉDIA |
 | RF-010 | Lista de empresas/instituições de coleta | ALTA |
 | RF-011 | Cadastro de dispositivos eletrônicos (usuários e empresas) | ALTA |
 
