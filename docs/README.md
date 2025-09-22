@@ -24,7 +24,7 @@ A documentação do projeto é estruturada da seguinte forma:
 6. Solução
 7. Referências Bibliográficas
 
-✅ [Documentação de Design Thinking (MIRO)](files/processo-dt.pdf)
+✅ [Documentação de Design Thinking (MIRO)](files/miro.pdf)
 
 # Contexto
 
@@ -45,17 +45,8 @@ A documentação do projeto é estruturada da seguinte forma:
 
 
 ## Público-Alvo
-
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> Descreva quais são as pessoas que usarão a sua aplicação indicando os diferentes perfis. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
->
-> **Orientações**:
->
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+![Persona José](images/PersonaJose.jpg)
+![Persona Brenda](images/PersonaBrenda.jpg)
 
 # Product Discovery
 
@@ -64,7 +55,7 @@ A documentação do projeto é estruturada da seguinte forma:
 ![Matriz CSD](images/matrizCSD.jpg)
 
 ##### Mapa de stakeholders
-![Mapa de stakeholders](images/.jpg)
+![Mapa de stakeholders](images/mapaStakeholders.jpg)
 
 ##### Entrevistas qualitativas
 ![Entrevistas qualitativas](images/entrevistaQualitativa.jpg)
@@ -152,65 +143,55 @@ Estes são os protótipos de telas do sistema.
 ##### TELA HOME 
 
 Descrição do site
-![Exemplo de wireframe](images/wireframe.png)
+![Tela Home](images/wireframe.png)
 
 Carrossel de imagens
-![Exemplo de wireframe](images/wireframe2.png)
+![Tela Home](images/wireframe2.png)
 
 Rodapé
-![Exemplo de wireframe](images/wireframe3.png)
+![Tela Home](images/wireframe3.png)
 
 ##### TELA SOBRE  
 
 Informações sobre os desenvolvedores do site
-![Exemplo de wireframe](images/wireframe4.png)
+![Tela Sobre](images/wireframe4.png)
 
-![Exemplo de wireframe](images/wireframe5.png)
+![Tela Sobre](images/wireframe5.png)
 
-![Exemplo de wireframe](images/wireframe6.png)
+![Tela Sobre](images/wireframe6.png)
 
 ##### TELA MATÉRIAS
 
 Notícias com o tema de sustentabilidade
-![Exemplo de wireframe](images/wireframe7.png)
+![Tela Matérias](images/wireframe7.png)
 
 Vídeos
-![Exemplo de wireframe](images/wireframe8.png)
+![Tela Matérias](images/wireframe8.png)
 
 ##### TELA PONTOS DE COLETA
 
 Mapa com os pontos de coleta próximos
-![Exemplo de wireframe](images/wireframe9.png)
+![Tela Pontos de Coleta](images/wireframe9.png)
 
 Filtro de localização
-![Exemplo de wireframe](images/wireframe10.png)
+![Tela Pontos de Coleta](images/wireframe10.png)
 
 ##### TELA AVALIA-NOS
 
 Sessão de avaliar as empresas parceiras
-![Exemplo de wireframe](images/wireframe11.png)
+![Tela Avalia-nos](images/wireframe11.png)
 
 ##### TELA FEEDBACK
 
 Sessão de feedback sobre os pontos de coleta
-![Exemplo de wireframe](images/wireframe12.png)
+![Tela Feedback](images/wireframe12.png)
 
 
 ### User Flow
 
-**✳️✳️✳️ COLOQUE AQUI O DIAGRAMA DE FLUXO DE TELAS ✳️✳️✳️**
+**✳️✳️✳️Diagrama✳️✳️✳️**
 
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
->
-> **Orientações**:
->
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+![fluxo de telas](images/fluxoTelas.jpg)
 
 ### Protótipo Interativo
 
