@@ -6,7 +6,7 @@ h3 {
     border-bottom: 1px solid #c1c1c1;
 }
 h4 {
-    color: #ff7645;
+    color: #c54b1e;
 }
 
 .banner img {
@@ -14,8 +14,8 @@ h4 {
 }
 
 .barra-info {
-    height: 2em;
-    background-color: #f0f0f0;
+    height: 5em;
+    background-color: #22440a;
     display: flex;
     justify-content: space-between;
 }
@@ -36,7 +36,7 @@ h4 {
 
 .menu li a {
     text-decoration: none;
-    color: #ff7645;
+    color: #fffdfc;
     font-weight: bold;
 }
 
