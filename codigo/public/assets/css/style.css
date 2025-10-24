@@ -1,10 +1,23 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"); 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* body{
+    /* min-height: 100vh; altura mínima da página 
+   
+} */
 
 h3 {
     color: #093070;
     border-bottom: 1px solid #c1c1c1;
 }
+
 h4 {
     color: #c54b1e;
 }
@@ -29,7 +42,7 @@ h4 {
 .menu li {
     display: inline;
     margin: 0px;
-    padding: 0.5em 1em; 
+    padding: 0.5em 1em;
     height: 2em;
     line-height: 2em;
 }
@@ -53,4 +66,75 @@ h4 {
 
 main {
     padding: 20px;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.content-faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Sabrina */
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 50%;
+}
+
+.accordion {
+    background-color: #22440a;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(27, 27, 27);
+
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    /*tira a cor de fundo da pergunta*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.accordion-header span {
+    color: #f5f2f2; /*cor das caixas de perguntas*/
+    max-width: 100%;
+    /**/
+    white-space: nowrap;
+    /*não quebrar a linha*/
+    overflow: hidden;
+    /*esconder o que ultrapassar o tamanho*/
+    text-overflow: ellipsis;
+    /*coloca reticências no final do texto*/
+}
+
+.accordion-body {
+    color: #d38a8a;
+    font-size: 14px;
+    opacity: 0;
+    height: 0;
+}
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 5px 0px;
+    /*ajustar espaçamento*/
+    height: auto;
+    margin-top: 8px;
 }

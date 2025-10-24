@@ -1,35 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- <script src="./assets/js/login.js"></script> -->
-  </head>
-  <body>
-    <header>
-      <div class="banner">
-        <!-- <img src="./assets/images/banner_ti.png" alt="" /> -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- <script src="./assets/js/login.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <div class="banner">
+      <!-- <img src="./assets/images/banner_ti.png" alt="" /> -->
+    </div>
+    <div class="barra-info">
+      <nav class="menu">
+        <ul>
+          <li><a class="fs-4 fw-bold" href="index.html">RETECHNA</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="">Matérias</a></li>
+          <li><a href="">Pontos de Coleta</a></li>
+          <li><a href="">Avaliar Empresas</a></li>
+          <li><a href="about.html">Login</a></li>
+        </ul>
+      </nav>
+      <div class="dadosnp-usuario">
+        <span id="userInfo"></span>
       </div>
-      <div class="barra-info">
-        <nav class="menu">
-          <ul>
-            <li><a class="fs-4 fw-bold" href="index.html">RETECHNA</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li><a href="">Matérias</a></li>
-            <li><a href="">Pontos de Coleta</a></li>
-            <li><a href="">Avaliar Empresas</a></li>
-            <li><a href="about.html">Login</a></li>
-          </ul>
-        </nav>
-        <div class="dadosnp-usuario">
-          <span id="userInfo"></span>
+    </div>
+
+  </header>
+  <main>
+    <section class="content-faq">
+      <div id="container">
+        <div class="accordion">
+          <button class="accordion-header">
+            <span>Pergunta 1</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="accordion-body">
+            <p>Resposta</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-header">
+            <span>Pergunta 2</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="accordion-body">
+            <p>Resposta</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-header">
+            <span>Pergunta 3</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="accordion-body">
+            <p>Resposta</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-header">
+            <span>Pergunta 4</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="accordion-body">
+            <p>Resposta</p>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-    
-    </main>
-  </body>
+
+    </section>
+  </main>
+  <script src="./assets/js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
