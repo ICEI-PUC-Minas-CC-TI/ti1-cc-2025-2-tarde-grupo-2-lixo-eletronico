@@ -19,3 +19,90 @@
 /* color: var(--graydark-900); */
 
 /*------------ ESTILIZAÇÃO DA FUNCIONALIDADE ------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--yellow-100);
+  box-sizing: border-box;
+  color: var(--graydark-900);
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  color: #093070;
+  border-bottom: 1px solid #c1c1c1;
+}
+h4 {
+  color: #c54b1e;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.barra-info {
+  height: 5em;
+  background-color: var(--green-700);
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin: 0px;
+  padding: 0.5em 1em;
+  height: 2em;
+  line-height: 2em;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fffdfc;
+  font-weight: bold;
+}
+
+.menu li:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.dados-usuario {
+  height: 2em;
+  line-height: 2em;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+/*Rodapé*/
+
+#contato {
+  background-color: var(--green-700) !important;
+  color: #fff;
+}
+
+.info-icon {
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
+  color: #555;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  color: #333;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
