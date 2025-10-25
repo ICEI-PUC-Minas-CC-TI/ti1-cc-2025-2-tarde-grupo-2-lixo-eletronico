@@ -1,0 +1,196 @@
+/*Variaveis de cores para aplicação no CSS */
+/*Dentro do mundo do Design Digital pode se classificar a intensidade das cores*/
+/*100 (Tonalidade mais clara) e 900 (Tonalidade mais escura)*/
+
+:root {
+  --green-700: #33691e; /*Aplicação Geral: MENU e Botões*/
+  --green-400: #4caf50; /*Aplicação Geral: CARDS, Bordas ou Sessões*/
+  --yellow-100: #f8f8d5; /*Aplicação Geral: Fundo de Páginas e Sessões *textos em fundo escuro*/
+  --grayblue-200: #90a4ae; /*Aplicação Geral: Elementos Secundários e/ou Footer (Rodapé)*/
+  --graydark-900: #212121; /*Aplicação Geral: Textos e Ícones em fundos claros*/
+  --darkbrow-900: #6d4c41; /*ALTERNATIVA: Textos e Ícones em fundos claros*/
+  font-family: "Montserrat", sans-serif; /*Fonte Padrão da Aplicação*/
+}
+
+/* Usar os pesos 200 (Para Contéudo), 400 (Destaque no contéudo) e 500/600 (Títulos ou subtítulos) */
+
+/* Como usar as variaveis de cores no CSS */
+/* background-color: var(--green-700); */
+/* color: var(--graydark-900); */
+
+/*------------ ESTILIZAÇÃO GERAL DA APLICAÇÃO ------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--yellow-100);
+  box-sizing: border-box;
+  color: var(--graydark-900);
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  color: #093070;
+  border-bottom: 1px solid #c1c1c1;
+}
+h4 {
+  color: #c54b1e;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.barra-info {
+  height: 5em;
+  background-color: var(--green-700);
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin: 0px;
+  padding: 0.5em 1em;
+  height: 2em;
+  line-height: 2em;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fffdfc;
+  font-weight: bold;
+}
+
+.menu li:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.dados-usuario {
+  height: 2em;
+  line-height: 2em;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+}
+/*---------------------------------------*/
+
+/*Estilização da Sessão de Vídeos*/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3f0c9;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  color: var(--darkbrow-900);
+  margin: 20px;
+}
+
+.videos-container {
+  display: flex;
+  background-color: var(--green-700);
+  color: white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.video-principal {
+  flex: 3;
+  margin-right: 20px;
+}
+
+.video-principal h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.video-player iframe {
+  width: 100%;
+  height: 360px;
+  border-radius: 10px;
+}
+
+.videos-relacionados {
+  flex: 1;
+  background-color: var(--green-400);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.videos-relacionados h3 {
+  color: white;
+}
+
+.video-relacionado {
+  display: flex;
+  align-items: center;
+  background-color: #d6e9d3;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.video-relacionado img {
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.video-relacionado h4 {
+  color: var(--darkbrow-900);
+  margin: 0;
+}
+
+.video-relacionado p {
+  color: var(--grayblue-200);
+  font-size: 0.9em;
+  margin: 0;
+}
+/*------------------------------------*/
+
+/*Rodapé*/
+
+#contato {
+  background-color: var(--green-700) !important;
+  color: #fff;
+}
+/*
+.footer-content {
+  padding: 200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+*/
+.info-icon {
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
+  color: #555;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  color: #333;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+/*------------ ESTILIZAÇÃO DA FUNCIONALIDADE ------------*/

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="barra-info">
+        <nav class="menu">
+          <ul>
+            <li><a class="fs-4 fw-bold" href="index.html">RETECHNA</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="">Matérias</a></li>
+            <li>
+              <a href="./modulos/estrutura/detalhesVideos_kaique/videos.html"
+                >Vídeos</a
+              >
+            </li>
+            <li><a href="">Pontos de Coleta</a></li>
+            <li><a href="">Avaliar Empresas</a></li>
+            <li><a href="about.html">Login</a></li>
+          </ul>
+        </nav>
+        <div class="dadosnp-usuario">
+          <span id="userInfo"></span>
+        </div>
+      </div>
+      <h1>VÍDEOS:</h1>
+    </header>
+
+    <main class="videos-container">
+      <section class="video-principal">
+        <h2 id="titulo-video"></h2>
+        <div class="video-player">
+          <iframe
+            id="video-frame"
+            src=""
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p id="descricao-video"></p>
+        <p><strong>Autor do vídeo:</strong> <span id="autor-video"></span></p>
+        <p>
+          <strong>Duração do vídeo:</strong> <span id="duracao-video"></span>
+        </p>
+      </section>
+
+      <aside class="videos-relacionados">
+        <h3>Vídeos relacionados:</h3>
+        <div id="lista-relacionados"></div>
+      </aside>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
