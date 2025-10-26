@@ -1,0 +1,24 @@
+{
+  "faqs": [
+    {
+      "id": "1",
+      "pergunta": "O que são considerados lixos eletrônicos?",
+      "resposta": "Lixo eletrônico, é todo dispositivo elétrico ou eletrônico que foi descartado, está obsoleto, danificado ou sem possibilidade de uso, como celulares, computadores, televisores, eletrodomésticos, fios, placas de circuito, pilhas e baterias"
+    },
+    {
+      "id": "2",
+      "pergunta": "Quais os impactos que o descarte dos dispositivos reproduz na natureza?",
+      "resposta": "O descarte inadequado de lixo eletrônico gera diversos impactos ambientais e à saúde, tais como: Contaminação do solo e da água, poluição do ar, riscos à saúde humana e a fauna etc."
+    },
+    {
+      "id": "3",
+      "pergunta": "Como posso fazer o descarte adequado de eletrônicos?",
+      "resposta": "Para fazer o descarte adequado de eletrônicos, siga esses passos: separe os dispositivos eletrônicos, apague seus dados pessoais(fotos, contatos, documentos) e entregue em pontos de coleta especializados."
+    },
+    {
+      "id": "4",
+      "pergunta": "Como é feito o descarte de eletrônicos?",
+      "resposta": "Existem diferentes caminhos e práticas para o descarte responsável de eletrônicos. Dentre eles, posso citar: Coleta e pontos de entrega, Logística reversa, Desmontagem e separação, Reciclagem química/física e Disposição final segura."
+    }
+  ]
+}
