@@ -128,6 +128,8 @@ section {
     font-size: 14px;
     opacity: 0;
     height: 0;
+    overflow: hidden; /*esconder o texto que ultrapassar o tamanho*/
+    transition: opacity 0.2s;/* exibir o texto de forma lenta */
 }
 
 .accordion-body.active {
@@ -137,4 +139,13 @@ section {
     /*ajustar espaçamento*/
     height: auto;
     margin-top: 8px;
+}
+
+/*para a seta girar*/
+.arrow {
+    transition: transform 0.2s linear;
+}
+/* animação da seta */
+.accordion:has(.active) .arrow{
+    transform: rotate(180deg);
 }
