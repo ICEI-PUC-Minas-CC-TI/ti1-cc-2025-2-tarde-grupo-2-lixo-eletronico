@@ -1,4 +1,4 @@
-const db = {
+ {
   "faqs": [
     {
       "id": "1",
