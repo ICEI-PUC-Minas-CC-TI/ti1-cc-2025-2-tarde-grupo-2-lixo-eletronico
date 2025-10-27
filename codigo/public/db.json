@@ -1,5 +1,5 @@
 {
-  "faqs"= [
+  "faqs": [
     {
       "id": "1",
       "pergunta": "O que são considerados lixos eletrônicos?",
@@ -21,41 +21,49 @@
       "resposta": "Existem diferentes caminhos e práticas para o descarte responsável de eletrônicos. Dentre eles, posso citar: Coleta e pontos de entrega, Logística reversa, Desmontagem e separação, Reciclagem química/física e Disposição final segura."
     }
   ],
-  "videos"= [
+  "videos": [
     {
       "id": "1",
-      "titulo": "O Problema Crescente do Lixo Eletrônico no Mundo",
-      "descricao": "Este vídeo aborda o aumento global do lixo eletrônico e seus impactos ambientais.",
-      "duracao": "12:00",
-      "canal": "Carlos",
-      "url": "https://www.youtube.com/"
+      "titulo": "Lixo Eletrônico",
+      "descricao": "Este vídeo explica o que é o lixo eletrônico (ou resíduo eletrônico) e a sua crescente quantidade. Detalha a composição desses resíduos, como TVs e celulares, e o que pode ser reciclado (vidro, ferro, cobre, etc.). Alerta sobre os riscos ambientais de metais pesados contaminando rios e plantações quando o descarte é incorreto, reforçando que o consumidor é responsável pelo destino do que consome e joga fora.",
+      "duracao": "04:30",
+      "canal": "Momento Ambiental",
+      "url": "https://www.youtube.com/embed/YIL4QRPkZU4"
     },
     {
       "id": "2",
-      "titulo": "Sustentabilidade e Tecnologia: A Importância da Reciclagem do Lixo Eletrônico",
-      "descricao": "Especialistas discutem como a reciclagem de eletrônicos contribui para a sustentabilidade.",
-      "duracao": "40:00",
-      "canal": "Sustentabilidade e Tecnologia",
-      "url": "https://www.youtube.com/"
+      "titulo": "Reciclagem de Eletroeletrônicos - E-Lixo",
+      "descricao": "Este vídeo define o e-lixo como qualquer equipamento elétrico ou eletrônico em desuso. Ele destaca a baixa taxa de reciclagem no Brasil e alerta sobre os componentes perigosos, como chumbo, cobre, prata e mercúrio, que se descartados incorretamente, poluem solo e águas. O conteúdo enfatiza que o descarte correto transforma esses metais em nova matéria-prima, gerando economia e empregos, e incentiva o uso dos pontos de coleta espalhados pelas cidades.",
+      "duracao": "04:09",
+      "canal": "Recicla Sampa",
+      "url": "https://www.youtube.com/embed/42rzbf_Txug"
     },
     {
       "id": "3",
-      "titulo": "Lixo Eletrônico",
-      "descricao": "Reportagem sobre o descarte correto de lixo eletrônico no Brasil.",
-      "duracao": "45:00",
-      "canal": "Repórter Eco",
-      "url": "https://www.youtube.com/"
+      "titulo": "Para onde vai todo o lixo eletrônico? É possível reciclá-lo?",
+      "descricao": "O vídeo explora o conceito de lixo eletrônico e o desafio logístico de dar o destino correto a ele. A reportagem visita uma cooperativa de materiais recicláveis em São Paulo, mostrando como CPUs, fitas VHS e outros eletrônicos são recebidos. Discute a complexidade da desmontagem e a importância da logística reversa para garantir que os materiais tenham um destino ambientalmente seguro, transformando-os em nova matéria-prima.",
+      "duracao": "08:35",
+      "canal": "CNN Soft Business",
+      "url": "https://www.youtube.com/embed/3OfJ2KIRjy0"
     },
     {
       "id": "4",
-      "titulo": "Sustentabilidade e Lixo Eletrônico | Conceito e Ação",
-      "descricao": "A ONU alerta sobre os riscos do crescente volume de lixo eletrônico.",
-      "duracao": "8:20",
-      "canal": "Sustentabilidade e Lixo Eletrônico",
-      "url": "https://www.youtube.com/"
+      "titulo": "Reciclagem de lixo eletrônico",
+      "descricao": "Este é um segmento do programa Shark Tank Brasil, onde o fundador de uma empresa de reciclagem de lixo eletrônico apresenta seu negócio. O vídeo destaca os três pilares da sustentabilidade (ambiental, econômico e social) na reciclagem de e-lixo. Explica como a desmontagem e a separação dos componentes agregam valor, transformando resíduos em matéria-prima para novos produtos, além de usar sucata em projetos de reuso criativo.",
+      "duracao": "07:37",
+      "canal": "Shark Tank Brasil",
+      "url": "https://www.youtube.com/embed/3AWHWxLd1V0"
+    },
+    {
+      "id": "5",
+      "titulo": "IMPACTO do Lixo Eletrônico no Meio Ambiente",
+      "descricao": "Este vídeo explica o conceito de e-lixo, alertando sobre a presença de materiais tóxicos como chumbo, mercúrio e cádmio, que são perigosos para o meio ambiente e a saúde humana. Destaca a importância da reciclagem para evitar a contaminação do solo e da água. O conteúdo reforça a necessidade de conscientização sobre o descarte correto e seguro de todos os tipos de eletrônicos e eletrodomésticos em geral.",
+      "duracao": "03:00 (Tempo estimado)",
+      "canal": "E.M.I - Educação Ambiental",
+      "url": "https://www.youtube.com/embed/VYLLhCnPnVc"
     }
   ],
-  "materias"= [
+  "materias": [
     {
       "id": "1",
       "titulo": "O Problema Crescente do Lixo Eletrônico no Mundo",
@@ -97,7 +105,7 @@
       "url": "images/descarte-perigos.jpg"
     }
   ],
-  "usuarios"= [
+  "usuarios": [
     {
       "id": "1",
       "nome": "Ana Carla Souza",
@@ -123,7 +131,7 @@
       "senha": "38748"
     }
   ],
-  "produtos"= [
+  "produtos": [
     {
       "id": "1",
       "nome": "pilhas"
@@ -142,7 +150,7 @@
     }
   ],
 
-  "pontos_de_coleta"= [
+  "pontos_de_coleta": [
     {
       "id": 1,
       "nome": "Ponto de Coleta de Lixo Eletrônico - PROPAM",

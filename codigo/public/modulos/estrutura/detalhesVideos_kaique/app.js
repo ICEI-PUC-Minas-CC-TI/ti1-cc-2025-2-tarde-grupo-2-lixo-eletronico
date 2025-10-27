@@ -27,9 +27,9 @@ function listarRelacionados(videos) {
     item.classList.add("video-relacionado");
 
     // miniatura padrão se não tiver thumb
-    item.innerHTML = `
-      <img src="https://via.placeholder.com/120x80?text=Vídeo" alt="Miniatura">
-      <div>
+    item.innerHTML =
+      //<img src="https://via.placeholder.com/120x80?text=Vídeo" alt="Miniatura">
+      `<div>
         <h4>${v.titulo}</h4>
         <p>${v.canal}</p>
       </div>

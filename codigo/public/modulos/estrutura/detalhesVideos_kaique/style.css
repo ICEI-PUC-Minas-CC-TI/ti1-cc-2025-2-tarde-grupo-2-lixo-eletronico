@@ -13,7 +13,6 @@
 }
 
 /* Usar os pesos 200 (Para Contéudo), 400 (Destaque no contéudo) e 500/600 (Títulos ou subtítulos) */
-
 /* Como usar as variaveis de cores no CSS */
 /* background-color: var(--green-700); */
 /* color: var(--graydark-900); */
@@ -26,13 +25,6 @@ body {
   box-sizing: border-box;
   color: var(--graydark-900);
   font-family: "Montserrat", sans-serif;
-}
-h3 {
-  color: #093070;
-  border-bottom: 1px solid #c1c1c1;
-}
-h4 {
-  color: #c54b1e;
 }
 
 .banner img {
@@ -58,6 +50,7 @@ h4 {
   padding: 0.5em 1em;
   height: 2em;
   line-height: 2em;
+  border-radius: 10px;
 }
 
 .menu li a {
@@ -67,7 +60,7 @@ h4 {
 }
 
 .menu li:hover {
-  background-color: darkblue;
+  background-color: var(--green-400);
   color: white;
 }
 
@@ -116,7 +109,7 @@ header h1 {
 
 .video-player iframe {
   width: 100%;
-  height: 360px;
+  height: 460px;
   border-radius: 10px;
 }
 
@@ -166,14 +159,7 @@ header h1 {
   background-color: var(--green-700) !important;
   color: #fff;
 }
-/*
-.footer-content {
-  padding: 200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-*/
+
 .info-icon {
   width: 20px;
   text-align: center;
