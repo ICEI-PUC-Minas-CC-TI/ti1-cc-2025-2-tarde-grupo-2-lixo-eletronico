@@ -1,5 +1,5 @@
-{
-  "faqs"= [
+ {
+  "faqs": [
     {
       "id": "1",
       "pergunta": "O que são considerados lixos eletrônicos?",
@@ -21,7 +21,7 @@
       "resposta": "Existem diferentes caminhos e práticas para o descarte responsável de eletrônicos. Dentre eles, posso citar: Coleta e pontos de entrega, Logística reversa, Desmontagem e separação, Reciclagem química/física e Disposição final segura."
     }
   ],
-  "videos"= [
+  "videos": [
     {
       "id": "1",
       "titulo": "O Problema Crescente do Lixo Eletrônico no Mundo",
@@ -55,7 +55,7 @@
       "url": "https://www.youtube.com/"
     }
   ],
-  "materias"= [
+  "materias": [
     {
       "id": "1",
       "titulo": "O Problema Crescente do Lixo Eletrônico no Mundo",
@@ -97,7 +97,7 @@
       "url": "images/descarte-perigos.jpg"
     }
   ],
-  "usuarios"= [
+  "usuarios": [
     {
       "id": "1",
       "nome": "Ana Carla Souza",
@@ -123,7 +123,7 @@
       "senha": "38748"
     }
   ],
-  "produtos"= [
+  "produtos": [
     {
       "id": "1",
       "nome": "pilhas"
@@ -142,7 +142,7 @@
     }
   ],
 
-  "pontos_de_coleta"= [
+  "pontos_de_coleta": [
     {
       "id": 1,
       "nome": "Ponto de Coleta de Lixo Eletrônico - PROPAM",
