@@ -1,9 +1,11 @@
-   document.addEventListener('DOMContentLoaded', () => {
-        fetch('db.json') 
+//    Sabrina FAQ - carregar perguntas e respostas do JSON
+   document.addEventListener('DOMContentLoaded', () => 
+    {
+        fetch('/faqs') 
         .then(response => response.json())
         .then(data => { 
-            for(let i=0; i<data.faqs.length; i++){
-                let faq = data.faqs[i];
+            for(let i=0; i<data.length; i++){
+                let faq = data[i];
                 const span = document.getElementById(`${faq.id}`);
                 if (span) {
                 span.textContent = faq.pergunta;
@@ -26,3 +28,4 @@
                body.classList.toggle('active');
             });
         });
+
