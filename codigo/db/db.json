@@ -1,1 +1,241 @@
-{}
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com"
+    },
+    {
+      "id": 2,
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com"
+    },
+    {
+      "login": "rommel",
+      "senha": "123",
+      "nome": "Rommel",
+      "email": "rommel@gmail.com",
+      "id": 3
+    },
+    {
+      "login": "Sabrina",
+      "senha": "1234",
+      "nome": "Sabrina",
+      "email": "ss6215245@gmail.com",
+      "id": 4
+    }
+  ],
+  "faqs": [
+    {
+      "id": "1",
+      "pergunta": "O que são considerados lixos eletrônicos?",
+      "resposta": "Lixo eletrônico, é todo dispositivo elétrico ou eletrônico que foi descartado, está obsoleto, danificado ou sem possibilidade de uso, como celulares, computadores, televisores, eletrodomésticos, fios, placas de circuito, pilhas e baterias"
+    },
+    {
+      "id": "2",
+      "pergunta": "Quais os impactos que o descarte dos dispositivos reproduz na natureza?",
+      "resposta": "O descarte inadequado de lixo eletrônico gera diversos impactos ambientais e à saúde, tais como: Contaminação do solo e da água, poluição do ar, riscos à saúde humana e a fauna etc."
+    },
+    {
+      "id": "3",
+      "pergunta": "Como posso fazer o descarte adequado de eletrônicos?",
+      "resposta": "Para fazer o descarte adequado de eletrônicos, siga esses passos: separe os dispositivos eletrônicos, apague seus dados pessoais(fotos, contatos, documentos) e entregue em pontos de coleta especializados."
+    },
+    {
+      "id": "4",
+      "pergunta": "Como é feito o descarte de eletrônicos?",
+      "resposta": "Existem diferentes caminhos e práticas para o descarte responsável de eletrônicos. Dentre eles, posso citar: Coleta e pontos de entrega, Logística reversa, Desmontagem e separação, Reciclagem química/física e Disposição final segura."
+    }
+  ],
+  "videos": [
+    {
+      "id": "1",
+      "titulo": "O Problema Crescente do Lixo Eletrônico no Mundo",
+      "descricao": "Este vídeo aborda o aumento global do lixo eletrônico e seus impactos ambientais.",
+      "duracao": "12:00",
+      "canal": "Carlos",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "id": "2",
+      "titulo": "Sustentabilidade e Tecnologia: A Importância da Reciclagem do Lixo Eletrônico",
+      "descricao": "Especialistas discutem como a reciclagem de eletrônicos contribui para a sustentabilidade.",
+      "duracao": "40:00",
+      "canal": "Sustentabilidade e Tecnologia",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "id": "3",
+      "titulo": "Lixo Eletrônico",
+      "descricao": "Reportagem sobre o descarte correto de lixo eletrônico no Brasil.",
+      "duracao": "45:00",
+      "canal": "Repórter Eco",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "id": "4",
+      "titulo": "Sustentabilidade e Lixo Eletrônico | Conceito e Ação",
+      "descricao": "A ONU alerta sobre os riscos do crescente volume de lixo eletrônico.",
+      "duracao": "8:20",
+      "canal": "Sustentabilidade e Lixo Eletrônico",
+      "url": "https://www.youtube.com/"
+    }
+  ],
+  "materias": [
+    {
+      "id": "1",
+      "titulo": "O Problema Crescente do Lixo Eletrônico no Mundo",
+      "conteudo": "O lixo eletrônico é um dos fluxos de resíduos que mais cresce no mundo, com uma estimativa de 50 milhões de toneladas geradas anualmente. Esse aumento é impulsionado pelo rápido avanço tecnológico e pela obsolescência programada dos dispositivos eletrônicos. O descarte inadequado desses resíduos pode levar à contaminação do solo e da água, além de representar riscos à saúde humana devido à presença de substâncias tóxicas como chumbo, mercúrio e cádmio. A reciclagem e o descarte correto são essenciais para mitigar esses impactos ambientais.",
+      "autor": "Carlos",
+      "width": "1200",
+      "height": "400",
+      "fonte": "https://www.greenpeace.org/brasil/blog/o-problema-crescente-do-lixo-eletronico-no-mundo/",
+      "url": "images/descarte-problema.jpg"
+    },
+    {
+      "id": "2",
+      "titulo": "Descarte Correto: Procure o Ponto de Coleta Mais Próximo",
+      "conteudo": "Para garantir o descarte correto de eletrônicos, é fundamental procurar pontos de coleta especializados. Muitas cidades possuem locais específicos onde os cidadãos podem entregar seus dispositivos eletrônicos usados ou quebrados. Além disso, algumas empresas oferecem programas de logística reversa, permitindo que os consumidores devolvam os produtos ao fabricante para reciclagem. Ao optar por esses métodos, contribuímos para a redução do impacto ambiental e promovemos a reutilização de materiais valiosos presentes nos eletrônicos.",
+      "autor": "Alice",
+      "width": "1200",
+      "height": "400",
+      "fonte": "https://www.greenpeace.org/brasil/blog/o-problema-crescente-do-lixo-eletronico-no-mundo/",
+      "url": "images/descarte-correto.jpg"
+    },
+    {
+      "id": "3",
+      "titulo": "Reciclagem: Materiais Valiosos São Recuperados do E-lixo",
+      "conteudo": "A reciclagem de lixo eletrônico é um processo crucial para a recuperação de materiais valiosos, como ouro, prata, cobre e outros metais preciosos presentes nos dispositivos. Além disso, a reciclagem ajuda a reduzir a quantidade de resíduos enviados para aterros sanitários, minimizando os impactos ambientais. Empresas especializadas realizam a desmontagem dos eletrônicos, separando os componentes reutilizáveis e recicláveis. Ao participar ativamente da reciclagem, contribuímos para a economia circular e para a preservação dos recursos naturais.",
+      "autor": "Bruno",
+      "width": "1200",
+      "height": "400",
+      "fonte": "https://www.greenpeace.org/brasil/blog/o-problema-crescente-do-lixo-eletronico-no-mundo/",
+      "url": "images/descarte-reciclagem.jpg"
+    },
+    {
+      "id": "4",
+      "titulo": "Componentes Tóxicos: O Perigo do Descarte Incorreto na Natureza",
+      "conteudo": "O descarte incorreto de lixo eletrônico na natureza pode liberar componentes tóxicos, como chumbo, mercúrio, cádmio e retardadores de chama, que representam sérios riscos à saúde humana e ao meio ambiente. Esses elementos podem contaminar o solo e a água, afetando a fauna e a flora locais. Além disso, a exposição direta a esses materiais pode causar problemas de saúde, como doenças respiratórias, danos neurológicos e câncer. É fundamental conscientizar a população sobre os perigos do descarte inadequado e promover práticas responsáveis para o manejo do lixo eletrônico.",
+      "autor": "Mariana",
+      "width": "1200",
+      "height": "400",
+      "fonte": "https://www.greenpeace.org/brasil/blog/o-problema-crescente-do-lixo-eletronico-no-mundo/",
+      "url": "images/descarte-perigos.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "nome": "Ana Carla Souza",
+      "e-mail": "aninha@gmail.com",
+      "senha": "12345"
+    },
+    {
+      "id": "2",
+      "nome": "Henrique Silva",
+      "e-mail": "henrique.souza@gmail.com",
+      "senha": "35671"
+    },
+    {
+      "id": "3",
+      "nome": "Kaique Oliveira Prado",
+      "e-mail": "oliveira_Kaique@gmail.com",
+      "senha": "72012"
+    },
+    {
+      "id": "4",
+      "nome": "Patricia Gomes",
+      "e-mail": "santos_patricia@gmail.com",
+      "senha": "38748"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "pilhas"
+    },
+    {
+      "id": "2",
+      "nome": "telas de celular"
+    },
+    {
+      "id": "3",
+      "nome": "placas de computador"
+    },
+    {
+      "id": "4",
+      "nome": "cabos USB"
+    }
+  ],
+  "pontos_de_coleta": [
+    {
+      "id": 1,
+      "nome": "Ponto de Coleta de Lixo Eletrônico - PROPAM",
+      "logradouro": "Rua Rad. Ubaldo Ferreira",
+      "numero": 20,
+      "bairro": "Castelo",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "31330-294",
+      "pais": "Brasil",
+      "latitude": -19.86966,
+      "longitude": -43.99367
+    },
+    {
+      "id": 2,
+      "nome": "URPV - Unidade de Recebimento de Pequenos Volumes",
+      "logradouro": "Rua flôr de Índio",
+      "numero": 105,
+      "bairro": "Liberdade",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "31270-215",
+      "pais": "Brasil",
+      "latitude": -19.8574,
+      "longitude": -43.95612
+    },
+    {
+      "id": 3,
+      "nome": "MG Recicla Reciclagem de Lixo Eletrônico",
+      "logradouro": "Rua Sasaré",
+      "numero": 47,
+      "bairro": "Jardinópolis",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "30512-010",
+      "pais": "Brasil",
+      "latitude": -19.87895,
+      "longitude": -44.01169
+    },
+    {
+      "id": 4,
+      "nome": "Ecoponto E-MILE de Lixo Eletrônico (CTRL+Play)",
+      "logradouro": "Rua Bernardo Guimarães",
+      "numero": 3000,
+      "bairro": "Santo Agostinho",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "30140-083",
+      "pais": "Brasil",
+      "latitude": -19.87761,
+      "longitude": -43.95658
+    },
+    {
+      "id": 5,
+      "nome": "Lithium Informática - Ecoponto E-MILE - Descarte Lixo Eletrônico",
+      "logradouro": "Rua Padre Eustáquio",
+      "numero": 443,
+      "bairro": "Carlos Prates",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "30710-580",
+      "pais": "Brasil",
+      "latitude": -19.8591,
+      "longitude": -43.95939
+    }
+  ]
+}
