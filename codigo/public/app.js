@@ -31,9 +31,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    
+// Samuel Carrossel - carregar matérias do JSON
     const API_URL = '/materias';
-
     
     fetch(API_URL)
         .then(response => {
