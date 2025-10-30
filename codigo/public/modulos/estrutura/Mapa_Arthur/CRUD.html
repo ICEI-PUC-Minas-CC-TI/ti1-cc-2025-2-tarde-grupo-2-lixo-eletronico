@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mapa de Pontos de Coleta</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <main>
-    <h3>Mapa Interativo - Pontos de Coleta</h3>
-    <div id="map"></div>
+    <main>
+        <h3>Mapa Interativo - Pontos de Coleta</h3>
+        <div id="map"></div>
 
-    <h3>Lista de Pontos</h3>
-    <div class="lista-pontos" id="listaPontos"></div>
-  </main>
+        <h3>Lista de Pontos</h3>
+        <div id="msg"></div> <!-- Adicione esta div para mensagens -->
+        <div class="lista-pontos" id="listaPontos"></div>
+    </main>
+    
+    <script src="CRUD.js"></script>
+    <script>
+        // Função para exibir os pontos na lista
+        function exibirPontos(pontos) {
+            const listaPontos = document.getElementById('listaPontos');
+            listaPontos.innerHTML = ''; // Limpa a lista
+            
+            pontos.forEach(ponto => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <h4>${ponto.nome}</h4>
+                    <p><strong>Endereço:</strong> ${ponto.logradouro}, ${ponto.numero}</p>
+                    <p><strong>Bairro:</strong> ${ponto.bairro}</p>
+                    <p><strong>Cidade:</strong> ${ponto.cidade} - ${ponto.estado}</p>
+                    <p><strong>CEP:</strong> ${ponto.cep}</p>
+                    <p><strong>Coordenadas:</strong> ${ponto.latitude}, ${ponto.longitude}</p>
+                `;
+                listaPontos.appendChild(card);
+            });
+        }
+
+        // Carrega os pontos quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            readContato(exibirPontos);
+        });
+    </script>
 </body>
 </html>
