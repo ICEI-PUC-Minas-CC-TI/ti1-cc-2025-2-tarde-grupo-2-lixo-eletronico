@@ -3,13 +3,20 @@
 /*100 (Tonalidade mais clara) e 900 (Tonalidade mais escura)*/
 
 :root {
-  --green-700: #33691e; /*Aplicação Geral: MENU e Botões*/
-  --green-400: #4caf50; /*Aplicação Geral: CARDS, Bordas ou Sessões*/
-  --yellow-100: #f8f8d5; /*Aplicação Geral: Fundo de Páginas e Sessões *textos em fundo escuro*/
-  --grayblue-200: #90a4ae; /*Aplicação Geral: Elementos Secundários e/ou Footer (Rodapé)*/
-  --graydark-900: #212121; /*Aplicação Geral: Textos e Ícones em fundos claros*/
-  --darkbrow-900: #6d4c41; /*ALTERNATIVA: Textos e Ícones em fundos claros*/
-  font-family: "Montserrat", sans-serif; /*Fonte Padrão da Aplicação*/
+  --green-700: #33691e;
+  /*Aplicação Geral: MENU e Botões*/
+  --green-400: #4caf50;
+  /*Aplicação Geral: CARDS, Bordas ou Sessões*/
+  --yellow-100: #f8f8d5;
+  /*Aplicação Geral: Fundo de Páginas e Sessões *textos em fundo escuro*/
+  --grayblue-200: #90a4ae;
+  /*Aplicação Geral: Elementos Secundários e/ou Footer (Rodapé)*/
+  --graydark-900: #212121;
+  /*Aplicação Geral: Textos e Ícones em fundos claros*/
+  --darkbrow-900: #6d4c41;
+  /*ALTERNATIVA: Textos e Ícones em fundos claros*/
+  font-family: "Montserrat", sans-serif;
+  /*Fonte Padrão da Aplicação*/
 }
 
 /* Usar os pesos 200 (Para Contéudo), 400 (Destaque no contéudo) e 500/600 (Títulos ou subtítulos) */
@@ -27,10 +34,12 @@ body {
   color: var(--graydark-900);
   font-family: "Montserrat", sans-serif;
 }
+
 h3 {
   color: #093070;
   border-bottom: 1px solid #c1c1c1;
 }
+
 h4 {
   color: #c54b1e;
 }
@@ -109,76 +118,117 @@ main {
 
 /* Sabrina FAQ */
 .content-faq {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 
 #container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 50%;
 }
 
 .accordion {
-    background-color:  var(--green-700);
-    border-radius: 8px;
-    padding: 12px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px rgb(27, 27, 27);
+  background-color: var(--green-700);
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(27, 27, 27);
 
 }
 
 .accordion-header {
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    /*tira a cor de fundo da pergunta*/
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  /*tira a cor de fundo da pergunta*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .accordion-header span {
-    color: var(--yellow-100); /*cor do texto nas caixas de perguntas*/
-    max-width: 100%;
-    /**/
-    white-space: nowrap;
-    /*não quebrar a linha*/
-    overflow: hidden;
-    /*esconder o que ultrapassar o tamanho*/
-    text-overflow: ellipsis;
-    /*coloca reticências no final do texto*/
+  color: var(--yellow-100);
+  /*cor do texto nas caixas de perguntas*/
+  max-width: 100%;
+  /**/
+  white-space: nowrap;
+  /*não quebrar a linha*/
+  overflow: hidden;
+  /*esconder o que ultrapassar o tamanho*/
+  text-overflow: ellipsis;
+  /*coloca reticências no final do texto*/
 }
 
 .accordion-body {
-    color: var(--yellow-100);
-    font-size: 14px;
-    opacity: 0;
-    height: 0;
-    overflow: hidden; /*esconder o texto que ultrapassar o tamanho*/
-    transition: opacity 0.2s;/* exibir o texto de forma lenta */
+  color: var(--yellow-100);
+  font-size: 14px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  /*esconder o texto que ultrapassar o tamanho*/
+  transition: opacity 0.2s;
+  /* exibir o texto de forma lenta */
 }
 
 .accordion-body.active {
-    height: 100%;
-    opacity: 1;
-    padding: 5px 0px;
-    /*ajustar espaçamento*/
-    height: auto;
-    margin-top: 8px;
+  height: 100%;
+  opacity: 1;
+  padding: 5px 0px;
+  /*ajustar espaçamento*/
+  height: auto;
+  margin-top: 8px;
 }
 
 /*para a seta girar*/
 .arrow {
-    transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
 }
+
 /* animação da seta */
-.accordion:has(.active) .arrow{
-    transform: rotate(180deg);
+.accordion:has(.active) .arrow {
+  transform: rotate(180deg);
+}
+
+
+/* Sabrina - Materias */
+.menu-materias {
+  height: 50%;
+  width: 300px;
+  position: fixed;
+  /*não colar com a página*/
+  z-index: 1;
+  /* ficar na frente de outros elementos */
+  right: 50px;
+  /*torna-lo fixo na direita*/
+  border-radius: 20px;
+  background-color: var(--green-700);
+  overflow-x: hidden;
+  /*remover barra de rolagem horizontal*/
+}
+
+.menu-materias a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  /*cada link em uma linha*/
+  color: var(--yellow-100);
+  transition: 0.3s;
+}
+
+.menu-materias a:hover {
+  color: var(--green-400);
+  /*cor ao passar o mouse*/
+
+}
+
+#content-materias p {
+  width: 70%;
 }

@@ -1,3 +1,5 @@
+
+  const API_URL = '/materias';
 //    Sabrina FAQ - carregar perguntas e respostas do JSON
    document.addEventListener('DOMContentLoaded', () => 
     {
@@ -29,12 +31,39 @@
             });
         });
 
-document.addEventListener('DOMContentLoaded', function() {
-    
-    
-    const API_URL = '/materias';
+//    Sabrina MATERIAS - carregar materias do JSON
+   document.addEventListener('DOMContentLoaded', () => 
+    {
+        fetch(API_URL) 
+        .then(response => response.json())
+        .then(data => { 
+            for(let i=0; i<data.length; i++){
+                let materias = data[i];
+                // sincronizar titulos
+                const title = document.getElementById(`${materias.id}`);
+                if (title) {
+                title.textContent = materias.titulo;
+                }
+                // exibir topicos
+                const topico = document.getElementById(`topico-${materias.id}`);
+                if (topico) {
+                topico.textContent = materias.titulo;
+                }
+                //sincronizar conteudo
+                const content = document.querySelector(`.news[data-id="${materias.id}"]`);
+                if(content){
+                    content.textContent = materias.conteudo;
+                }
+            }
+            })
+              .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
+});
 
-    
+
+
+//    Samuel Carousel - carregar matérias do backend
+document.addEventListener('DOMContentLoaded', function() {
+
     fetch(API_URL)
         .then(response => {
             
