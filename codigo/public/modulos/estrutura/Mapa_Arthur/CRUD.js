@@ -1,37 +1,80 @@
-// URL da API JSONServer - Substitua pela URL correta da sua API
-const apiUrl = 'http://localhost:3000/pontos_de_coleta';
+const apiUrl= '/pontos_de_coleta';
 
-/**
- * Exibe uma mensagem na tela
- */
-function displayMessage(mensagem) {
+function displayMessage(message) {
     const msg = document.getElementById('msg');
-    msg.innerHTML = `<div class="alert alert-warning">${mensagem}</div>`;
-    
-    // Remove a mensagem após 3 segundos
-    setTimeout(() => {
-        msg.innerHTML = '';
-    }, 3000);
+    msg.innerHTML = '<div class="alert alert-warning">' + message + '</div>';
 }
 
-/**
- * Lê os pontos de coleta da API
- */
-function readContato(processaDados) {
+// LER PONTOS DE COLETA
+function readPontosDeColeta(processaDados){
     fetch(apiUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erro na rede: ' + response.status);
-            }
-            return response.json();
-        })
-        .then(data => {
-            processaDados(data);
-        })
-        .catch(error => {
-            console.error('Erro ao ler pontos de coleta via API JSONServer:', error);
-            displayMessage('Erro ao carregar pontos de coleta. Verifique se o JSON Server está rodando.');
-        });
+    .then(response =>  response.json()) // pede o JSON
+    .then(data => { 
+        processaDados(data); // os dados são entregues para a função processaDados
+})
+    .catch(error => { 
+        console.error('Erro ao ler os pontos de coleta via API JSONServer: ' + error);
+        dysplayMessage('Erro ao ler os pontos de coleta');
+         })
+    }
+
+    // CRIAR PONTOS DE COLETA
+function createPontosDeColeta(PontosDeColeta, processaDados){
+    fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(PontosDeColeta),
+    })
+    .then(response =>  response.json())
+    .then(data => { 
+        displayMessage("Ponto de coleta inserido com sucesso");
+        if(refreshFunction)
+            refreshFunction();
+})
+    .catch(error => { 
+        console.error('Erro ao inserir o ponto de coleta via API JSONServer: ' + error);
+        dysplayMessage('Erro ao inserir o ponto de coleta');
+         });
+    }
+
+// ATUALIZAR PONTOS DE COLETA
+function updatePontosDeColeta(id, PontosDeColeta, refreshFunction){
+    fetch(`${apiUrl}/${id}`, {
+        method: 'PUT',
+        headers: {  
+            'Content-Type': 'application/json',
+            'Accept-language': 'pt-BR',
+            'Accept': 'text/xml',
+        },
+        body: JSON.stringify(PontosDeColeta),
+    })
+    .then(response =>  response.json())
+    .then(data=> {
+        displayMessage("Pontos de coleta atualizado com sucesso");
+        if (refreshFunction)
+            refreshFunction();
+    })
+    .catch(error => {
+        console.error("Erro ao atualizar API via JSONServer: " + error);    
+        displayMessage("Erro ao atualizar os pontos de coleta");
+    });
 }
 
-// ... restante do código permanece igual
+// EXCLUIR PONTOS DE COLETA
+function deletePontosDeColeta(id, refreshFunction){
+    fetch(`${apiUrl}/${id}`, {
+        method: 'DELETE',
+    })
+    .then(response => response.json())
+    .then(data=> {
+        displayMessage("ponto de coleta removido com sucesso");
+        if(refreshFunction)
+            refreshFunction();
+    })
+    .catch(error => {
+        console.error("Erro ao remover ponto de coleta via API JSONServer:" + error);
+        displayMessage("Erro ao remover o ponto de coleta");
+    });
+}

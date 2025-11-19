@@ -108,12 +108,13 @@ main {
 }
 
 /*        MAPA       */
-   #map {
+   #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+   /* #map {
       width: 100%;
       height: 500px;
       border-radius: 10px;
       margin-bottom: 20px;
-    }
+    } */
 
     .lista-pontos {
       display: grid;

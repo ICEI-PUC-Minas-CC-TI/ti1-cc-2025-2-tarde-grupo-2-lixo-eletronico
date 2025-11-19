@@ -1,47 +1,296 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa de Pontos de Coleta</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
-    <main>
-        <h3>Mapa Interativo - Pontos de Coleta</h3>
-        <div id="map"></div>
-
-        <h3>Lista de Pontos</h3>
-        <div id="msg"></div> <!-- Adicione esta div para mensagens -->
-        <div class="lista-pontos" id="listaPontos"></div>
-    </main>
-    
-    <script src="CRUD.js"></script>
-    <script>
-        // Função para exibir os pontos na lista
-        function exibirPontos(pontos) {
-            const listaPontos = document.getElementById('listaPontos');
-            listaPontos.innerHTML = ''; // Limpa a lista
+<!-- <body onload="init()">  ao carregar é chamada a função init() -->
+    <h1 style="text-align: center;">Cadastro de PontosDeColeta (CRUD)</h1>
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1">
+                <!-- alerta de PontosDeColeta não encontrado -->
             
-            pontos.forEach(ponto => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.innerHTML = `
-                    <h4>${ponto.nome}</h4>
-                    <p><strong>Endereço:</strong> ${ponto.logradouro}, ${ponto.numero}</p>
-                    <p><strong>Bairro:</strong> ${ponto.bairro}</p>
-                    <p><strong>Cidade:</strong> ${ponto.cidade} - ${ponto.estado}</p>
-                    <p><strong>CEP:</strong> ${ponto.cep}</p>
-                    <p><strong>Coordenadas:</strong> ${ponto.latitude}, ${ponto.longitude}</p>
-                `;
-                listaPontos.appendChild(card);
+        <form id="form-PontosDeColeta">
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <label for="inputId">Id</label>
+                    <input type="text" class="form-control" id="inputId" placeholder="Id" disabled>
+                </div>
+                <div class="col-sm-8">
+                    <label for="inputNome">Nome</label>
+                    <input type="text" class="form-control" id="inputNome" placeholder="Nome" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="inputLogradouro">Logradouro</label>
+                    <input type="text" class="form-control" id="inputLogradouro" placeholder="Logradouro" required>
+                </div>
+                 <div class="col-sm-7">
+                    <label for="inputNumero">Numero</label>
+                    <input type="text" class="form-control" id="inputNumero" placeholder="Numero" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="inputBairro">Bairro</label>
+                    <input type="text" class="form-control" id="inputBairro" placeholder="Bairro" required>
+                </div>
+                 <div class="col-sm-5">
+                    <label for="inputNumero">Cidade</label>
+                    <input type="text" class="form-control" id="inputCidade" placeholder="Cidade" required>
+                </div>
+                 <div class="col-sm-5">
+                    <label for="inputNumero">Estado</label>
+                    <input type="text" class="form-control" id="inputEstado" placeholder="Estado" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputCep">Cep</label>
+                    <input type="text" class="form-control" id="inputCep" placeholder="Cep" required>
+                </div>
+                 <div class="col-sm-6">
+                    <label for="inputPais">Pais</label>
+                    <input type="text" class="form-control" id="inputPais" placeholder="Pais" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <label for="inputLatitude">Latitude</label>
+                    <input type="text" class="form-control" id="inputLatitude" placeholder="Latitude" required>
+                </div>
+                 <div class="col-sm-4">
+                    <label for="inputLongitude">Longitude</label>
+                    <input type="text" class="form-control" id="inputLongitude" placeholder="Longitude" required>
+                </div>
+            </div>
+           
+            <div class="form-group row" style="margin-top: 10px;">
+                <div class="col-sm-6">
+                    <button id="btnInsert" type="button" class="btn btn-success">Inserir</button>
+                    <button id="btnUpdate" type="button" class="btn btn-warning">Alterar</button>
+                    <button id="btnDelete" type="button" class="btn btn-danger">Excluir</button>
+                    <button id="btnClear"  type="button" class="btn btn-secondary">Limpar Form</button>
+                </div>
+            </div>
+        </div>
+        </form>
+    
+    
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-PontosDeColeta" class="table table-striped">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Logradouro</th>
+                        <th scope="col">Numero</th>
+                        <th scope="col">Bairro</th>
+                        <th scope="col">Cidade</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Cep</th>
+                        <th scope="col">Pais</th>
+                        <th scope="col">Latitude</th>
+                        <th scope="col">Longitude</th>
+                    </thead>
+                    <tbody id="table-PontosDeColeta">
+                        <tr>
+                            <td scope="row">1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        function exibirPontosDeColeta(){
+            tablePontosDeColeta = document.getElementById("table-PontosDeColeta");
+
+            // Remoção de todas as linhas da tabela
+            tablePontosDeColeta.innerHTML = "";
+
+            readPontosDeColeta(dados => {
+               for(i = 0; i < dados.length; i++){ 
+                    let PontosDeColeta = dados[i];
+                    tablePontosDeColeta.innerHTML += `<tr>
+                        <td scope="row">${PontosDeColeta.id}</td>
+                        <td>${PontosDeColeta.nome}</td>
+                        <td>${PontosDeColeta.logradouro}</td>
+                        <td>${PontosDeColeta.numero}</td>
+                        <td>${PontosDeColeta.bairro}</td>
+                        <td>${PontosDeColeta.cidade}</td>
+                        <td>${PontosDeColeta.estado}</td>
+                        <td>${PontosDeColeta.cep}</td>
+                        <td>${PontosDeColeta.pais}</td>
+                        <td>${PontosDeColeta.latitude}</td>
+                        <td>${PontosDeColeta.longitude}</td>
+                    </tr>`;
+                }
             });
         }
+        function init(){
+            // Define uma variável para o formulário de PontosDeColeta
+            formPontosDeColeta = document.getElementById("form-PontosDeColeta");
 
-        // Carrega os pontos quando a página carregar
-        document.addEventListener('DOMContentLoaded', function() {
-            readContato(exibirPontos);
+            // Adicona funções para tratar os eventos do formulário
+            btnInsert = document.getElementById("btnInsert");
+            btnInsert.addEventListener("click", function(){
+
+                // Verifica se o formulário está preenchido corretamente
+                if(!formPontosDeColeta.checkValidity()){
+                    displayMessage("msg", "Preencha o formulário corretamente!");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoNome = document.getElementById("inputNome").value;
+                let campoLogradouro = document.getElementById("inputLogradouro").value;
+                let campoNumero = document.getElementById("inputNumero").value;
+                let campoBairro = document.getElementById("inputBairro").value;
+                let campoCidade = document.getElementById("inputCidade").value;
+                let campoEstado = document.getElementById("inputEstado").value;
+                let campoCep = document.getElementById("inputCep").value;
+                let campoPais = document.getElementById("inputPais").value;
+                let campoLatitude = document.getElementById("inputLatitude").value;
+                let campoLongitude = document.getElementById("inputLongitude").value;
+
+                // Cria um objeto PontosDeColeta com os dados do PontosDeColeta
+                let PontosDeColeta = {
+                    nome: campoNome,
+                    logradouro: campoLogradouro,
+                    numero: campoNumero,
+                    bairro: campoBairro,
+                    cidade: campoCidade,
+                    estado: campoEstado,
+                    cep: campoCep,
+                    pais: campoPais,
+                    latitude: campoLatitude,
+                    longitude: campoLongitude
+
+                };
+
+                // Cria um PontosDeColeta no banco de dados
+                createPontosDeColeta(PontosDeColeta, exibirPontosDeColeta);
+            });
+           
+            btnUpdate = document.getElementById("btnUpdate");
+            btnUpdate.addEventListener("click", function(){
+                let campoId = document.getElementById("inputId").value;
+                if(campoId == ""){
+                    displayMessage("msg", "Nenhum PontosDeColeta selecionado para atualização!");
+                    return;
+                }
+                
+                // Obtem os valores dos campos do formulário
+                let campoNome = document.getElementById("inputNome").value;
+                let campoLogradouro = document.getElementById("inputLogradouro").value;
+                let campoNumero = document.getElementById("inputNumero").value;
+                let campoBairro = document.getElementById("inputBairro").value;
+                let campoCidade = document.getElementById("inputCidade").value;
+                let campoEstado = document.getElementById("inputEstado").value;
+                let campoCep = document.getElementById("inputCep").value;
+                let campoPais = document.getElementById("inputPais").value;
+                let campoLatitude = document.getElementById("inputLatitude").value;
+                let campoLongitude = document.getElementById("inputLongitude").value;
+
+                // Cria um objeto PontosDeColeta com os dados do PontosDeColeta
+                let PontosDeColeta = {
+                    nome: campoNome,
+                    logradouro: campoLogradouro,
+                    numero: campoNumero,
+                    bairro: campoBairro,
+                    cidade: campoCidade,
+                    estado: campoEstado,
+                    cep: campoCep,
+                    pais: campoPais,
+                    latitude: campoLatitude,
+                    longitude: campoLongitude
+
+                };
+                  // Altera o PontosDeColeta no banco de  dados
+            updatePontosDeColeta(parseInt(campoId), PontosDeColeta, exibirPontosDeColeta);
+                // limpa o formulário
+                formPontosDeColeta.reset();
+            });
+          
+
+            btnDelete = document.getElementById("btnDelete");
+            btnDelete.addEventListener("click", function(){
+
+                let campoId = document.getElementById("inputId").value;
+                if(campoId == ""){
+                    displayMessage("Selecione um PontosDeColeta para exclusão!");
+                    return;
+                }
+                
+                // Exclui o PontosDeColeta no banco de dados
+                deletePontosDeColeta(parseInt(campoId), 
+                    exibirPontosDeColeta);
+
+               // limpa o formulário
+               formPontosDeColeta.reset();
+            });
+
+            //Trata o click do botao Listar PontosDeColeta
+            btnClear = document.getElementById("btnClear");
+            btnClear.addEventListener("click", function(){
+                formPontosDeColeta.reset();
+            });
+            // Oculta a mensagem de alerta após 5 segundos
+            msg = document.getElementById("msg");
+            msg.addEventListener("DOMSubtreeModified", function(e){
+                if(e.target.innerHTML == "") return;
+                    setTimeout(function(){
+                    alert = msg.getElementByClassName("alert");
+                    alert[0].remove();
+                    msg.innerHTML = "";
+                }, 5000);
+            });
+       
+         // Preenche o formulário quando o usuário clicar em um linha da tabela
+         gridPontosDeColeta = document.getElementById("grid-PontosDeColeta");
+         gridPontosDeColeta.addEventListener("click", function(e){
+            if( e.target.tagName == "TD") {
+
+                // Obtem as colunas da linha selecionada na tabela
+                let linhaPontosDeColeta = e.target.parentNode;
+                colunas = linhaPontosDeColeta.querySelectorAll("td");
+
+                // Preenche os campos do formulário com os dados da linha selecionada na tabela
+                document.getElementById("inputId").value = colunas[0].innerText;
+                document.getElementById("inputNome").value = colunas[1].innerText;
+                document.getElementById("inputLogradouro").value = colunas[2].innerText;
+                document.getElementById("inputNumero").value = colunas[3].innerText;
+                document.getElementById("inputBairro").value = colunas[4].innerText;
+                document.getElementById("inputCidade").value = colunas[5].innerText;
+                document.getElementById("inputEstado").value = colunas[6].innerText;
+                document.getElementById("inputCep").value = colunas[7].innerText;
+                document.getElementById("inputPais").value = colunas[8].innerText;
+                document.getElementById("inputLatitude").value = colunas[9].innerText;
+                document.getElementById("inputLongitude").value = colunas[10].innerText;
+            }
         });
-    </script>
+            exibirPontosDeColeta();
+        }
+        document.addEventListener("DOMContentLoaded", init);
+   </script>
+    <script src="CRUD.js"></script>
+
 </body>
 </html>
