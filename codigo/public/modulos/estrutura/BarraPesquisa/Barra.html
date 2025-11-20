@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Busca - Lixo Eletrônico</title>
+</head>
+<body>
+    <div id="container">
+        <div class="input-group">
+            <div class="input-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <input 
+                id="search"
+                type="text" 
+                class="input-field" 
+                placeholder="Pesquisar locais de descarte..."
+            >
+        </div>
+
+        <ul class="items" id="results-list">
+            <li class="item" data-search="lixo eletronico lugar1 localização descarte centro reciclagem norte">
+                <div class="item-image">
+                    <img src="src/images/Lixo.jpg" alt="Lixo eletronico imagem 1">
+                </div>
+
+                <div class="item-content">
+                    <h2 class="item-title">
+                        Lixo Eletronico (Lugar1)
+                    </h2>
+
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Centro de Reciclagem Norte
+                    </p>
+
+                    <p class="item-description">
+                        Lugar para jogar o seu lixo eletronico fora
+                    </p>
+                </div>
+            </li>
+
+            <li class="item" data-search="lixo eletronico lugar2 localização descarte ecopoint sul">
+                <div class="item-image">
+                    <img src="src/images/Elet.jpg" alt="Lixo eletronico imagem 2">
+                </div>
+
+                <div class="item-content">
+                    <h2 class="item-title">
+                        Lixo Eletronico (Lugar2)
+                    </h2>
+
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-location-dot"></i>
+                        EcoPoint Sul
+                    </p>
+
+                    <p class="item-description">
+                        Lugar para jogar o seu lixo eletronico fora
+                    </p>
+                </div>
+            </li>
+
+            <li class="item" data-search="lixo eletronico lugar3 localização descarte posto central leste">
+                <div class="item-image">
+                    <img src="src/images/ronico.jpg" alt="Lixo eletronico imagem 3">
+                </div>
+
+                <div class="item-content">
+                    <h2 class="item-title">
+                        Lixo Eletronico (Lugar3)
+                    </h2>
+
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Posto Central Leste
+                    </p>
+
+                    <p class="item-description">
+                        Lugar para jogar o seu lixo eletronico fora
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+        <div id="no_results">
+            <p><i class="fa-solid fa-search"></i> Nenhum Resultado Encontrado</p>
+            <p class="no-results-suggestion">Tente pesquisar por: "lixo", "eletronico", "localização"</p>
+        </div>
+    </div>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

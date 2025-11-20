@@ -94,3 +94,62 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 });
+// Bernardo/Pesquisa
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search');
+    const items = document.querySelectorAll('.item');
+    const noResults = document.getElementById('no_results');
+    const resultsList = document.querySelector('.items');
+
+    // Função para filtrar os resultados
+    function filterResults() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        let visibleItems = 0;
+
+        items.forEach(item => {
+            const searchData = item.getAttribute('data-search').toLowerCase();
+            const title = item.querySelector('.item-title').textContent.toLowerCase();
+            const subtitle = item.querySelector('.item-subtitle').textContent.toLowerCase();
+            const description = item.querySelector('.item-description').textContent.toLowerCase();
+
+            // Verifica se o termo de busca está em qualquer um dos campos
+            const matches = searchData.includes(searchTerm) || 
+                           title.includes(searchTerm) || 
+                           subtitle.includes(searchTerm) || 
+                           description.includes(searchTerm);
+
+            if (matches || searchTerm === '') {
+                item.style.display = 'flex';
+                visibleItems++;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        // Mostra ou esconde a mensagem de nenhum resultado
+        if (visibleItems === 0 && searchTerm !== '') {
+            noResults.style.display = 'block';
+            resultsList.style.display = 'none';
+        } else {
+            noResults.style.display = 'none';
+            resultsList.style.display = 'flex';
+        }
+    }
+
+    // Event listener para o input de busca
+    searchInput.addEventListener('input', filterResults);
+
+    // Event listener para a tecla Escape
+    searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            searchInput.value = '';
+            filterResults();
+            searchInput.blur();
+        }
+    });
+
+    // Focar no input quando a página carregar
+    searchInput.focus();
+
+    console.log('Sistema de busca inicializado! Digite "kakkkfuhsfguhsiu" para testar.');
+});
