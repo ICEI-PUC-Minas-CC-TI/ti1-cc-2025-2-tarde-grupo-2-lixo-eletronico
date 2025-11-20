@@ -70,3 +70,44 @@ function deleteProduto(id, refreshFunction){
         displayMesssage('Erro ao remover produto', 'danger');
     });
 }
+
+//DOM
+function exibirProdutos(){
+    const tableProdutos = document.getElementById("table-produtos");
+    tableProdutos.innerHTML = "";
+
+    readProduto(dados => {
+        dados.forEach(produto => {
+            tableProdutos.innerHTML += `
+            <tr data-id="${produto.id}" style="cursor: pointer">
+                <td>${produto.id}</td>
+                <td>${produto.nome}</td>
+            </tr>`;
+        });
+    });
+}
+
+function limparForm() {
+    const formProduto = document.getElementById("form-produto");
+    const inputId = document.getElementById("inputId");
+
+    formProduto.reset();
+    inputId.value = "";
+
+    document.getElementById("btnInsert").disabled = false;
+    document.getElementById("btnUpdate").disabled = true;
+    document.getElementById("btnDelete").disabled = true;
+}
+
+function init(){
+    const formProduto = document.getElementById("form-produto");
+    const inputId = document.getElementById("inputId");
+    const inputNome = document.getElementById("inputNome");
+
+    const btnInsert = document.getElementById("btnInsert");
+    const btnUpdate = document.getElementById("btnUpdate");
+    const btnDelete = document.getElementById("btnDelete");
+    const btnClear = document.getElementById("btnClear");
+    const gridProdutos = document.getElementById("grid-produtos");
+
+}
