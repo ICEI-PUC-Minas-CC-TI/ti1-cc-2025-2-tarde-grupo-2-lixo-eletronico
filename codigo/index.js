@@ -13,69 +13,16 @@
 // Autor: Rommel Vieira Carneiro
 // Data: 03/10/2023
 
-document.addEventListener('DOMContentLoaded', function() {
-    
-    
-    const API_URL = 'http://localhost:3000/materias';
+const jsonServer = require('json-server')
+const server = jsonServer.create()
+const router = jsonServer.router('./db/db.json')
+  
+// Para permitir que os dados sejam alterados, altere a linha abaixo
+// colocando o atributo readOnly como false.
+const middlewares = jsonServer.defaults({ noCors: true })
+server.use(middlewares)
+server.use(router)
 
-    
-    fetch(API_URL)
-        .then(response => {
-            
-            if (!response.ok) {
-                throw new Error('Erro na rede: ' + response.statusText);
-            }
-            return response.json();
-        })
-        .then(materias => {
-            
-
-            const indicatorsContainer = document.getElementById('carousel-indicators-container');
-            const innerContainer = document.getElementById('carousel-inner-container');
-
-            indicatorsContainer.innerHTML = '';
-            innerContainer.innerHTML = '';
-
-            materias.forEach((materia, index) => {
-                const isActive = index === 0;
-
-                const indicatorHTML = `
-                    <button 
-                        type="button" 
-                        data-bs-target="#carouselDestaques" 
-                        data-bs-slide-to="${index}" 
-                        class="${isActive ? 'active' : ''}" 
-                        aria-current="${isActive ? 'true' : 'false'}" 
-                        aria-label="Slide ${index + 1}">
-                    </button>
-                `;
-                
-                const itemHTML = `
-                    <div class="carousel-item ${isActive ? 'active' : ''}">
-                        <img 
-                            src="${materia.url}" 
-                            class="d-block w-100" 
-                            alt="${materia.titulo}" 
-                            style="height: ${materia.height}px; object-fit: cover; filter: brightness(0.7);">
-                        
-                        <div class="carousel-caption d-none d-md-block text-start">
-                            <h5>${materia.titulo}</h5>
-                            <p>${materia.conteudo.substring(0, 120)}...</p> 
-                        </div>
-                    </div>
-                `;
-
-                indicatorsContainer.innerHTML += indicatorHTML;
-                innerContainer.innerHTML += itemHTML;
-            });
-        })
-        .catch(error => {
-            
-            console.error('Falha ao buscar matérias:', error);
-            
-            const innerContainer = document.getElementById('carousel-inner-container');
-            if (innerContainer) {
-                innerContainer.innerHTML = '<p class="text-danger text-center">Não foi possível carregar as notícias. Tente novamente mais tarde.</p>';
-            }
-        });
-});
+server.listen(3000, () => {
+  console.log(`JSON Server is running em http://localhost:3000`)
+})

@@ -1,0 +1,74 @@
+.content-faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 50%;
+}
+
+.accordion {
+    background-color: #22440a;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(27, 27, 27);
+
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    /*tira a cor de fundo da pergunta*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.accordion-header span {
+    color: #f5f2f2; /*cor das caixas de perguntas*/
+    max-width: 100%;
+    /**/
+    white-space: nowrap;
+    /*não quebrar a linha*/
+    overflow: hidden;
+    /*esconder o que ultrapassar o tamanho*/
+    text-overflow: ellipsis;
+    /*coloca reticências no final do texto*/
+}
+
+.accordion-body {
+    color: #d38a8a;
+    font-size: 14px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden; /*esconder o texto que ultrapassar o tamanho*/
+    transition: opacity 0.2s;/* exibir o texto de forma lenta */
+}
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 5px 0px;
+    /*ajustar espaçamento*/
+    height: auto;
+    margin-top: 8px;
+}
+
+/*para a seta girar*/
+.arrow {
+    transition: transform 0.2s linear;
+}
+/* animação da seta */
+.accordion:has(.active) .arrow{
+    transform: rotate(180deg);
+}

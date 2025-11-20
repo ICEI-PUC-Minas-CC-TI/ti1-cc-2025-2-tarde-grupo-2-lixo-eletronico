@@ -1,60 +1,5 @@
- {
-  "faqs": [
-    {
-      "id": "1",
-      "pergunta": "O que são considerados lixos eletrônicos?",
-      "resposta": "Lixo eletrônico, é todo dispositivo elétrico ou eletrônico que foi descartado, está obsoleto, danificado ou sem possibilidade de uso, como celulares, computadores, televisores, eletrodomésticos, fios, placas de circuito, pilhas e baterias"
-    },
-    {
-      "id": "2",
-      "pergunta": "Quais os impactos que o descarte dos dispositivos reproduz na natureza?",
-      "resposta": "O descarte inadequado de lixo eletrônico gera diversos impactos ambientais e à saúde, tais como: Contaminação do solo e da água, poluição do ar, riscos à saúde humana e a fauna etc."
-    },
-    {
-      "id": "3",
-      "pergunta": "Como posso fazer o descarte adequado de eletrônicos?",
-      "resposta": "Para fazer o descarte adequado de eletrônicos, siga esses passos: separe os dispositivos eletrônicos, apague seus dados pessoais(fotos, contatos, documentos) e entregue em pontos de coleta especializados."
-    },
-    {
-      "id": "4",
-      "pergunta": "Como é feito o descarte de eletrônicos?",
-      "resposta": "Existem diferentes caminhos e práticas para o descarte responsável de eletrônicos. Dentre eles, posso citar: Coleta e pontos de entrega, Logística reversa, Desmontagem e separação, Reciclagem química/física e Disposição final segura."
-    }
-  ],
-  "videos": [
-    {
-      "id": "1",
-      "titulo": "O Problema Crescente do Lixo Eletrônico no Mundo",
-      "descricao": "Este vídeo aborda o aumento global do lixo eletrônico e seus impactos ambientais.",
-      "duracao": "12:00",
-      "canal": "Carlos",
-      "url": "https://www.youtube.com/"
-    },
-    {
-      "id": "2",
-      "titulo": "Sustentabilidade e Tecnologia: A Importância da Reciclagem do Lixo Eletrônico",
-      "descricao": "Especialistas discutem como a reciclagem de eletrônicos contribui para a sustentabilidade.",
-      "duracao": "40:00",
-      "canal": "Sustentabilidade e Tecnologia",
-      "url": "https://www.youtube.com/"
-    },
-    {
-      "id": "3",
-      "titulo": "Lixo Eletrônico",
-      "descricao": "Reportagem sobre o descarte correto de lixo eletrônico no Brasil.",
-      "duracao": "45:00",
-      "canal": "Repórter Eco",
-      "url": "https://www.youtube.com/"
-    },
-    {
-      "id": "4",
-      "titulo": "Sustentabilidade e Lixo Eletrônico | Conceito e Ação",
-      "descricao": "A ONU alerta sobre os riscos do crescente volume de lixo eletrônico.",
-      "duracao": "8:20",
-      "canal": "Sustentabilidade e Lixo Eletrônico",
-      "url": "https://www.youtube.com/"
-    }
-  ],
+ 
+  {
   "materias": [
     {
       "id": "1",
@@ -123,6 +68,88 @@
       "senha": "38748"
     }
   ],
+  "faqs": [
+    {
+      "id": "1",
+      "pergunta": "O que são considerados lixos eletrônicos?",
+      "resposta": "Lixo eletrônico, é todo dispositivo elétrico ou eletrônico que foi descartado, está obsoleto, danificado ou sem possibilidade de uso, como celulares, computadores, televisores, eletrodomésticos, fios, placas de circuito, pilhas e baterias"
+    },
+    {
+      "id": "2",
+      "pergunta": "Quais os impactos que o descarte dos dispositivos reproduz na natureza?",
+      "resposta": "O descarte inadequado de lixo eletrônico gera diversos impactos ambientais e à saúde, tais como: Contaminação do solo e da água, poluição do ar, riscos à saúde humana e a fauna etc."
+    },
+    {
+      "id": "3",
+      "pergunta": "Como posso fazer o descarte adequado de eletrônicos?",
+      "resposta": "Para fazer o descarte adequado de eletrônicos, siga esses passos: separe os dispositivos eletrônicos, apague seus dados pessoais(fotos, contatos, documentos) e entregue em pontos de coleta especializados."
+    },
+    {
+      "id": "4",
+      "pergunta": "Como é feito o descarte de eletrônicos?",
+      "resposta": "Existem diferentes caminhos e práticas para o descarte responsável de eletrônicos. Dentre eles, posso citar: Coleta e pontos de entrega, Logística reversa, Desmontagem e separação, Reciclagem química/física e Disposição final segura."
+    }
+  ],
+  "videos": [
+    {
+      "id": "1",
+      "titulo": "O Problema Crescente do Lixo Eletrônico no Mundo",
+      "descricao": "Este vídeo aborda o aumento global do lixo eletrônico e seus impactos ambientais.",
+      "duracao": "12:00",
+      "canal": "Carlos",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "id": "2",
+      "titulo": "Sustentabilidade e Tecnologia: A Importância da Reciclagem do Lixo Eletrônico",
+      "descricao": "Especialistas discutem como a reciclagem de eletrônicos contribui para a sustentabilidade.",
+      "duracao": "40:00",
+      "canal": "Sustentabilidade e Tecnologia",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "id": "3",
+      "titulo": "Lixo Eletrônico",
+      "descricao": "Reportagem sobre o descarte correto de lixo eletrônico no Brasil.",
+      "duracao": "45:00",
+      "canal": "Repórter Eco",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "id": "4",
+      "titulo": "Sustentabilidade e Lixo Eletrônico | Conceito e Ação",
+      "descricao": "A ONU alerta sobre os riscos do crescente volume de lixo eletrônico.",
+      "duracao": "8:20",
+      "canal": "Sustentabilidade e Lixo Eletrônico",
+      "url": "https://www.youtube.com/"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "nome": "Ana Carla Souza",
+      "e-mail": "aninha@gmail.com",
+      "senha": "12345"
+    },
+    {
+      "id": "2",
+      "nome": "Henrique Silva",
+      "e-mail": "henrique.souza@gmail.com",
+      "senha": "35671"
+    },
+    {
+      "id": "3",
+      "nome": "Kaique Oliveira Prado",
+      "e-mail": "oliveira_Kaique@gmail.com",
+      "senha": "72012"
+    },
+    {
+      "id": "4",
+      "nome": "Patricia Gomes",
+      "e-mail": "santos_patricia@gmail.com",
+      "senha": "38748"
+    }
+  ],
   "produtos": [
     {
       "id": "1",
@@ -141,7 +168,6 @@
       "nome": "cabos USB"
     }
   ],
-
   "pontos_de_coleta": [
     {
       "id": 1,
@@ -156,7 +182,6 @@
       "latitude": -19.86966,
       "longitude": -43.99367
     },
-
     {
       "id": 2,
       "nome": "URPV - Unidade de Recebimento de Pequenos Volumes",
@@ -170,7 +195,6 @@
       "latitude": -19.8574,
       "longitude": -43.95612
     },
-
     {
       "id": 3,
       "nome": "MG Recicla Reciclagem de Lixo Eletrônico",
@@ -184,7 +208,6 @@
       "latitude": -19.87895,
       "longitude": -44.01169
     },
-
     {
       "id": 4,
       "nome": "Ecoponto E-MILE de Lixo Eletrônico (CTRL+Play)",
@@ -198,7 +221,6 @@
       "latitude": -19.87761,
       "longitude": -43.95658
     },
-
     {
       "id": 5,
       "nome": "Lithium Informática - Ecoponto E-MILE - Descarte Lixo Eletrônico",
