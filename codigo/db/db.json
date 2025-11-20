@@ -1,5 +1,4 @@
- 
-  {
+{
   "materias": [
     {
       "id": "1",
@@ -152,25 +151,29 @@
   ],
   "produtos": [
     {
-      "id": "1",
-      "nome": "pilhas"
+      "nome": "teclado",
+      "id": "1"
     },
     {
       "id": "2",
       "nome": "telas de celular"
     },
     {
-      "id": "3",
+      "id": "4",
+      "nome": "cabos USB"
+    },
+    {
+      "id": "2c3f",
       "nome": "placas de computador"
     },
     {
-      "id": "4",
-      "nome": "cabos USB"
+      "id": "9291",
+      "nome": "pilhas"
     }
   ],
   "pontos_de_coleta": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Ponto de Coleta de Lixo Eletrônico - PROPAM",
       "logradouro": "Rua Rad. Ubaldo Ferreira",
       "numero": 20,
@@ -183,7 +186,7 @@
       "longitude": -43.99367
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "URPV - Unidade de Recebimento de Pequenos Volumes",
       "logradouro": "Rua flôr de Índio",
       "numero": 105,
@@ -196,7 +199,7 @@
       "longitude": -43.95612
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "MG Recicla Reciclagem de Lixo Eletrônico",
       "logradouro": "Rua Sasaré",
       "numero": 47,
@@ -209,7 +212,7 @@
       "longitude": -44.01169
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Ecoponto E-MILE de Lixo Eletrônico (CTRL+Play)",
       "logradouro": "Rua Bernardo Guimarães",
       "numero": 3000,
@@ -222,7 +225,7 @@
       "longitude": -43.95658
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Lithium Informática - Ecoponto E-MILE - Descarte Lixo Eletrônico",
       "logradouro": "Rua Padre Eustáquio",
       "numero": 443,

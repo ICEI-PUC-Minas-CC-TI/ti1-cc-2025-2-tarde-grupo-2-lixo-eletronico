@@ -37,8 +37,8 @@ function createProduto(produto, refreshFunction){
 }
 
 //update
-function createProduto(produto, refreshFunction){
-    fetch(apiUrl,{
+function updateProduto(id, produto, refreshFunction){
+    fetch(`${apiUrl}/${id}`,{
         method:'PUT',
         headers: {'Content-Type':'application/json'},
         body:JSON.stringify(produto),
