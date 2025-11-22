@@ -39,26 +39,51 @@
         .then(data => { 
             for(let i=0; i<data.length; i++){
                 let materias = data[i];
-                // sincronizar titulos
-                const title = document.getElementById(`${materias.id}`);
-                if (title) {
-                title.textContent = materias.titulo;
-                }
-                // exibir topicos
+               // preencher titulo
+               const tituloNews = document.getElementById(`${materias.id}`);
+               if (tituloNews){
+                tituloNews.textContent = materias.titulo;
+               } 
+            //    const image = document.getElementById()
+                // preencher conteudo
+               const conteudoNews = document.querySelector(`.news[data-id="${materias.id}"]`);
+               if (conteudoNews){
+                conteudoNews.textContent = materias.conteudo;
+               } 
                 const topico = document.getElementById(`topico-${materias.id}`);
                 if (topico) {
                 topico.textContent = materias.titulo;
-                }
-                //sincronizar conteudo
-                const content = document.querySelector(`.news[data-id="${materias.id}"]`);
+                    topico.addEventListener('click', () => {
+                        // esconde todos os conteúdos
+                        document.querySelectorAll('#content-materias h2').forEach(elem => {
+                        elem.classList.remove('active');
+                        });
+                        document.querySelectorAll('.news').forEach(elem => {
+                        elem.classList.remove('active');
+                    });
+             const content = document.querySelector(`.news[data-id="${materias.id}"]`);
+                const titulo = document.querySelector(`h2[id="${materias.id}"]`); 
+
+                if (titulo) titulo.classList.add('active');
                 if(content){
-                    content.textContent = materias.conteudo;
+                    content.classList.add('active');
                 }
+                });
             }
-            })
+            
+                 // mostrar a primeira notícia por padrão
+                const title = document.querySelector(`h2[id="1"]`);
+                const FirstNew = document.querySelector(`.news[data-id="1"]`);
+
+                   if (title) title.classList.add('active');
+                    if (FirstNew) {
+                    FirstNew.classList.add('active');
+                }
+                
+        }})
+           
               .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
 });
-
 
 
 //    Samuel Carousel - carregar matérias do backend

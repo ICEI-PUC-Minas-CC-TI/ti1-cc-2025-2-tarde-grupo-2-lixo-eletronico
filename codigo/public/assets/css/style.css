@@ -232,3 +232,24 @@ main {
 #content-materias p {
   width: 70%;
 }
+
+/* Esconder todos os títulos por padrão */
+/* Esconde todos os h2 por padrão */
+#content-materias h2 {
+  display: none;
+}
+
+/* Esconde todos os conteúdos por padrão */
+.news {
+  display: none;
+}
+
+/* Exibe h2 ativo */
+#content-materias h2.active {
+  display: block;
+}
+
+/* Exibe conteúdo ativo */
+.news.active {
+  display: block;
+}
