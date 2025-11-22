@@ -41,15 +41,20 @@
                 let materias = data[i];
                // preencher titulo
                const tituloNews = document.getElementById(`${materias.id}`);
-               if (tituloNews){
-                tituloNews.textContent = materias.titulo;
-               } 
-            //    const image = document.getElementById()
+               if (tituloNews) tituloNews.textContent = materias.titulo;
+                
+               // preecnher autor + data
+               const dadosNews = document.querySelector(`span[info-id="${materias.id}"]`);
+               if (dadosNews) dadosNews.innerHTML = `${materias.autor} — ${materias.data}`;
+                console.log(dadosNews);
+               // preencher imagem
+               const image = document.querySelector(`img[img-id="${materias.id}"]`);
+               if(image) image.src = materias.url;
+               
                 // preencher conteudo
                const conteudoNews = document.querySelector(`.news[data-id="${materias.id}"]`);
-               if (conteudoNews){
-                conteudoNews.textContent = materias.conteudo;
-               } 
+               if (conteudoNews) conteudoNews.textContent = materias.conteudo;
+            
                 const topico = document.getElementById(`topico-${materias.id}`);
                 if (topico) {
                 topico.textContent = materias.titulo;
@@ -60,26 +65,37 @@
                         });
                         document.querySelectorAll('.news').forEach(elem => {
                         elem.classList.remove('active');
-                    });
-             const content = document.querySelector(`.news[data-id="${materias.id}"]`);
+                        });
+                        document.querySelectorAll('#content-materias img').forEach(elem => {
+                        elem.classList.remove('active');
+                         });
+                        document.querySelectorAll('#content-materias span').forEach(elem => {
+                        elem.classList.remove('active');
+                        });
+                const content = document.querySelector(`.news[data-id="${materias.id}"]`);
                 const titulo = document.querySelector(`h2[id="${materias.id}"]`); 
+                const imagem = document.querySelector(`img[img-id="${materias.id}"]`); 
+                const dadosNews = document.querySelector(`span[info-id="${materias.id}"]`); 
 
+                // exibe todos os conteúdos
                 if (titulo) titulo.classList.add('active');
-                if(content){
-                    content.classList.add('active');
+                if(content) content.classList.add('active');
+                if(imagem)  imagem.classList.add('active');
+                if(dadosNews)  dadosNews.classList.add('active');
+
+            });
                 }
-                });
-            }
             
                  // mostrar a primeira notícia por padrão
-                const title = document.querySelector(`h2[id="1"]`);
-                const FirstNew = document.querySelector(`.news[data-id="1"]`);
+                const FirstTitle = document.querySelector(`h2[id="1"]`);
+                const FirstContent = document.querySelector(`.news[data-id="1"]`);
+                const FirstImage = document.querySelector(`img[img-id="1"]`);
+                const FirstDate = document.querySelector(`span[info-id="1"]`);
 
-                   if (title) title.classList.add('active');
-                    if (FirstNew) {
-                    FirstNew.classList.add('active');
-                }
-                
+                   if (FirstTitle) FirstTitle.classList.add('active');
+                   if (FirstContent) FirstContent.classList.add('active');
+                   if (FirstImage) FirstImage.classList.add('active');
+                   if (FirstDate) FirstDate.classList.add('active');
         }})
            
               .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));

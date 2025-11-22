@@ -3,71 +3,50 @@
   "materias": [
     {
       "id": "1",
-      "titulo": "O Problema Crescente do Lixo Eletrônico no Mundo",
-      "conteudo": "O lixo eletrônico é um dos fluxos de resíduos que mais cresce no mundo, com uma estimativa de 50 milhões de toneladas geradas anualmente. Esse aumento é impulsionado pelo rápido avanço tecnológico e pela obsolescência programada dos dispositivos eletrônicos. O descarte inadequado desses resíduos pode levar à contaminação do solo e da água, além de representar riscos à saúde humana devido à presença de substâncias tóxicas como chumbo, mercúrio e cádmio. A reciclagem e o descarte correto são essenciais para mitigar esses impactos ambientais.",
-      "autor": "Carlos",
+      "titulo": "Descarte de Eletrônicos: Legislação Brasileira",
+      "conteudo": "Com o crescente descarte de eletrônicos no Brasil, fez-se necessário que esse fosse devidamente regularizado, fazendo com que não só a população ficasse ciente do problema e suas consequências para o meio ambiente, mas também evitando o excesso de resíduos em locais impróprios. A partir dessa necessidade, a lei nº 9.605, regente desde 1998, foi alterada, dando origem a lei federal nº 12.305, que trata sobre a regularização do descarte de resíduos eletrônicos e que faz com que seja instituída a Política Nacional de Resíduos Sólidos.",
+      "autor": "Josianne Castro",
       "width": "1200",
       "height": "400",
-      "fonte": "https://www.greenpeace.org/brasil/blog/o-problema-crescente-do-lixo-eletronico-no-mundo/",
-      "url": "assets/images/descarte-problema.jpg"
+      "data": "2 de Novembro, 2016",
+      "fonte": "https://blog.amblegis.com.br/meio-ambiente/descarte-de-eletronicos-legislacao-brasileira/",
+      "url": "https://blog.amblegis.com.br/wp-content/uploads/2025/10/descarte-lixo-eletronico-capa-blogpost-1.jpg"
     },
     {
       "id": "2",
-      "titulo": "Descarte Correto: Procure o Ponto de Coleta Mais Próximo",
+      "titulo": "Como descartar o lixo eletrônico?",
       "conteudo": "Para garantir o descarte correto de eletrônicos, é fundamental procurar pontos de coleta especializados. Muitas cidades possuem locais específicos onde os cidadãos podem entregar seus dispositivos eletrônicos usados ou quebrados. Além disso, algumas empresas oferecem programas de logística reversa, permitindo que os consumidores devolvam os produtos ao fabricante para reciclagem. Ao optar por esses métodos, contribuímos para a redução do impacto ambiental e promovemos a reutilização de materiais valiosos presentes nos eletrônicos.",
-      "autor": "Alice",
+      "autor": "Aline Oliveira",
       "width": "1200",
       "height": "400",
-      "fonte": "https://www.greenpeace.org/brasil/blog/o-problema-crescente-do-lixo-eletronico-no-mundo/",
-      "url": "assets/images/descarte-correto.jpg"
+      "data": "28 de fevereiro, 2024",
+      "fonte": "https://www.cnnbrasil.com.br/tecnologia/como-descartar-o-lixo-eletronico/",
+      "url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/lixos-eletronicos.jpg?w=1200&h=900&crop=0"
     },
     {
       "id": "3",
-      "titulo": "Reciclagem: Materiais Valiosos São Recuperados do E-lixo",
-      "conteudo": "A reciclagem de lixo eletrônico é um processo crucial para a recuperação de materiais valiosos, como ouro, prata, cobre e outros metais preciosos presentes nos dispositivos. Além disso, a reciclagem ajuda a reduzir a quantidade de resíduos enviados para aterros sanitários, minimizando os impactos ambientais. Empresas especializadas realizam a desmontagem dos eletrônicos, separando os componentes reutilizáveis e recicláveis. Ao participar ativamente da reciclagem, contribuímos para a economia circular e para a preservação dos recursos naturais.",
-      "autor": "Bruno",
+      "titulo": "Metais Preciosos Encontrados no Lixo Eletrônico e Como Eles São Reaproveitados",
+      "conteudo": "A tecnologia avança rapidamente, e, com isso, o descarte de dispositivos eletrônicos cresce de forma alarmante. Computadores, celulares, tablets e outros aparelhos que não utilizamos mais podem parecer apenas sucata. No entanto, dentro deles há materiais valiosos que podem ser recuperados e reaproveitados, reduzindo a necessidade de novas extrações minerais. Além dos impactos ambientais causados pelo descarte inadequado, o lixo eletrônico contém metais preciosos que podemos reciclar e reinserir no mercado, reduzindo custos para a indústria e preservando recursos naturais.",
+      "autor": "Empresa Lorene",
       "width": "1200",
       "height": "400",
-      "fonte": "https://www.greenpeace.org/brasil/blog/o-problema-crescente-do-lixo-eletronico-no-mundo/",
-      "url": "assets/images/descarte-reciclagem.jpg"
+      "data": "27 de Março, 2025",
+      "fonte": "https://www.lorene.com.br/metais-preciosos-encontrados-no-lixo-eletronico-e-como-eles-sao-reaproveitados/",
+      "url": "https://i0.wp.com/www.lorene.com.br/wp-content/uploads/2024/07/Blog-Lorene-3.png?resize=1024%2C480&ssl=1"
     },
     {
       "id": "4",
-      "titulo": "Componentes Tóxicos: O Perigo do Descarte Incorreto na Natureza",
-      "conteudo": "O descarte incorreto de lixo eletrônico na natureza pode liberar componentes tóxicos, como chumbo, mercúrio, cádmio e retardadores de chama, que representam sérios riscos à saúde humana e ao meio ambiente. Esses elementos podem contaminar o solo e a água, afetando a fauna e a flora locais. Além disso, a exposição direta a esses materiais pode causar problemas de saúde, como doenças respiratórias, danos neurológicos e câncer. É fundamental conscientizar a população sobre os perigos do descarte inadequado e promover práticas responsáveis para o manejo do lixo eletrônico.",
+      "titulo": "Descarte inadequado de resíduos eletrônicos afeta meio ambiente e saúde da população",
+      "conteudo": "Compostos com elementos químicos potencialmente tóxicos, os aparelhos eletrônicos precisam de um descarte adequado. No entanto, não é sempre que esses materiais são levados a ecopontos para que esse descarte seja realizado de forma correta, e o resultado é que os aparelhos eletrônicos em lixos comuns causam a poluição da água e do solo, além de prejudicar a saúde da população. Os principais elementos encontrados nos aparelhos eletrônicos que podem causar problemas ambientais e de saúde são os elementos químicos inorgânicos, classificados como metais tóxicos, como chumbo, cádmio e mercúrios, os chamados metais pesados, e outros elementos como cobre, alumínio, selênio, berílio e silício, também metais. Além deles, a professora Alma Blásida Concepción Elizaur Benitez Catirse, docente da Faculdade de Odontologia de Ribeirão Preto (Forp) da USP, e Danilo Vitorino, vice-coordenadora e coordenador do Grupo de Trabalhos Temáticos em Resíduos (GT Resíduos) da Superintendência de Gestão Ambiental (SGA) da USP, respectivamente, lembram que os aparelhos eletrônicos são compostos por diversos tipos de plásticos, que também podem oferecer riscos ambientais. “Embora seja um material inerte, os diversos tipos de plásticos presentes nesses aparelhos são capazes de liberar minúsculas partículas de plástico, chamadas de microplásticos. Eles são responsáveis por grande parte da poluição atual e têm impacto também na saúde da população”, alertam.",
       "autor": "Mariana",
       "width": "1200",
       "height": "400",
-      "fonte": "https://www.greenpeace.org/brasil/blog/o-problema-crescente-do-lixo-eletronico-no-mundo/",
-      "url": "assets/images/descarte-problema.jpg"
+      "data": "15 de outubro, 2024",
+      "fonte": "https://sga.usp.br/descarte-inadequado-de-residuos-eletronicos-afeta-meio-ambiente-e-saude-da-populacao/",
+      "url": "https://jornal.usp.br/wp-content/uploads/2024/10/20241010_residuo-eletronico_plastico-1024x538.jpg"
     }
   ],
-  "usuarios": [
-    {
-      "id": "1",
-      "nome": "Ana Carla Souza",
-      "e-mail": "aninha@gmail.com",
-      "senha": "12345"
-    },
-    {
-      "id": "2",
-      "nome": "Henrique Silva",
-      "e-mail": "henrique.souza@gmail.com",
-      "senha": "35671"
-    },
-    {
-      "id": "3",
-      "nome": "Kaique Oliveira Prado",
-      "e-mail": "oliveira_Kaique@gmail.com",
-      "senha": "72012"
-    },
-    {
-      "id": "4",
-      "nome": "Patricia Gomes",
-      "e-mail": "santos_patricia@gmail.com",
-      "senha": "38748"
-    }
-  ],
+
   "faqs": [
     {
       "id": "1",

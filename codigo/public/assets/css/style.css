@@ -253,3 +253,24 @@ main {
 .news.active {
   display: block;
 }
+
+#content-materias img {
+  display: none;
+}
+
+#content-materias img.active {
+  display: block;
+}
+
+#content-materias span {
+  display: none;
+}
+
+#content-materias span.active {
+  display: block;
+}
+
+img {
+  width: 1000px;
+  height: 480px;
+}
