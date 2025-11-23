@@ -46,7 +46,6 @@
                // preecnher autor + data
                const dadosNews = document.querySelector(`span[info-id="${materias.id}"]`);
                if (dadosNews) dadosNews.innerHTML = `${materias.autor} — ${materias.data}`;
-                console.log(dadosNews);
                // preencher imagem
                const image = document.querySelector(`img[img-id="${materias.id}"]`);
                if(image) image.src = materias.url;

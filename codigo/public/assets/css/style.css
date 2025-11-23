@@ -201,9 +201,9 @@ main {
 .menu-materias {
   height: 50%;
   width: 300px;
-  position: fixed;
+  position: absolute;
   /*não colar com a página*/
-  z-index: 1;
+  /* z-index: 1; */
   /* ficar na frente de outros elementos */
   right: 50px;
   /*torna-lo fixo na direita*/
@@ -214,10 +214,11 @@ main {
 }
 
 .menu-materias a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 18px;
   display: block;
+  width: 90%;
   /*cada link em uma linha*/
   color: var(--yellow-100);
   transition: 0.3s;
@@ -233,8 +234,7 @@ main {
   width: 70%;
 }
 
-/* Esconder todos os títulos por padrão */
-/* Esconde todos os h2 por padrão */
+/* Esconde todos os títulos por padrão */
 #content-materias h2 {
   display: none;
 }
@@ -254,18 +254,22 @@ main {
   display: block;
 }
 
+/* Esconde todas as imagens por padrão */
 #content-materias img {
   display: none;
 }
 
+/* Exibe imagem ativa */
 #content-materias img.active {
   display: block;
 }
 
+/* Esconde data e autor ativos */
 #content-materias span {
   display: none;
 }
 
+/* Exibe data e autor ativos */
 #content-materias span.active {
   display: block;
 }
