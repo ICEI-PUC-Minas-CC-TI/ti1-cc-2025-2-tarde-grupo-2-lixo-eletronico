@@ -18,7 +18,7 @@ function readMaterias(processaDados){
     }
 
     // CRIAR Materias
-function createMaterias(Materias, processaDados){
+function createMaterias(Materias, refreshFunction){
     fetch(apiUrl, {
         method: 'POST',
         headers: {
