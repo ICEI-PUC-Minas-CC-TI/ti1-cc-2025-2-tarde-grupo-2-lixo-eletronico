@@ -354,22 +354,3 @@ body{
     color: mediumspringgreen;
     margin-right: 8px;
 }
-
-/* Scrollbar personalizada */
-.items::-webkit-scrollbar {
-    width: 6px;
-}
-
-.items::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-}
-
-.items::-webkit-scrollbar-thumb {
-    background: mediumspringgreen;
-    border-radius: 10px;
-}
-
-.items::-webkit-scrollbar-thumb:hover {
-    background: #00c781;
-}
