@@ -91,12 +91,12 @@
   ],
   "videos": [
     {
-      "id": "1",
       "titulo": "O Problema Crescente do Lixo Eletrônico no Mundo",
       "descricao": "Este vídeo aborda o aumento global do lixo eletrônico e seus impactos ambientais.",
       "duracao": "12:00",
       "canal": "Carlos",
-      "url": "https://www.youtube.com/"
+      "link": "undefined",
+      "id": "1"
     },
     {
       "id": "2",
@@ -121,6 +121,22 @@
       "duracao": "8:20",
       "canal": "Sustentabilidade e Lixo Eletrônico",
       "url": "https://www.youtube.com/"
+    },
+    {
+      "titulo": "exemplo",
+      "descricao": "exemplo",
+      "duracao": "10:00",
+      "canal": "exemplo",
+      "link": "youtube.com",
+      "id": "GUahJNo"
+    },
+    {
+      "titulo": "teste2",
+      "descricao": "teste2",
+      "duracao": "10:00",
+      "canal": "teste2",
+      "link": "youtube2.com",
+      "id": "3HsNXjd"
     }
   ],
   "users": [
