@@ -278,3 +278,82 @@ img {
   width: 1000px;
   height: 480px;
 }
+
+/*Estilização da Sessão de Vídeos*/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3f0c9;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  color: var(--darkbrow-900);
+  margin: 20px;
+}
+
+.videos-container {
+  display: flex;
+  background-color: var(--green-700);
+  color: white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.video-principal {
+  flex: 3;
+  margin-right: 20px;
+}
+
+.video-principal h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.video-player iframe {
+  width: 100%;
+  height: 460px;
+  border-radius: 10px;
+}
+
+.videos-relacionados {
+  flex: 1;
+  background-color: var(--green-400);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.videos-relacionados h3 {
+  color: white;
+}
+
+.video-relacionado {
+  display: flex;
+  align-items: center;
+  background-color: #d6e9d3;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.video-relacionado img {
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.video-relacionado h4 {
+  color: var(--darkbrow-900);
+  margin: 0;
+}
+
+.video-relacionado p {
+  color: var(--grayblue-200);
+  font-size: 0.9em;
+  margin: 0;
+}
+
+/*------------------------------------*/

@@ -118,6 +118,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const indicatorsContainer = document.getElementById('carousel-indicators-container');
             const innerContainer = document.getElementById('carousel-inner-container');
 
+            // Proteção: só manipula o carrossel se os elementos existirem na página
+            if (!indicatorsContainer || !innerContainer) {
+                console.log('Carrossel não presente nesta página — pulando renderização.');
+                return;
+            }
+
             indicatorsContainer.innerHTML = '';
             innerContainer.innerHTML = '';
 
@@ -164,3 +170,46 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 });
+
+// Vídeos - Kaique
+async function carregarVideos() {
+  const resposta = await fetch('/videos');
+  const videos = await resposta.json();
+
+  if (videos.length > 0) {
+    mostrarVideoPrincipal(videos[0]);
+    listarRelacionados(videos);
+  }
+}
+
+function mostrarVideoPrincipal(video) {
+  document.getElementById("titulo-video").textContent = video.titulo;
+  document.getElementById("video-frame").src = video.url;
+  document.getElementById("descricao-video").textContent = video.descricao;
+  document.getElementById("autor-video").textContent = video.canal;
+  document.getElementById("duracao-video").textContent = video.duracao;
+}
+
+function listarRelacionados(videos) {
+  const lista = document.getElementById("lista-relacionados");
+  lista.innerHTML = "";
+
+  videos.slice(1).forEach((v) => {
+    const item = document.createElement("div");
+    item.classList.add("video-relacionado");
+
+    // miniatura padrão se não tiver thumb
+    item.innerHTML =
+      //<img src="https://via.placeholder.com/120x80?text=Vídeo" alt="Miniatura">
+      `<div>
+        <h4>${v.titulo}</h4>
+        <p>${v.canal}</p>
+      </div>
+    `;
+
+    item.addEventListener("click", () => mostrarVideoPrincipal(v));
+    lista.appendChild(item);
+  });
+}
+
+carregarVideos();
