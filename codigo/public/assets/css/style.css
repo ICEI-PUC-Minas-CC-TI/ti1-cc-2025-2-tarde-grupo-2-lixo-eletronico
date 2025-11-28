@@ -92,12 +92,12 @@ main {
   width: 20px;
   text-align: center;
   margin-right: 8px;
-  color: #555;
+  color: white;
 }
 
 .social-icon {
   font-size: 1.8rem;
-  color: #333;
+  color: whitesmoke;
   margin-right: 15px;
   text-decoration: none;
   transition: color 0.3s ease;
