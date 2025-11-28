@@ -101,9 +101,9 @@
 });
 
 
-//    Samuel Carousel - carregar matérias do backend
+//    Samuel Carrousel - carregar matérias do backend
 document.addEventListener('DOMContentLoaded', function() {
-
+    
     fetch(API_URL)
         .then(response => {
             
