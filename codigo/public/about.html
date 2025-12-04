@@ -63,20 +63,38 @@
   </nav>
 </header>
 
-    <main>
-      <section class="container my-5"> <div class="row align-items-center"> <div class="col-md-6">
-        <h1>Sobre nós</h1>
-        <h2 class="mb-3 text-success">Nossa Missão</h2> <p>
-          Este site foi desenvolvido como parte de um projeto acadêmico com o objetivo de facilitar o acesso da comunidade a informações sobre pontos de coleta de resíduos. A proposta nasce da necessidade de incentivar o descarte correto de materiais e contribuir para práticas mais sustentáveis no cotidiano.
-          <p>Aqui, o usuário encontra um mapa interativo que exibe os pontos de coleta cadastrados, permitindo visualizar rapidamente os locais mais próximos e os tipos de resíduos que cada ponto recebe. A plataforma busca tornar o processo de descarte adequado mais simples, acessível e transparente.
-          </p></p>
-        <p>Nosso foco é promover consciência ambiental, aproximar a população das iniciativas de reciclagem e reforçar a importância de pequenas ações que, somadas, fazem diferença no cuidado com o meio ambiente.</p>
-         </div>
+<style>
+    main { padding-top: 80px; }
+</style>
 
-         <div class="col-md-6">
-          <img src="modulos/estrutura/carrossel/images/descarte-problema.jpg" alt="Ilustração sobre reciclagem" class="img-fluid rounded shadow">
-          </div>
-        </section>    
+    <main>
+      <section class="container my-5"> <div class="row align-items-center">
+      
+      <div class="col-md-6">
+        <h1 class="mb-3 text-success">Sobre nós</h1>
+        
+        <div class="box-destaque p-4 mt-0"> 
+            
+            <h2 class="mb-3 text-warning">Nossa Missão</h2> 
+            
+            <p style="text-align: justify;">
+              Este site foi desenvolvido como parte de um projeto acadêmico com o objetivo de facilitar o acesso da comunidade a informações sobre pontos de coleta de resíduos. A proposta nasce da necessidade de incentivar o descarte correto de materiais e contribuir para práticas mais sustentáveis no cotidiano.
+            </p>
+            <p style="text-align: justify;">
+              Aqui, o usuário encontra um mapa interativo que exibe os pontos de coleta cadastrados, permitindo visualizar rapidamente os locais mais próximos e os tipos de resíduos que cada ponto recebe. A plataforma busca tornar o processo de descarte adequado mais simples, acessível e transparente.
+            </p>
+            <p style="text-align: justify;">
+              Nosso foco é promover consciência ambiental, aproximar a população das iniciativas de reciclagem e reforçar a importância de pequenas ações que, somadas, fazem diferença no cuidado com o meio ambiente.
+            </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <img src="modulos/estrutura/carrossel/images/descarte-problema.jpg" alt="Ilustração sobre reciclagem" class="img-fluid rounded shadow">
+      </div>
+
+    </div>
+  </section>   
 
       <section class="container mb-5">
     <h2 class="text-center mb-4">Quem Faz Acontecer</h2>
@@ -115,6 +133,76 @@
 </section>
 
     </main>
-</body>
+        <!-- Rodapé -->
+    <footer id="contato" class="py-5">
+      <div class="container">
+        <h3 class="mb-3">Informações do Grupo</h3>
+        <hr class="mb-4" />
 
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Sobre</h4>
+            <p>
+              Este projeto foi desenvolvido como parte da disciplina de TI. O
+              objetivo foi criar um site responsivo e dinâmico, utilizando HTML,
+              CSS, JavaScript, JSON e Bootstrap para conscientizar sobre o
+              descarte correto e os impactos do lixo eletrônico.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h4>Autoria</h4>
+            <p>
+              <i class="fas fa-user info-icon"></i>
+              <strong>Grupo:</strong> Arthur, Bernardo, Kaique, Lucas, Sabrina e
+              Samuel
+            </p>
+            <p>
+              <i class="fas fa-graduation-cap info-icon"></i>
+              <strong>Curso:</strong> Ciência da Computação
+            </p>
+            <p>
+              <i class="fas fa-school info-icon"></i>
+              <strong>Turma:</strong> Tarde
+            </p>
+
+            <h4 class="mt-4">Redes Sociais</h4>
+            <div>
+              <a
+                href="https://github.com/ICEI-PUC-Minas-CC-TI/ti1-cc-2025-2-tarde-grupo-2-lixo-eletronico"
+                class="social-icon"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com"
+                class="social-icon"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com"
+                class="social-icon"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    
+</body>
 </html>

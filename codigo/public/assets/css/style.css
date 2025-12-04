@@ -182,3 +182,21 @@ main {
 .accordion:has(.active) .arrow{
     transform: rotate(180deg);
 }
+
+/* --- NOVA CLASSE PARA HARMONIZAR --- */
+.box-destaque {
+    background-color: var(--green-700); /* Fundo Verde Escuro */
+    color: var(--yellow-100);           /* Texto Claro (creme) */
+    border-radius: 20px;                /* Bordas arredondadas iguais aos vídeos */
+    padding: 3rem 2rem;                 /* Espaçamento interno */
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Garante que os títulos dentro dessa caixa fiquem brancos */
+.box-destaque h2, 
+.box-destaque h3, 
+.box-destaque h4 {
+    color: white !important;
+}
