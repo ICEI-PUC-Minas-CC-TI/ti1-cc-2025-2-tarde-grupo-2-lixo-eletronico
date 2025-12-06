@@ -16,25 +16,50 @@
 
 <body>
   <header>
-    <div class="banner">
-      <!-- <img src="./assets/images/banner_ti.png" alt="" /> -->
-    </div>
-    <div class="barra-info">
-      <nav class="menu">
-        <ul>
-          <li><a class="fs-4 fw-bold" href="index.html">RETECHNA</a></li>
-          <li><a href="about.html">Sobre</a></li>
-          <li><a href="noticias.html">Matérias</a></li>
-          <li><a href="">Pontos de Coleta</a></li>
-          <li><a href="">Avaliar Empresas</a></li>
-          <li><a href="">Login</a></li>
-        </ul>
-      </nav>
-      <div class="dadosnp-usuario">
-        <span id="userInfo"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-success fs-3" href="index.html">
+          <i class="fas fa-recycle me-2"></i>RETECHNA
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="noticias.html">Matérias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pontos de Coleta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Avaliar</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-outline-success rounded-pill px-4" href="#">Login</a>
+            </li>
+          </ul>
+          <div class="dadosnp-usuario ms-3">
+            <span id="userInfo" class="fw-bold text-secondary"></span>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
+
+  <style>
+    main {
+      padding-top: 80px;
+    }
+  </style>
 
   <main>
     <nav>

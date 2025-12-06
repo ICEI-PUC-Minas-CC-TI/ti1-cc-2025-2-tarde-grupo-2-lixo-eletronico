@@ -101,12 +101,12 @@ main {
   width: 20px;
   text-align: center;
   margin-right: 8px;
-  color: #555;
+  color: white;
 }
 
 .social-icon {
   font-size: 1.8rem;
-  color: #333;
+  color: whitesmoke;
   margin-right: 15px;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -195,7 +195,6 @@ main {
 .accordion:has(.active) .arrow {
   transform: rotate(180deg);
 }
-
 
 /* Sabrina - Materias */
 .menu-materias {
@@ -356,4 +355,27 @@ header h1 {
   margin: 0;
 }
 
-/*------------------------------------*/
+
+
+/* --- NOVA CLASSE PARA HARMONIZAR --- */
+.box-destaque {
+  background-color: var(--green-700);
+  /* Fundo Verde Escuro */
+  color: var(--yellow-100);
+  /* Texto Claro (creme) */
+  border-radius: 20px;
+  /* Bordas arredondadas iguais aos vídeos */
+  padding: 3rem 2rem;
+  /* Espaçamento interno */
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra suave */
+}
+
+/* Garante que os títulos dentro dessa caixa fiquem brancos */
+.box-destaque h2,
+.box-destaque h3,
+.box-destaque h4 {
+  color: white !important;
+}
