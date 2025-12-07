@@ -2,7 +2,7 @@
 
 Informações básicas do projeto.
 
-- **Projeto:** [RETECHNA]
+- **Projeto:** RETECHNA
 - **Repositório GitHub:** [[LINK PARA O REPOSITÓRIO NO GITHUB](https://github.com/ICEI-PUC-Minas-CC-TI/ti1-cc-2025-2-tarde-grupo-2-lixo-eletronico.git)]
 
 - **Membros da equipe:**
@@ -11,8 +11,7 @@ Informações básicas do projeto.
   - [Sabrina Siqueira dos Santos](https://github.com/Sabrina-1)
   - [Kaique Ribeiro Rezende](https://github.com/Kaique-tec)
   - [Samuel Teodoro Albuquerque Fragoso](https://github.com/samuelfragosoye)
-  - [Lucas Gabriel de Oliveira](https://github.com/cicrano)
-  - [Bernardo Augusto Germer Vicente]()
+  - [Bernardo Augusto Germer Vicente](https://github.com/Bernardo07-av)
 
 A documentação do projeto é estruturada da seguinte forma:
 
