@@ -89,202 +89,277 @@
         <div class="container">
             <h1 class="text-center mb-4 text-success fw-bold">Cadastro de Matérias</h1>
             
-            <div class="row justify-content-center">
-                <div id="msg" class="col-sm-10">
+            <div class="container">
+    <div class="row">
+        <div id="msg" class="col-sm-10 offset-sm-1">
+            <!-- alerta de Materias não encontrado -->
+
+            <form id="form-Materias">
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="inputId">Id</label>
+                        <input type="text" class="form-control" id="inputId" placeholder="Id" disabled>
                     </div>
-
-                <div class="col-md-12">
-                    <div class="card shadow border-0 p-4 mb-5 bg-white rounded">
-                        <form id="form-Materias">
-                            <div class="row mb-3">
-                                <div class="col-sm-2">
-                                    <label for="inputId" class="form-label fw-bold">Id</label>
-                                    <input type="text" class="form-control" id="inputId" placeholder="Auto" disabled>
-                                </div>
-                                <div class="col-sm-10">
-                                    <label for="inputtitulo" class="form-label fw-bold">Título</label>
-                                    <input type="text" class="form-control" id="inputtitulo" placeholder="Título da matéria" required>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-12">
-                                    <label for="inputconteudo" class="form-label">Conteúdo</label>
-                                    <textarea class="form-control" id="inputconteudo" rows="3" placeholder="Digite o conteúdo aqui..." required></textarea>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-6">
-                                    <label for="inputautor" class="form-label">Autor</label>
-                                    <input type="text" class="form-control" id="inputautor" placeholder="Nome do autor" required>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="inputfonte" class="form-label">Fonte</label>
-                                    <input type="text" class="form-control" id="inputfonte" placeholder="Fonte da matéria" required>
-                                </div>
-                            </div>
-
-                            <div class="d-flex justify-content-center gap-2 mt-4">
-                                <button id="btnInsert" type="button" class="btn btn-success px-4"><i class="fas fa-plus me-2"></i>Inserir</button>
-                                <button id="btnUpdate" type="button" class="btn btn-warning px-4 text-white"><i class="fas fa-edit me-2"></i>Alterar</button>
-                                <button id="btnDelete" type="button" class="btn btn-danger px-4"><i class="fas fa-trash me-2"></i>Excluir</button>
-                                <button id="btnClear" type="button" class="btn btn-secondary px-4"><i class="fas fa-eraser me-2"></i>Limpar</button>
-                            </div>
-                        </form>
+                    <div class="col-sm-8">
+                        <label for="inputtitulo">Titulo</label>
+                        <input type="text" class="form-control" id="inputtitulo" required>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="table-responsive shadow-sm rounded">
-                        <table id="grid-Materias" class="table table-striped table-hover align-middle mb-0">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Título</th>
-                                    <th scope="col">Conteúdo</th>
-                                    <th scope="col">Autor</th>
-                                    <th scope="col">Fonte</th>
-                                </tr>
-                            </thead>
-                            <tbody id="table-Materias">
-                                </tbody>
-                        </table>
+                <div class="form-group row">
+                    <div class="col-sm-5">
+                        <label for="inputconteudo">conteudo</label>
+                        <input type="text" class="form-control" id="inputconteudo" required>
+                    </div>
+                    <div class="col-sm-7">
+                        <label for="inputautor">autor</label>
+                        <input type="text" class="form-control" id="inputautor" required>
                     </div>
                 </div>
+                <div class="form-group row">
+                    <div class="col-sm-5">
+                        <label for="inputfonte">fonte</label>
+                        <input type="text" class="form-control" id="inputfonte" required>
+                    </div>
+                </div>
+
+                <div class="form-group row" style="margin-top: 10px;">
+                    <div class="col-sm-6">
+                        <button id="btnInsert" type="button" class="btn btn-success">Inserir</button>
+                        <button id="btnUpdate" type="button" class="btn btn-warning">Alterar</button>
+                        <button id="btnDelete" type="button" class="btn btn-danger">Excluir</button>
+                        <button id="btnClear" type="button" class="btn btn-secondary">Limpar Form</button>
+                    </div>
+                </div>
+        </div>
+        </form>
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-Materias" class="table table-striped">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Conteudo</th>
+                        <th scope="col">Autor</th>
+                        <th scope="col">Fonte</th>
+                    </thead>
+                    <tbody id="table-Materias">
+                        <tr>
+                            <td scope="row">1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </main>
-
-    <footer id="contato" class="py-5">
-        <div class="container">
-            <h3 class="mb-3">Informações do Grupo</h3>
-            <hr class="mb-4" style="border-color: rgba(255,255,255,0.3);" />
-            <div class="row">
-                <div class="col-md-8">
-                    <h4>Sobre</h4>
-                    <p>
-                        Este projeto foi desenvolvido como parte da disciplina de TI. O
-                        objetivo foi criar um site responsivo e dinâmico, utilizando HTML,
-                        CSS, JavaScript, JSON e Bootstrap para conscientizar sobre o
-                        descarte correto e os impactos do lixo eletrônico.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Autoria</h4>
-                    <p><i class="fas fa-user info-icon"></i><strong>Grupo:</strong> Arthur, Bernardo, Kaique, Lucas, Sabrina e Samuel</p>
-                    <p><i class="fas fa-graduation-cap info-icon"></i><strong>Curso:</strong> Ciência da Computação</p>
-                    <p><i class="fas fa-school info-icon"></i><strong>Turma:</strong> Tarde</p>
-                    
-                    <h4 class="mt-4">Redes Sociais</h4>
-                    <div class="mt-2">
-                         <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                         <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+    </div>
+    </div>
     <script>
-        // Funções internas para garantir funcionamento caso o arquivo externo falhe
         function exibirMaterias() {
-            let tableMaterias = document.getElementById("table-Materias");
+            tableMaterias = document.getElementById("table-Materias");
+
+            // Remoção de todas as linhas da tabela
             tableMaterias.innerHTML = "";
-            
-            // Verifica se a função readMaterias existe antes de chamar
-            if (typeof readMaterias === "function") {
-                readMaterias(dados => {
-                    for (let i = 0; i < dados.length; i++) {
-                        let Materias = dados[i];
-                        // Limita o texto do conteúdo se for muito grande
-                        let conteudoVisivel = Materias.conteudo.length > 50 ? Materias.conteudo.substring(0, 50) + "..." : Materias.conteudo;
-                        
-                        tableMaterias.innerHTML += `<tr>
-                            <td scope="row">${Materias.id}</td>
-                            <td>${Materias.titulo}</td>
-                            <td title="${Materias.conteudo}">${conteudoVisivel}</td>
-                            <td>${Materias.autor}</td>
-                            <td>${Materias.fonte}</td>
-                        </tr>`;
-                    }
-                });
-            }
+
+            readMaterias(dados => {
+                for (i = 0; i < dados.length; i++) {
+                    let Materias = dados[i];
+                    tableMaterias.innerHTML += `<tr>
+                        <td scope="row">${Materias.id}</td>
+                        <td>${Materias.titulo}</td>
+                        <td>${Materias.conteudo}</td>
+                        <td>${Materias.autor}</td>
+                        <td>${Materias.fonte}</td>
+                    </tr>`;
+                }
+            });
         }
-
         function init() {
-            let formMaterias = document.getElementById("form-Materias");
+            // Define uma variável para o formulário de Materias
+            formMaterias = document.getElementById("form-Materias");
 
-            // Botão Inserir
-            document.getElementById("btnInsert").addEventListener("click", function () {
+            // Adicona funções para tratar os eventos do formulário
+            btnInsert = document.getElementById("btnInsert");
+            btnInsert.addEventListener("click", function () {
+
+                // Verifica se o formulário está preenchido corretamente
                 if (!formMaterias.checkValidity()) {
-                    alert("Preencha o formulário corretamente!");
+                    displayMessage("msg", "Preencha o formulário corretamente!");
                     return;
                 }
+
+                // Obtem os valores dos campos do formulário
+                let campotitulo = document.getElementById("inputtitulo").value;
+                let campoconteudo = document.getElementById("inputconteudo").value;
+                let campoautor = document.getElementById("inputautor").value;
+                let campofonte = document.getElementById("inputfonte").value;
+
+                // Cria um objeto Materias com os dados do Materias
                 let Materias = {
-                    titulo: document.getElementById("inputtitulo").value,
-                    conteudo: document.getElementById("inputconteudo").value,
-                    autor: document.getElementById("inputautor").value,
-                    fonte: document.getElementById("inputfonte").value
+                    titulo: campotitulo,
+                    conteudo: campoconteudo,
+                    autor: campoautor,
+                    fonte: campofonte
                 };
+
+                // Cria um Materias no banco de dados
                 createMaterias(Materias, exibirMaterias);
             });
 
-            // Botão Alterar
-            document.getElementById("btnUpdate").addEventListener("click", function () {
+            btnUpdate = document.getElementById("btnUpdate");
+            btnUpdate.addEventListener("click", function () {
                 let campoId = document.getElementById("inputId").value;
-                if (campoId == "") { alert("Selecione para atualizar!"); return; }
-                
+                if (campoId == "") {
+                    displayMessage("msg", "Nenhum Materias selecionado para atualização!");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campotitulo = document.getElementById("inputtitulo").value;
+                let campoconteudo = document.getElementById("inputconteudo").value;
+                let campoautor = document.getElementById("inputautor").value;
+                let campofonte = document.getElementById("inputfonte").value;
+
+                // Cria um objeto Materias com os dados do Materias
                 let Materias = {
-                    titulo: document.getElementById("inputtitulo").value,
-                    conteudo: document.getElementById("inputconteudo").value,
-                    autor: document.getElementById("inputautor").value,
-                    fonte: document.getElementById("inputfonte").value
+                    titulo: campotitulo,
+                    conteudo: campoconteudo,
+                    autor: campoautor,
+                    fonte: campofonte
+
                 };
+                // Altera o Materias no banco de  dados
                 updateMaterias(parseInt(campoId), Materias, exibirMaterias);
+                // limpa o formulário
                 formMaterias.reset();
             });
 
-            // Botão Excluir
-            document.getElementById("btnDelete").addEventListener("click", function () {
+
+            btnDelete = document.getElementById("btnDelete");
+            btnDelete.addEventListener("click", function () {
+
                 let campoId = document.getElementById("inputId").value;
-                if (campoId == "") { alert("Selecione para exclusão!"); return; }
-                deleteMaterias(parseInt(campoId), exibirMaterias);
+                if (campoId == "") {
+                    displayMessage("Selecione um Materias para exclusão!");
+                    return;
+                }
+
+                // Exclui o Materias no banco de dados
+                deleteMaterias(parseInt(campoId),
+                    exibirMaterias);
+
+                // limpa o formulário
                 formMaterias.reset();
             });
 
-            // Botão Limpar
-            document.getElementById("btnClear").addEventListener("click", function () { 
-                formMaterias.reset(); 
+            //Trata o click do botao Listar Materias
+            btnClear = document.getElementById("btnClear");
+            btnClear.addEventListener("click", function () {
+                formMaterias.reset();
+            });
+            // Oculta a mensagem de alerta após 5 segundos
+            msg = document.getElementById("msg");
+            msg.addEventListener("DOMSubtreeModified", function (e) {
+                if (e.target.innerHTML == "") return;
+                setTimeout(function () {
+                    alert = msg.getElementByClassName("alert");
+                    alert[0].remove();
+                    msg.innerHTML = "";
+                }, 5000);
             });
 
-            // Clique na Tabela
-            document.getElementById("grid-Materias").addEventListener("click", function (e) {
-                let target = e.target;
-                while (target && target.tagName !== 'TD') { target = target.parentNode; }
-                
-                if (target && target.tagName == "TD") {
-                    let linha = target.parentNode;
-                    let colunas = linha.querySelectorAll("td");
-                    
+            // Preenche o formulário quando o usuário clicar em um linha da tabela
+            gridMaterias = document.getElementById("grid-Materias");
+            gridMaterias.addEventListener("click", function (e) {
+                if (e.target.tagName == "TD") {
+
+                    // Obtem as colunas da linha selecionada na tabela
+                    let linhaMaterias = e.target.parentNode;
+                    colunas = linhaMaterias.querySelectorAll("td");
+
+                    // Preenche os campos do formulário com os dados da linha selecionada na tabela
                     document.getElementById("inputId").value = colunas[0].innerText;
                     document.getElementById("inputtitulo").value = colunas[1].innerText;
-                    // Tenta pegar o conteudo completo do atributo title, senão pega o texto curto
-                    document.getElementById("inputconteudo").value = colunas[2].getAttribute('title') || colunas[2].innerText;
+                    document.getElementById("inputconteudo").value = colunas[2].innerText;
                     document.getElementById("inputautor").value = colunas[3].innerText;
                     document.getElementById("inputfonte").value = colunas[4].innerText;
                 }
             });
-
             exibirMaterias();
         }
         document.addEventListener("DOMContentLoaded", init);
     </script>
-    
+    </main>
     <script src="crud_materias.js"></script>
+
+        <footer id="contato" class="py-5 text-white">
+      <div class="container">
+        <h3 class="mb-3 text-white">Informações do Grupo</h3>
+        <hr class="mb-4" />
+
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="text-white">Sobre</h4>
+            <p>
+              Este projeto foi desenvolvido como parte da disciplina de TI. O
+              objetivo foi criar um site responsivo e dinâmico, utilizando HTML,
+              CSS, JavaScript, JSON e Bootstrap para conscientizar sobre o
+              descarte correto e os impactos do lixo eletrônico.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="text-white">Autoria</h4>
+            <p>
+              <i class="fas fa-user info-icon text-white"></i>
+              <strong>Grupo:</strong> Arthur, Bernardo, Kaique, Lucas, Sabrina e
+              Samuel
+            </p>
+            <p>
+              <i class="fas fa-graduation-cap info-icon text-white"></i>
+              <strong>Curso:</strong> Ciência da Computação
+            </p>
+            <p>
+              <i class="fas fa-school info-icon text-white"></i>
+              <strong>Turma:</strong> Tarde
+            </p>
+
+            <h4 class="mt-4 text-white">Redes Sociais</h4>
+            <div>
+              <a
+                href="https://github.com/ICEI-PUC-Minas-CC-TI/ti1-cc-2025-2-tarde-grupo-2-lixo-eletronico"
+                class="social-icon text-white me-2"
+                target="_blank"
+                ><i class="fab fa-github fa-lg"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com"
+                class="social-icon text-white me-2"
+                target="_blank"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a
+                href="https://www.instagram.com"
+                class="social-icon text-white me-2"
+                target="_blank"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
 
 </body>
 </html>
