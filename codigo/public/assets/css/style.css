@@ -230,15 +230,15 @@ main {
 /* Sabrina - Materias */
 .menu-materias {
   height: 50%;
-  width: 300px;
+  width: 250px;
   position: absolute;
   /*não colar com a página*/
   /* z-index: 1; */
   /* ficar na frente de outros elementos */
-  right: 50px;
+  right: 10rem;
   /*torna-lo fixo na direita*/
   border-radius: 20px;
-  background-color: var(--green-700);
+  /* background-color: var(--green-700); TIREI ESSA PARTE */
   overflow-x: hidden;
   /*remover barra de rolagem horizontal*/
 }
@@ -246,11 +246,11 @@ main {
 .menu-materias a {
   padding: 8px 8px 8px 8px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 12px;
   display: block;
-  width: 90%;
+  width: 100%;
   /*cada link em uma linha*/
-  color: var(--yellow-100);
+  color: var(--green-700);
   transition: 0.3s;
 }
 
@@ -262,11 +262,14 @@ main {
 
 #content-materias p {
   width: 70%;
+  text-align: justify;
+  font-size: 12px;
 }
 
 /* Esconde todos os títulos por padrão */
 #content-materias h2 {
   display: none;
+  width: 70%;
 }
 
 /* Esconde todos os conteúdos por padrão */
@@ -305,8 +308,12 @@ main {
 }
 
 img {
-  width: 1000px;
+  width: 720px;
   height: 480px;
+}
+
+#info-id {
+  font-size: 12px;
 }
 
 /*Estilização da Sessão de Vídeos*/
