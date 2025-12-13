@@ -25,6 +25,37 @@
 /* background-color: var(--green-700); */
 /* color: var(--graydark-900); */
 
+
+
+/* Alterar cor dos botões */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: var(--green-700) !important;
+  color: var(--yellow-100) !important;
+}
+
+.btn-color {
+  color: var(--green-700) !important;
+  --bs-border-color: var(--green-700) !important;
+}
+
+/* Filtro */
+.filter-span {
+  background-color: var(--yellow-100);
+  color: var(--green-700);
+  padding: 0.5em 10.75em;
+  --bs-border-color: var(--yellow-100) !important;
+}
+
+.filter-tab {
+  /* background-color: var(--yellow-100); */
+  color: var(--green-700);
+  margin: 20px 20px 0px 0px;
+  width: 200px;
+  text-align: center;
+  --bs-border-color: var(--green-700) !important;
+}
+
 /*------------ ESTILIZAÇÃO DA FUNCIONALIDADE ------------*/
 body {
   margin: 0;
