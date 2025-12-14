@@ -417,3 +417,55 @@ header h1 {
 .box-destaque h4 {
   color: white !important;
 }
+
+/* Mecanismo de Pesquisa */
+.container-Pesquisa {
+  padding: 25px;
+  max-width: 550px;
+  margin: 50px auto;
+  border-radius: 12px;
+}
+
+.grid-template-columns {
+  grid-template-columns: 200px 200px;
+}
+
+.search-box {
+  width: 10%;
+  padding: 12px 16px;
+  border: 2px solid var(--green-700);
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  background-color: var(--yellow-100);
+}
+
+.search-box:focus {
+  border-color: var(--green-400);
+  box-shadow: 0 0 3px var(--green-400);
+  background-color: #ffffff;
+}
+
+.list-group-item {
+  min-height: 50px;
+  width: 100%;
+  max-width: 100%;
+}
+
+#pills-filtros,
+#pills-bairros,
+#pills-rua {
+  max-height: 340px;
+  /* altura do scroll */
+  width: 450px;
+  /* largura do scroll */
+  overflow-y: auto;
+  /* scroll vertical */
+  font-size: 12px;
+  scrollbar-color: #ccc transparent;
+  scrollbar-width: thin;
+  text-overflow: ellipsis;
+  scrollbar-gutter: stable;
+
+}
