@@ -17,11 +17,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-                <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="modulos/estrutura/crud_materias/index.html">Matérias</a></li>
-    <li><a class="dropdown-item" href="modulos/estrutura/crud_videos/index.html">Vídeos</a></li>
-    <li><a class="dropdown-item" href="modulos/estrutura/cadastro_produto/index.html">Produtos</a></li>
-                 </ul>
+                
       <div class="container">
         <a class="navbar-brand fw-bold text-success fs-3" href="index.html">
           <i class="fas fa-recycle me-2"></i>RETECHNA
@@ -45,13 +41,21 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Pontos de Coleta</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Avaliar</a>
+               <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" 
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                   Gerenciar (CRUD)
+                 </a>
+               <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="modulos/estrutura/crud_materias/crud_materias.html">Matérias</a></li>
+        <li><a class="dropdown-item" href="modulos/estrutura/crud_videos/crudVideos.html">Vídeos</a></li>
+        <li><a class="dropdown-item" href="modulos/estrutura/crud_produtos/cadastro_produto.html">Produtos</a></li>
+              </ul>
             </li>
             <li class="nav-item ms-lg-3">
               <a class="btn btn-outline-success rounded-pill px-4" href="#">Login</a>
             </li>
-          </ul>
+
 
           <div class="dadosnp-usuario ms-3">
             <span id="userInfo" class="fw-bold text-secondary"></span>
