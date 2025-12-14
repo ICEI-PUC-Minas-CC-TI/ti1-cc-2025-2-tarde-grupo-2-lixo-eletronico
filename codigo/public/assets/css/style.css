@@ -469,3 +469,50 @@ header h1 {
   scrollbar-gutter: stable;
 
 }
+/*    <----------PONTOS.HTML---------->   */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.container-Pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 20px;
+}
+.tab-content {
+    width: 100%;
+    order: 3; 
+}
+.input-icon {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.search-box {
+    width: 100% !important;
+    height: 45px;
+    border-radius: 28px !important;
+    padding: 15px 25px 15px 50px !important;
+    font-size: 16px;
+    border: 2px solid #e0e0e0 !important;
+    background-color: #fff;
+}
+.input-icon .fa-magnifying-glass {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    font-size: 18px;
+    z-index: 10;
+}
