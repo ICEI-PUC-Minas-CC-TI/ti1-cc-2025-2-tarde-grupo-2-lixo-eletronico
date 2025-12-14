@@ -5,7 +5,7 @@ const CHAVE_USUARIO_LOGADO = 'usuario_logado';
 // --- 1. FUNÇÃO DE PROTEÇÃO ---
 function verificarAcessoRestrito() {
     // Se estiver na própria página de login, ignora
-    if (window.location.pathname.includes('login.html')) return;
+    if (window.location.pathname.includes('modulos/login/login.html')) return;
 
     const path = window.location.pathname.toLowerCase();
     const usuarioLogado = getUsuarioCorrente();
@@ -13,7 +13,7 @@ function verificarAcessoRestrito() {
     // Se tentar acessar as pastas de CRUD sem estar logado
     if ((path.includes('crud') || path.includes('modulos')) && !usuarioLogado) {
         alert("Acesso negado! Faça login primeiro.");
-        window.location.href = '/codigo/public/login.html'; 
+        window.location.href = '../../login/login.html'; 
     }
 }
 
