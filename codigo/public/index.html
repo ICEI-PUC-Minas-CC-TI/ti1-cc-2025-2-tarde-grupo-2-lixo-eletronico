@@ -1,78 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/login.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="banner">
-        <img src="./assets/images/banner_ti.png" alt="" />
-      </div>
-      <div class="barra-info">
-        <nav class="menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Sobre nós</a></li>
-          </ul>
-        </nav>
-        <div class="dados-usuario">
-          <span id="userInfo"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <script src="./assets/js/login.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+                
+      <div class="container">
+        <a class="navbar-brand fw-bold text-success fs-3" href="index.html">
+          <i class="fas fa-recycle me-2"></i>RETECHNA
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="noticias.html">Matérias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pontos.html">Pontos de Coleta</a>
+            </li>
+               <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" 
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                   Gerenciar (CRUD)
+                 </a>
+               <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="modulos/estrutura/crud_materias/crud_materias.html">Matérias</a></li>
+        <li><a class="dropdown-item" href="modulos/estrutura/crud_videos/crudVideos.html">Vídeos</a></li>
+        <li><a class="dropdown-item" href="modulos/estrutura/crud_produtos/cadastro_produto.html">Produtos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a id="btnLogin" class="btn btn-outline-success rounded-pill px-4" href="modulos/login/login.html">Login</a>
+            </li>
+
+
+          <div class="dadosnp-usuario ms-3">
+            <span id="userInfo" class="fw-bold text-secondary"></span>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-        <h3>Boas vindas</h3>
-        <p>Sejam bem-vindos à home-page do projeto de TI 1 - Trabalho
-        Interdisciplinar</p>
-        <p>Esse conteúdo que você está lendo foi criado para exemplificar como
-        criar o seu site integrado com o ambiente de login e o back end que
-        utiliza o JSON Server.</p>
-        <p>Ao criar o seu site, você deve adaptar esse código para sua neessidade ou começar do zero, excluindo todo esse conteúdo.
-        </p>
+    </nav>
+  </header>
 
-        <h3>Arquivos do site (Front End)</h3>
-        <p>Para montar seu site, edite os arquivos existentes e crie novos arquivos na pasta <code>public</code> que mantem todos os arquivos da parte de Front End do site, a interface que é vista pelo usuário no navegador.</p>
+  <style>
+    main {
+      padding-top: 80px;
+    }
+  </style>
 
-        <p>Nesta pasta <code>public</code>, sugerimos que você organize os arquivos do seu site da seguinte maneira:</p>
-        <ul>
-            <li><strong>Pasta <code>assets</code></strong>: os arquivos de formatação (CSS), os scripts (JS), as imagens utilizadas no site (JPG, PNG, GIF, SVG, etc), fontes (TTF) e outros arquivos gerais utilizados por todo o site.</li>
-            <li><strong>Pasta <code>modulos</code></strong>: os arquivos utilizados na implementação das funcionalidades do site. Separe uma sub-pasta para cada novo módulo ou funcionalidade. Pode também ser utilizado para dividir o trabalho de cada membro do grupo.</li>
-            <li><strong>Arquivo <code>index.html</code></strong>: arquivo que representa a "home page" do site.</li>
-        </ul>
+  <main>
+    <!-- Samuel Carrossel  -->
+    <section id="destaques" class="container py-5">
+      <h2 class="text-center mb-4">Notícias</h2>
+      <div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators" id="carousel-indicators-container"></div>
+        <div class="carousel-inner" id="carousel-inner-container"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
 
-        <h3>Módulo de Login</h3>
-        <p>O módulo de login de usuário traz uma funcionalidade completa de registro de usuários e validação de login e senha.</p>
-        <h4>Integração do site com módulo de Login</h4>
-        <p>Para utilizar o módulo de login, basta incluir o script na sua página colocando a seguinte tag no HEAD</p>
-        <pre>&lt;script src="./assets/js/login.js"&gt&lt;script&gt;</pre>
-        <p>Ao incluir o script de login na sua página, caso o usuário ainda não tenha efetuado login, ao acessar a home-page do site, o navegador será direcionado para o formulário de <strong>Identificação de Usuário</strong>. Se o usuário informar corretamente o login e a senha, o navegador será direcionado para a Home-Page.</p>
-        <h4>Sessão do usuário logado</h4>
-        <p>Assim que o usuário se identifica e acessa a parte privada do site, o módulo de login cria uma chave do sessionStorage do navegador com o título <strong>usuarioCorrente</strong> e cujo conteúdo é um objeto com os atributos: id, nome, login, senha e email. </p>
-        <h4>Base de dados de usuários</h4>
-        <p>Inicialmente o módulo de login é configurado com dois usuários: </p>
-        <ul>
-            <li>admin - Senha: 123</li>
-            <li>user - Senha: 123</li>
-        </ul>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
 
-        <h3>Servidor Web e API baseada no JSON Server (Back end)</h3>
-        <p>O ambiente de trabalho disponibilizado para suportar o Trabalho Interdisciplinar 1 é baseado no Node.js. A aplicação de back end utiliza o módulo JSON Server para criar um Servidor Web que prove duas estruturas separadas:
-        <ul>
-            <li><strong>Arquivos estáticos (Pasta <code>public</code>)</strong>: da acesso aos arquivos utilizados no front end (HTML, CSS e JavaScript).</li>
-            <li><strong>API RESTful (pasta <code>db</code>)</strong>: uma interface para acesso aos dados definidos no arquivo db.json.</li>
-        </ul></p>
+    <!-- Funções do site  -->
+    <section class="container box-destaque mt-5">
+      <div class="row text-center">
 
-        <h4>Arquitetura do site</h4>
-        <p>A imagem que se segue apresenta a arquitetura desse ambiente, mostrando as duas refletindo as pastas desse ambiente.</p>
-        <p><img class="img-fluid d-block w-75 m-auto" src="./assets/images/servidor.png" alt=""></p>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="mb-3">
+            <i class="fas fa-map-marker-alt fa-3x text-white"></i>
+          </div>
+          <h4>Encontre Pontos</h4>
+          <p>Localize rapidamente onde descartar seu lixo eletrônico perto de você.</p>
+        </div>
 
-        <h4>Arquivo db.json</h4>
-        <p>O arquivo JSON utilizado para definição das estruturas dos dados providos pela aplicação é localizado na pasta db e tem um formato como o mostrado no exemplo da figura a seguir. Esse arquivo define uma estrutura hipotética de contatos que descreve itens com os seguintes atributos: <code>id</code>, <code>nome</code> e <code>cidade</code>. para o JSON Server, é fundamental que toda estrutura tenha um atributo de identificador de nome <code>id</code>.</p>
-        <p><img class="img-fluid d-block w-50 m-auto" src="./assets/images/arquivo_json.png" alt=""></p>
-    </main>
-  </body>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="mb-3">
+            <i class="fas fa-leaf fa-3x text-white"></i>
+          </div>
+          <h4>Descarte Consciente</h4>
+          <p>Aprenda sobre o impacto ambiental e como separar seus resíduos.</p>
+        </div>
+
+        <div class="col-md-4">
+          <div class="mb-3">
+            <i class="fas fa-play-circle fa-3x text-white"></i>
+          </div>
+          <h4>Aprenda Mais</h4>
+          <p>Acesse nossa biblioteca de vídeos e matérias sobre descarte de lixo eletrônico.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Por que isso importa?  -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Por que isso importa?</h2>
+      <p class="text-center fs-5">
+        O lixo eletrônico cresce como uma sombra sobre as cidades.
+        Cada aparelho esquecido na gaveta carrega metais valiosos
+        e toxinas que podem destruir rios, solos e vidas.
+        Entender o impacto é o primeiro passo para transformar o descarte
+        em cuidado com o mundo que a gente pisa.
+      </p>
+
+      <div class="row text-center mt-4">
+        <div class="col-md-3 mb-4">
+          <h4 class="fw-bold">53 milhões</h4>
+          <p>de toneladas de lixo eletrônico são geradas por ano.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h4 class="fw-bold">Só 17%</h4>
+          <p>é reciclado corretamente no mundo.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h4 class="fw-bold">Metais Pesados</h4>
+          <p>contaminam solo e água quando descartados de forma errada.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h4 class="fw-bold">Reciclável</h4>
+          <p>placas, chips e peças podem voltar para a indústria.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Linha do tempo do lixo eletrônico -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Ciclo do Lixo Eletrônico</h2>
+
+      <div class="row justify-content-center text-center">
+
+        <div class="col-md-3 mb-4">
+          <i class="fas fa-industry fa-3x text-success mb-3"></i>
+          <h5 class="fw-bold">Produção</h5>
+          <p>Dispositivos nascem de metais extraídos da natureza.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <i class="fas fa-mobile-alt fa-3x text-success mb-3"></i>
+          <h5 class="fw-bold">Consumo</h5>
+          <p>Usamos, trocamos, quebramos, esquecemos na gaveta.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <i class="fas fa-trash-alt fa-3x text-success mb-3"></i>
+          <h5 class="fw-bold">Descarte</h5>
+          <p>Muitos aparelhos acabam indo parar no lixo comum.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <i class="fas fa-recycle fa-3x text-success mb-3"></i>
+          <h5 class="fw-bold">Reciclagem</h5>
+          <p>Peças voltam ao ciclo produtivo e reduzem danos ambientais.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sabrina FAQ -->
+    <section class="content-faq">
+      <div id="container">
+        <div class="accordion">
+          <button class="accordion-header">
+            <span id="1"></span>
+            <i class="fa-solid fa-chevron-down arrow "></i>
+          </button>
+
+          <div class="accordion-body">
+            <p class="resposta" data-id="1"></p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-header">
+            <span id="2"></span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </button>
+
+          <div class="accordion-body">
+            <p class="resposta" data-id="2"></p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-header">
+            <span id="3"></span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </button>
+
+          <div class="accordion-body">
+            <p class="resposta" data-id="3"></p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-header">
+            <span id="4"></span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </button>
+
+          <div class="accordion-body">
+            <p class="resposta" data-id="4"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="contato" class="py-5">
+    <div class="container">
+      <h3 class="mb-3">Informações do Grupo</h3>
+      <hr class="mb-4" />
+
+      <div class="row">
+        <div class="col-md-8">
+          <h4>Sobre</h4>
+          <p>
+            Este projeto foi desenvolvido como parte da disciplina de TI. O
+            objetivo foi criar um site responsivo e dinâmico, utilizando HTML,
+            CSS, JavaScript, JSON e Bootstrap para conscientizar sobre o
+            descarte correto e os impactos do lixo eletrônico.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Autoria</h4>
+          <p>
+            <i class="fas fa-user info-icon"></i>
+            <strong>Grupo:</strong> Arthur, Bernardo, Kaique, Lucas, Sabrina e
+            Samuel
+          </p>
+          <p>
+            <i class="fas fa-graduation-cap info-icon"></i>
+            <strong>Curso:</strong> Ciência da Computação
+          </p>
+          <p>
+            <i class="fas fa-school info-icon"></i>
+            <strong>Turma:</strong> Tarde
+          </p>
+
+          <h4 class="mt-4">Redes Sociais</h4>
+          <div>
+            <a href="https://github.com/ICEI-PUC-Minas-CC-TI/ti1-cc-2025-2-tarde-grupo-2-lixo-eletronico"
+              class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script src="assets/js/login.js"></script>
+  <script src="assets/js/controlemenu.js"></script>
+
+</body>
+
 </html>

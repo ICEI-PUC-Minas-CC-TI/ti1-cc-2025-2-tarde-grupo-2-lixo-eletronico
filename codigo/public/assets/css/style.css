@@ -1,56 +1,518 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"); 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/*Variaveis de cores para aplicação no CSS */
+/*Dentro do mundo do Design Digital pode se classificar a intensidade das cores*/
+/*100 (Tonalidade mais clara) e 900 (Tonalidade mais escura)*/
+
+:root {
+  --green-700: #33691e;
+  /*Aplicação Geral: MENU e Botões*/
+  --green-400: #4caf50;
+  /*Aplicação Geral: CARDS, Bordas ou Sessões*/
+  --yellow-100: #f8f8d5;
+  /*Aplicação Geral: Fundo de Páginas e Sessões *textos em fundo escuro*/
+  --grayblue-200: #90a4ae;
+  /*Aplicação Geral: Elementos Secundários e/ou Footer (Rodapé)*/
+  --graydark-900: #212121;
+  /*Aplicação Geral: Textos e Ícones em fundos claros*/
+  --darkbrow-900: #6d4c41;
+  /*ALTERNATIVA: Textos e Ícones em fundos claros*/
+  font-family: "Montserrat", sans-serif;
+  /*Fonte Padrão da Aplicação*/
+}
+
+/* Usar os pesos 200 (Para Contéudo), 400 (Destaque no contéudo) e 500/600 (Títulos ou subtítulos) */
+
+/* Como usar as variaveis de cores no CSS */
+/* background-color: var(--green-700); */
+/* color: var(--graydark-900); */
+
+
+
+/* Alterar cor dos botões */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: var(--green-700) !important;
+  color: var(--yellow-100) !important;
+}
+
+.btn-color {
+  color: var(--green-700) !important;
+  --bs-border-color: var(--green-700) !important;
+}
+
+/* Filtro */
+.filter-span {
+  background-color: var(--yellow-100);
+  color: var(--green-700);
+  padding: 0.5em 10.75em;
+  --bs-border-color: var(--yellow-100) !important;
+}
+
+.filter-tab {
+  /* background-color: var(--yellow-100); */
+  color: var(--green-700);
+  margin: 20px 20px 0px 0px;
+  width: 200px;
+  text-align: center;
+  --bs-border-color: var(--green-700) !important;
+}
+
+/*------------ ESTILIZAÇÃO DA FUNCIONALIDADE ------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--yellow-100);
+  box-sizing: border-box;
+  color: var(--graydark-900);
+  font-family: "Montserrat", sans-serif;
+}
 
 h3 {
-    color: #093070;
-    border-bottom: 1px solid #c1c1c1;
+  color: #093070;
+  border-bottom: 1px solid #c1c1c1;
 }
+
 h4 {
-    color: #ff7645;
+  color: #c54b1e;
 }
 
 .banner img {
-    width: 100%;
+  width: 100%;
 }
 
 .barra-info {
-    height: 2em;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: space-between;
+  height: 5em;
+  background-color: var(--green-700);
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu li {
-    display: inline;
-    margin: 0px;
-    padding: 0.5em 1em; 
-    height: 2em;
-    line-height: 2em;
+  display: inline;
+  margin: 0px;
+  padding: 0.5em 1em;
+  height: 2em;
+  line-height: 2em;
 }
 
 .menu li a {
-    text-decoration: none;
-    color: #ff7645;
-    font-weight: bold;
+  text-decoration: none;
+  color: #fffdfc;
+  font-weight: bold;
 }
 
 .menu li:hover {
-    background-color: darkblue;
-    color: white;
+  background-color: darkblue;
+  color: white;
 }
 
 .dados-usuario {
-    height: 2em;
-    line-height: 2em;
-    margin-right: 20px;
+  height: 2em;
+  line-height: 2em;
+  margin-right: 20px;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
+}
+
+/*Rodapé*/
+
+#contato {
+  background-color: var(--green-700) !important;
+  color: #fff;
+}
+
+.info-icon {
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
+  color: white;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  color: whitesmoke;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+/* Sabrina FAQ */
+.content-faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 50%;
+}
+
+.accordion {
+  background-color: var(--green-700);
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(27, 27, 27);
+
+}
+
+.accordion-header {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  /*tira a cor de fundo da pergunta*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.accordion-header span {
+  color: var(--yellow-100);
+  /*cor do texto nas caixas de perguntas*/
+  max-width: 100%;
+  /**/
+  white-space: nowrap;
+  /*não quebrar a linha*/
+  overflow: hidden;
+  /*esconder o que ultrapassar o tamanho*/
+  text-overflow: ellipsis;
+  /*coloca reticências no final do texto*/
+}
+
+.accordion-body {
+  color: var(--yellow-100);
+  font-size: 14px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  /*esconder o texto que ultrapassar o tamanho*/
+  transition: opacity 0.2s;
+  /* exibir o texto de forma lenta */
+}
+
+.accordion-body.active {
+  height: 100%;
+  opacity: 1;
+  padding: 5px 0px;
+  /*ajustar espaçamento*/
+  height: auto;
+  margin-top: 8px;
+}
+
+/*para a seta girar*/
+.arrow {
+  transition: transform 0.2s linear;
+}
+
+/* animação da seta */
+.accordion:has(.active) .arrow {
+  transform: rotate(180deg);
+}
+
+/* Sabrina - Materias */
+.menu-materias {
+  height: 50%;
+  width: 250px;
+  position: absolute;
+  /*não colar com a página*/
+  /* z-index: 1; */
+  /* ficar na frente de outros elementos */
+  right: 10rem;
+  /*torna-lo fixo na direita*/
+  border-radius: 20px;
+  /* background-color: var(--green-700); TIREI ESSA PARTE */
+  overflow-x: hidden;
+  /*remover barra de rolagem horizontal*/
+}
+
+.menu-materias a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  /*cada link em uma linha*/
+  color: var(--green-700);
+  transition: 0.3s;
+}
+
+.menu-materias a:hover {
+  color: var(--green-400);
+  /*cor ao passar o mouse*/
+
+}
+
+#content-materias p {
+  width: 77%;
+  text-align: justify;
+  font-size: 12px;
+}
+
+/* Esconde todos os títulos por padrão */
+#content-materias h2 {
+  display: none;
+  width: 80%;
+}
+
+/* Esconde todos os conteúdos por padrão */
+.news {
+  display: none;
+}
+
+/* Exibe h2 ativo */
+#content-materias h2.active {
+  display: block;
+}
+
+/* Exibe conteúdo ativo */
+.news.active {
+  display: block;
+}
+
+/* Esconde todas as imagens por padrão */
+#content-materias img {
+  display: none;
+}
+
+/* Exibe imagem ativa */
+#content-materias img.active {
+  display: block;
+}
+
+/* Esconde data e autor ativos */
+#content-materias span {
+  display: none;
+}
+
+/* Exibe data e autor ativos */
+#content-materias span.active {
+  display: block;
+}
+
+img {
+  width: 685px;
+  height: 506px;
+}
+
+#info-id {
+  font-size: 12px;
+}
+
+/*Estilização da Sessão de Vídeos*/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3f0c9;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  color: var(--darkbrow-900);
+  margin: 20px;
+}
+
+.videos-container {
+  display: flex;
+  background-color: var(--green-700);
+  color: white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.video-principal {
+  flex: 3;
+  margin-right: 20px;
+}
+
+.video-principal h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.video-player iframe {
+  width: 100%;
+  height: 460px;
+  border-radius: 10px;
+}
+
+.videos-relacionados {
+  flex: 1;
+  background-color: var(--green-400);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.videos-relacionados h3 {
+  color: white;
+}
+
+.video-relacionado {
+  display: flex;
+  align-items: center;
+  background-color: #d6e9d3;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.video-relacionado img {
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.video-relacionado h4 {
+  color: var(--darkbrow-900);
+  margin: 0;
+}
+
+.video-relacionado p {
+  color: var(--grayblue-200);
+  font-size: 0.9em;
+  margin: 0;
+}
+
+
+
+/* --- NOVA CLASSE PARA HARMONIZAR --- */
+.box-destaque {
+  background-color: var(--green-700);
+  /* Fundo Verde Escuro */
+  color: var(--yellow-100);
+  /* Texto Claro (creme) */
+  border-radius: 20px;
+  /* Bordas arredondadas iguais aos vídeos */
+  padding: 3rem 2rem;
+  /* Espaçamento interno */
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra suave */
+}
+
+/* Garante que os títulos dentro dessa caixa fiquem brancos */
+.box-destaque h2,
+.box-destaque h3,
+.box-destaque h4 {
+  color: white !important;
+}
+
+/* Mecanismo de Pesquisa */
+.container-Pesquisa {
+  padding: 25px;
+  max-width: 550px;
+  margin: 50px auto;
+  border-radius: 12px;
+}
+
+.grid-template-columns {
+  grid-template-columns: 200px 200px;
+}
+
+.search-box {
+  width: 10%;
+  padding: 12px 16px;
+  border: 2px solid var(--green-700);
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  background-color: var(--yellow-100);
+}
+
+.search-box:focus {
+  border-color: var(--green-400);
+  box-shadow: 0 0 3px var(--green-400);
+  background-color: #ffffff;
+}
+
+.list-group-item {
+  min-height: 50px;
+  width: 100%;
+  max-width: 100%;
+}
+
+#pills-filtros,
+#pills-bairros,
+#pills-rua {
+  max-height: 340px;
+  /* altura do scroll */
+  width: 450px;
+  /* largura do scroll */
+  overflow-y: auto;
+  /* scroll vertical */
+  font-size: 12px;
+  scrollbar-color: #ccc transparent;
+  scrollbar-width: thin;
+  text-overflow: ellipsis;
+  scrollbar-gutter: stable;
+
+}
+/*    <----------PONTOS.HTML---------->   */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.container-Pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 20px;
+}
+.tab-content {
+    width: 100%;
+    order: 3; 
+}
+.input-icon {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.search-box {
+    width: 100% !important;
+    height: 45px;
+    border-radius: 28px !important;
+    padding: 15px 25px 15px 50px !important;
+    font-size: 16px;
+    border: 2px solid #e0e0e0 !important;
+    background-color: #fff;
+}
+.input-icon .fa-magnifying-glass {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    font-size: 18px;
+    z-index: 10;
 }
