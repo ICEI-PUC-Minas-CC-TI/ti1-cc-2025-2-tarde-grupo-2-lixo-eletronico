@@ -261,7 +261,7 @@ main {
 }
 
 #content-materias p {
-  width: 70%;
+  width: 77%;
   text-align: justify;
   font-size: 12px;
 }
@@ -269,7 +269,7 @@ main {
 /* Esconde todos os títulos por padrão */
 #content-materias h2 {
   display: none;
-  width: 70%;
+  width: 80%;
 }
 
 /* Esconde todos os conteúdos por padrão */
@@ -308,8 +308,8 @@ main {
 }
 
 img {
-  width: 720px;
-  height: 480px;
+  width: 685px;
+  height: 506px;
 }
 
 #info-id {

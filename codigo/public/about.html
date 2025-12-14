@@ -11,8 +11,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Se ativar o login, apenas depois do user logar que acessa a página -->
-  <!-- <script src="./assets/js/login.js"></script> -->
 </head>
 
 <body>
@@ -39,13 +37,23 @@
               <a class="nav-link" href="noticias.html">Matérias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pontos de Coleta</a>
+              <a class="nav-link" href="pontos.html">Pontos de Coleta</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Avaliar</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Gerenciar (CRUD)
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="modulos/estrutura/crud_materias/crud_materias.html">Matérias</a></li>
+                <li><a class="dropdown-item" href="modulos/estrutura/crud_videos/crudVideos.html">Vídeos</a></li>
+                <li><a class="dropdown-item" href="modulos/estrutura/crud_produtos/cadastro_produto.html">Produtos</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item ms-lg-3">
-              <a class="btn btn-outline-success rounded-pill px-4" href="#">Login</a>
+              <a id="btnLogin" class="btn btn-outline-success rounded-pill px-4"
+                href="modulos/login/login.html">Login</a>
             </li>
           </ul>
           <div class="dadosnp-usuario ms-3">
@@ -194,6 +202,9 @@
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="app.js"></script>
+
+  <script src="assets/js/login.js"></script>
+  <script src="assets/js/controlemenu.js"></script>
 
 </body>
 
