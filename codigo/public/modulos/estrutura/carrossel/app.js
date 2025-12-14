@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     
-    const API_URL = 'http://localhost:3000/materias';
+    const API_URL = 'https://retechna-api.onrender.com/materias';
 
     
     fetch(API_URL)

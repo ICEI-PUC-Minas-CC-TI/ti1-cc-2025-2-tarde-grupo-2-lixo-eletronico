@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:3000/videos";
+const apiUrl = "https://retechna-api.onrender.com/videos";
 
 function displayMessage(message) {
   const msg = document.getElementById("msg");
