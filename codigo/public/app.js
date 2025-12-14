@@ -103,7 +103,11 @@
 
 //    Samuel Carousel - carregar matérias do backend
 document.addEventListener('DOMContentLoaded', function() {
+    
+    
+    const API_URL = 'http://localhost:3000/materias';
 
+    
     fetch(API_URL)
         .then(response => {
             
@@ -117,12 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const indicatorsContainer = document.getElementById('carousel-indicators-container');
             const innerContainer = document.getElementById('carousel-inner-container');
-
-            // Proteção: só manipula o carrossel se os elementos existirem na página
-            if (!indicatorsContainer || !innerContainer) {
-                console.log('Carrossel não presente nesta página — pulando renderização.');
-                return;
-            }
 
             indicatorsContainer.innerHTML = '';
             innerContainer.innerHTML = '';
@@ -140,19 +138,21 @@ document.addEventListener('DOMContentLoaded', function() {
                         aria-label="Slide ${index + 1}">
                     </button>
                 `;
-                
+
                 const itemHTML = `
                     <div class="carousel-item ${isActive ? 'active' : ''}">
-                        <img 
-                            src="${materia.url}" 
-                            class="d-block w-100" 
-                            alt="${materia.titulo}" 
-                            style="height: ${materia.height}px; object-fit: cover; filter: brightness(0.7);">
-                        
-                        <div class="carousel-caption d-none d-md-block text-start">
-                            <h5>${materia.titulo}</h5>
-                            <p>${materia.conteudo.substring(0, 120)}...</p> 
-                        </div>
+                        <a href="noticias.html" style="text-decoration: none; color: white;">
+                            <img 
+                                src="${materia.url}" 
+                                class="d-block w-100" 
+                                alt="${materia.titulo}" 
+                                style="height: ${materia.height}px; object-fit: cover; filter: brightness(0.7);">
+                            
+                            <div class="carousel-caption d-none d-md-block text-start">
+                                <h5>${materia.titulo}</h5>
+                                <p>${materia.conteudo.substring(0, 120)}...</p> 
+                            </div>
+                        </a>
                     </div>
                 `;
 
