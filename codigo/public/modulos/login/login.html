@@ -82,23 +82,23 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
-  <script src="assets/js/login.js"></script>
+  <script src="../../assets/js/login.js"></script>
 
   <script>
     // URL para onde voltar após login (Home)
-    const RETURN_URL = 'index.html';
+    const RETURN_URL = '../../index.html'; 
 
-    function processaFormLogin(event) {
-      event.preventDefault();
-      var username = document.getElementById('username').value;
-      var password = document.getElementById('password').value;
+function processaFormLogin(event) {
+  event.preventDefault();
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
 
-      if (loginUser(username, password)) {
-        window.location.href = RETURN_URL;
-      } else {
-        alert('Usuário ou senha incorretos. (Dica: tente admin / 123)');
-      }
-    }
+  if (loginUser(username, password)) {
+    window.location.href = RETURN_URL;
+  } else {
+    alert('Usuário ou senha incorretos. (Dica: tente admin / 123)');
+  }
+}
 
     function salvaLogin(event) {
       event.preventDefault();

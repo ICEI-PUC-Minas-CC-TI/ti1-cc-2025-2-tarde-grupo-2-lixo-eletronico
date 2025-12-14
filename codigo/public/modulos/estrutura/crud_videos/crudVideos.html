@@ -184,7 +184,7 @@
                         <td>${VideosMateria.descricao}</td>
                         <td>${VideosMateria.duracao}</td>
                         <td>${VideosMateria.canal}</td>
-                        <td>${VideosMateria.link}</td>
+                        <td>${VideosMateria.url}</td>
                     </tr>`;
                 }
             });
@@ -217,7 +217,7 @@
                     descricao: campoDescricao,
                     duracao: campoDuracao,
                     canal: campoCanal,
-                    link: campoLink,
+                    url: campoLink,
 
                 };
 
@@ -246,7 +246,7 @@
                     descricao: campoDescricao,
                     duracao: campoDuracao,
                     canal: campoCanal,
-                    link: campoLink,
+                    url: campoLink,
 
                 };
                   // Altera o VideosMateria no banco de  dados
@@ -314,7 +314,6 @@
         }
         document.addEventListener("DOMContentLoaded", init);
    </script>
-    <script src="crudVideos.js"></script>
     </main>
 
     <footer id="contato" class="py-5 text-white">
@@ -376,9 +375,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="../../../assets/js/login.js"></script>
+    <script src="../../../assets/js/login.js"></script>
     <script src="../../../assets/js/controlemenu.js"></script>
-
+    <script src="crudVideos.js"></script>
 
 </body>
 </html>

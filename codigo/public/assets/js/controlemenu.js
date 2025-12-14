@@ -42,7 +42,7 @@ function atualizarMenu() {
         
         if (btnLogin) {
             btnLogin.innerHTML = 'Login';
-            btnLogin.href = "login.html";
+            btnLogin.href = "modulos/login/login.html";
             btnLogin.onclick = null; 
         }
     }
