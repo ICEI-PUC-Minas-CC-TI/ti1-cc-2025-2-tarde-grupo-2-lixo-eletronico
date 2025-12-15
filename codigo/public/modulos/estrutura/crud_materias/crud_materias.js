@@ -1,4 +1,4 @@
-const apiUrl= '/materias';
+const apiUrl = 'https://retechna-api.onrender.com/materias';
 function displayMessage(message) {
     const msg = document.getElementById('msg');
     msg.innerHTML = '<div class="alert alert-warning">' + message + '</div>';

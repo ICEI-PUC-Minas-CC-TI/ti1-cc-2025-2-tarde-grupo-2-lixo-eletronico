@@ -1,4 +1,4 @@
-const apiUrl = '/produtos';
+const apiUrl = 'https://retechna-api.onrender.com/produtos';
 
 function displayMessage(mensagem, tipo ='succes'){
     const msg = document.getElementById('msg');
