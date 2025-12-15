@@ -1,7 +1,7 @@
-const API_URL = "/materias";
+const API_URL = "https://retechna-api.onrender.com/materias";
 //    Sabrina FAQ - carregar perguntas e respostas do JSON
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("/faqs")
+  fetch("https://retechna-api.onrender.com/faqs")
     .then((response) => response.json())
     .then((data) => {
       for (let i = 0; i < data.length; i++) {
@@ -31,7 +31,7 @@ accordions.forEach((accordion) => {
 
 //    Sabrina MATERIAS - carregar materias do JSON
 document.addEventListener("DOMContentLoaded", () => {
-  fetch(API_URL)
+  fetch("https://retechna-api.onrender.com/materias")
     .then((response) => response.json())
     .then((data) => {
       for (let i = 0; i < data.length; i++) {
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 // Vídeos - Kaique
 async function carregarVideos() {
-  const resposta = await fetch("/videos");
+  const resposta = await fetch("https://retechna-api.onrender.com/videos");
   const videos = await resposta.json();
 
   if (videos.length > 0) {
@@ -228,7 +228,7 @@ carregarVideos();
 
 // Mecanismo de busca
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("/pontos_de_coleta")
+  fetch("https://retechna-api.onrender.com/pontos_de_coleta")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Erro na rede: " + response.statusText);
