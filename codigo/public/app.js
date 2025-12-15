@@ -1,7 +1,7 @@
-const API_URL = "https://retechna-api.onrender.com/materias";
+const API_URL = "/materias";
 //    Sabrina FAQ - carregar perguntas e respostas do JSON
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("https://retechna-api.onrender.com/faqs")
+  fetch("/faqs")
     .then((response) => response.json())
     .then((data) => {
       for (let i = 0; i < data.length; i++) {
@@ -31,7 +31,7 @@ accordions.forEach((accordion) => {
 
 //    Sabrina MATERIAS - carregar materias do JSON
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("https://retechna-api.onrender.com/materias")
+  fetch("/materias")
     .then((response) => response.json())
     .then((data) => {
       for (let i = 0; i < data.length; i++) {
@@ -115,51 +115,51 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //    Samuel Carousel - carregar matérias do backend
-document.addEventListener('DOMContentLoaded', function() {
-    
-    
-    const API_URL = 'https://retechna-api.onrender.com/materias';
+document.addEventListener("DOMContentLoaded", function () {
+  const API_URL = "/materias";
 
-    
-    fetch(API_URL)
-        .then(response => {
-            
-            if (!response.ok) {
-                throw new Error('Erro na rede: ' + response.statusText);
-            }
-            return response.json();
-        })
-        .then(materias => {
-            
+  fetch(API_URL)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Erro na rede: " + response.statusText);
+      }
+      return response.json();
+    })
+    .then((materias) => {
+      const indicatorsContainer = document.getElementById(
+        "carousel-indicators-container"
+      );
+      const innerContainer = document.getElementById(
+        "carousel-inner-container"
+      );
 
-            const indicatorsContainer = document.getElementById('carousel-indicators-container');
-            const innerContainer = document.getElementById('carousel-inner-container');
+      indicatorsContainer.innerHTML = "";
+      innerContainer.innerHTML = "";
 
-            indicatorsContainer.innerHTML = '';
-            innerContainer.innerHTML = '';
+      materias.forEach((materia, index) => {
+        const isActive = index === 0;
 
-            materias.forEach((materia, index) => {
-                const isActive = index === 0;
-
-                const indicatorHTML = `
+        const indicatorHTML = `
                     <button 
                         type="button" 
                         data-bs-target="#carouselDestaques" 
                         data-bs-slide-to="${index}" 
-                        class="${isActive ? 'active' : ''}" 
-                        aria-current="${isActive ? 'true' : 'false'}" 
+                        class="${isActive ? "active" : ""}" 
+                        aria-current="${isActive ? "true" : "false"}" 
                         aria-label="Slide ${index + 1}">
                     </button>
                 `;
 
-                const itemHTML = `
-                    <div class="carousel-item ${isActive ? 'active' : ''}">
+        const itemHTML = `
+                    <div class="carousel-item ${isActive ? "active" : ""}">
                         <a href="noticias.html" style="text-decoration: none; color: white;">
                             <img 
                                 src="${materia.url}" 
                                 class="d-block w-100" 
                                 alt="${materia.titulo}" 
-                                style="height: ${materia.height}px; object-fit: cover; filter: brightness(0.7);">
+                                style="height: ${
+                                  materia.height
+                                }px; object-fit: cover; filter: brightness(0.7);">
                             
                             <div class="carousel-caption d-none d-md-block text-start">
                                 <h5>${materia.titulo}</h5>
@@ -169,23 +169,25 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 `;
 
-                indicatorsContainer.innerHTML += indicatorHTML;
-                innerContainer.innerHTML += itemHTML;
-            });
-        })
-        .catch(error => {
-            
-            console.error('Falha ao buscar matérias:', error);
-            
-            const innerContainer = document.getElementById('carousel-inner-container');
-            if (innerContainer) {
-                innerContainer.innerHTML = '<p class="text-danger text-center">Não foi possível carregar as notícias. Tente novamente mais tarde.</p>';
-            }
-        });
+        indicatorsContainer.innerHTML += indicatorHTML;
+        innerContainer.innerHTML += itemHTML;
+      });
+    })
+    .catch((error) => {
+      console.error("Falha ao buscar matérias:", error);
+
+      const innerContainer = document.getElementById(
+        "carousel-inner-container"
+      );
+      if (innerContainer) {
+        innerContainer.innerHTML =
+          '<p class="text-danger text-center">Não foi possível carregar as notícias. Tente novamente mais tarde.</p>';
+      }
+    });
 });
 // Vídeos - Kaique
 async function carregarVideos() {
-  const resposta = await fetch("https://retechna-api.onrender.com/videos");
+  const resposta = await fetch("/videos");
   const videos = await resposta.json();
 
   if (videos.length > 0) {
@@ -228,7 +230,7 @@ carregarVideos();
 
 // Mecanismo de busca
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("https://retechna-api.onrender.com/pontos_de_coleta")
+  fetch("/pontos_de_coleta")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Erro na rede: " + response.statusText);
@@ -333,41 +335,46 @@ let map;
 
 // Função que carrega os dados de unidades da PUC Minas
 window.onload = () => {
-  montarMapa ();
-}
+  montarMapa();
+};
 
-async function montarMapa( ) {
-const response = await fetch ('/pontos_de_coleta');
-const pontos_de_coleta = await response.json ();
+async function montarMapa() {
+  const response = await fetch("/pontos_de_coleta");
+  const pontos_de_coleta = await response.json();
   // Defina o Access Token do Mapbox
-   mapboxgl.accessToken = 'pk.eyJ1IjoiMjQwMTA3IiwiYSI6ImNtaWR5bWd3YzAwZHgybXE1am1nMXVrMGQifQ.k4J19OtjH5_O5n4wg_OVQA';
-   map = new mapboxgl.Map({
-      container: 'map', // O container do mapa
-      style: 'mapbox://styles/mapbox/streets-v12', // Estilo do mapa
-      center: centralLatLong, // Localização central do mapa
-      zoom: 9 // Zoom inicial
-   });
+  mapboxgl.accessToken =
+    "pk.eyJ1Ijoic2FicmluYTE2MyIsImEiOiJjbWkwd2N3amMxNGE5MndxNjM4OXNib2hjIn0.-j8SxbXWuGcQZg5TWhg5GQ";
+  map = new mapboxgl.Map({
+    container: "map", // O container do mapa
+    style: "mapbox://styles/mapbox/streets-v12", // Estilo do mapa
+    center: centralLatLong, // Localização central do mapa
+    zoom: 9, // Zoom inicial
+  });
 
-   // Adiciona marcadores para cada local
-   pontos_de_coleta.forEach((uni) => {
-      let popup = new mapboxgl.Popup({ offset: 25 })
-      .setHTML(`<br>${uni.nome} <br>${uni.cep} - ${uni.numero}`);
-      const marker = new mapboxgl.Marker({ color: uni.cor })
+  // Adiciona marcadores para cada local
+  pontos_de_coleta.forEach((uni) => {
+    let popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
+      `<br>${uni.nome} <br>${uni.cep} - ${uni.numero}`
+    );
+    const marker = new mapboxgl.Marker({ color: uni.cor })
       .setLngLat([uni.longitude, uni.latitude])
       .setPopup(popup)
       .addTo(map);
-   });
+  });
 
-   // Obtém a localização do usuário e adiciona um marcador
-   navigator.geolocation.getCurrentPosition(processarGetCurrentPosition, () => { alert('Erro ao obter localização.') });
+  // Obtém a localização do usuário e adiciona um marcador
+  navigator.geolocation.getCurrentPosition(processarGetCurrentPosition, () => {
+    alert("Erro ao obter localização.");
+  });
 }
 
 // Função para processar a localização do usuário
 function processarGetCurrentPosition(local) {
-   let popup = new mapboxgl.Popup({ offset: 25 })
-   .setHTML(`<h3> Estou aqui!!! </h3>`);
-   const marker = new mapboxgl.Marker({ color: 'yellow' })
-   .setLngLat([local.coords.longitude, local.coords.latitude])
-   .setPopup(popup)
-   .addTo(map);
+  let popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    `<h3> Estou aqui!!! </h3>`
+  );
+  const marker = new mapboxgl.Marker({ color: "yellow" })
+    .setLngLat([local.coords.longitude, local.coords.latitude])
+    .setPopup(popup)
+    .addTo(map);
 }
