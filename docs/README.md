@@ -41,6 +41,7 @@ A documentação do projeto é estruturada da seguinte forma:
 ## Justificativa
 
 **O objeto de estudo sobre o tema "descarte de lixo eletrônico" fundamenta-se em ressaltar sua urgência e necessidade ambiental. Além de ser pouco tratado nos meios de comunicação e políticas públicas, o descarte inadequado traz problemáticas ambientais quanto à contaminação do solo e da água por metais pesados. A função embasada do projeto é evidenciar esses riscos e pontuar a relevância do descarte adequado dos dispositivos em desuso, orientando a população e empresas sobre como desfazer-se dos aparelhos, considerando os aspectos mencionados. A base de pesquisa se estendeu desde sites de notícias até videoaula, que contribuíram para a compreensão da problemática.**
+
 [Lixo eletrônico: descarte adequado ainda é difícil](https://youtu.be/LlR-H33soaE?si=LHBMtWv6atod6MiN)
 [Legislação sobre reciclagem de eletrônicos no Brasil](https://gruporeciclo.com/legislacao-sobre-reciclagem-de-eletronicos-no-brasil/)
 
@@ -73,10 +74,10 @@ A documentação do projeto é estruturada da seguinte forma:
 
 ### Personas
 
-**✳️✳️✳️Jose Augusto D'Ávilla✳️✳️✳️**
+**Jose Augusto D'Ávilla**
 ![Jose Augusto D'Ávilla](images/PersonaJose.jpg)
 
-**✳️✳️✳️Brenda Miranda✳️✳️✳️**
+**Brenda Miranda**
 ![Brenda Miranda](images/PersonaBrenda.jpg)
 
 # Product Design
@@ -127,7 +128,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-008 | Informativos(Carrossel)                                    | MÉDIA      |
 | RF-009 | Like(apoiar/classificar empresa)                           | MÉDIA      |
 | RF-010 | Lista de empresas/instituições de coleta                   | ALTA       |
-| RF-011 | Cadastro de dispositivos eletrônicos (usuários e empresas) | ALTA       |
+| RF-011 | Cadastro de dispositivos eletrônicos (usuários e empresas) | MÉDIA      |
 
 ### Requisitos não Funcionais
 
@@ -182,16 +183,6 @@ Mapa com os pontos de coleta próximos
 Filtro de localização
 ![Tela Pontos de Coleta](images/wireframe10.png)
 
-##### TELA AVALIA-NOS
-
-Sessão de avaliar as empresas parceiras
-![Tela Avalia-nos](images/wireframe11.png)
-
-##### TELA FEEDBACK
-
-Sessão de feedback sobre os pontos de coleta
-![Tela Feedback](images/wireframe12.png)
-
 ### User Flow
 
 **Diagrama**
@@ -242,7 +233,7 @@ Esta seção apresenta todos os detalhes da solução criada no projeto.
 
 O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução.
 
-[![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
+[![Vídeo do projeto](images/video.png)](https://youtu.be/aTOw97JHa2I?si=Odd8KjrcYZP6N4b0)
 
 ## Funcionalidades
 
@@ -328,7 +319,7 @@ Permite a inclusão, leitura, alteração e exclusão das matérias (notícias) 
   - Digite o endereço ou produto que deseja descartar
 - **Tela da funcionalidade**:
 
-![Tela de Funcionalidade](images/pesquisa-mapa.png)
+![Tela de Funcionalidade](images/filtro-mapa.png)
 
 ##### Funcionalidade 8 - MAPA
 
@@ -414,30 +405,35 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
     },
 ```
 
-##### Estrutura de Dados - Vídeos
+##### Estrutura de Dados - Pontos de Coleta
 
-Registro dos vídeos do sistema utilizados para a exibição do contéudo em vídeo para os usuários.
+Registro dos Pontos de coleta do sistema utilizados para a exibição do pontos de coleta no mapa ao se pesquisar um endereço.
 
 ```json
-"videos": [
+"pontos_de_coleta": [
     {
-    "id": "1",
-      "titulo": "Lixo Eletrônico",
-      "descricao": "Este vídeo explica o que é o lixo eletrônico (ou resíduo eletrônico) e a sua crescente quantidade. Detalha a composição desses resíduos, como TVs e celulares, e o que pode ser reciclado (vidro, ferro, cobre, etc.). Alerta sobre os riscos ambientais de metais pesados contaminando rios e plantações quando o descarte é incorreto, reforçando que o consumidor é responsável pelo destino do que consome e joga fora.",
-      "duracao": "04:30",
-      "canal": "Momento Ambiental",
-      "url": "https://www.youtube.com/embed/YIL4QRPkZU4"
+      "id": 1,
+      "nome": "Ponto de Coleta de Lixo Eletrônico - PROPAM",
+      "logradouro": "Rua Rad. Ubaldo Ferreira",
+      "numero": 20,
+      "bairro": "Castelo",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "31330-294",
+      "pais": "Brasil",
+      "latitude": -19.86966,
+      "longitude": -43.99367
     },
 ```
 
 ##### Estrutura de Dados - Vídeos
 
-Registro dos vídeos do sistema utilizados para a exibição do contéudo em vídeo para os usuários.
+Registro dos vídeos do sistema utilizados para a exibição na página de materias.
 
 ```json
 "videos": [
     {
-    "id": "1",
+      "id": "1",
       "titulo": "Lixo Eletrônico",
       "descricao": "Este vídeo explica o que é o lixo eletrônico (ou resíduo eletrônico) e a sua crescente quantidade. Detalha a composição desses resíduos, como TVs e celulares, e o que pode ser reciclado (vidro, ferro, cobre, etc.). Alerta sobre os riscos ambientais de metais pesados contaminando rios e plantações quando o descarte é incorreto, reforçando que o consumidor é responsável pelo destino do que consome e joga fora.",
       "duracao": "04:30",
@@ -457,7 +453,7 @@ Esta seção apresenta os módulos e APIs utilizados na solução
 **Scripts:**
 
 - jQuery - [http://www.jquery.com/](http://www.jquery.com/)
-- Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/)
+- Bootstrap 5.3.3 - [http://getbootstrap.com/](http://getbootstrap.com/)
 - MAPBOX - [https://www.mapbox.com/](https://www.mapbox.com/)
 
 # Referências

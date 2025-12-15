@@ -1,0 +1,81 @@
+/* Sabrina - Materias */
+.menu-materias {
+    height: 50%;
+    width: 300px;
+    position: absolute;
+    /*não colar com a página*/
+    /* z-index: 1; */
+    /* ficar na frente de outros elementos */
+    right: 50px;
+    /*torna-lo fixo na direita*/
+    border-radius: 20px;
+    background-color: var(--green-700);
+    overflow-x: hidden;
+    /*remover barra de rolagem horizontal*/
+}
+
+.menu-materias a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: 90%;
+    /*cada link em uma linha*/
+    color: var(--yellow-100);
+    transition: 0.3s;
+}
+
+.menu-materias a:hover {
+    color: var(--green-400);
+    /*cor ao passar o mouse*/
+
+}
+
+#content-materias p {
+    width: 70%;
+}
+
+/* Esconde todos os títulos por padrão */
+#content-materias h2 {
+    display: none;
+}
+
+/* Esconde todos os conteúdos por padrão */
+.news {
+    display: none;
+}
+
+/* Exibe h2 ativo */
+#content-materias h2.active {
+    display: block;
+}
+
+/* Exibe conteúdo ativo */
+.news.active {
+    display: block;
+}
+
+/* Esconde todas as imagens por padrão */
+#content-materias img {
+    display: none;
+}
+
+/* Exibe imagem ativa */
+#content-materias img.active {
+    display: block;
+}
+
+/* Esconde data e autor ativos */
+#content-materias span {
+    display: none;
+}
+
+/* Exibe data e autor ativos */
+#content-materias span.active {
+    display: block;
+}
+
+img {
+    width: 1000px;
+    height: 480px;
+}

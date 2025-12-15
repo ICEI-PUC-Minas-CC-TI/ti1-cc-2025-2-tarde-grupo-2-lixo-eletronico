@@ -1,25 +1,228 @@
 {
-  "usuarios": [
+  "materias": [
+    {
+      "id": "1",
+      "titulo": "Descarte de Eletrônicos: Legislação Brasileira",
+      "conteudo": "Com o crescente descarte de eletrônicos no Brasil, fez-se necessário que esse fosse devidamente regularizado, fazendo com que não só a população ficasse ciente do problema e suas consequências para o meio ambiente, mas também evitando o excesso de resíduos em locais impróprios. A partir dessa necessidade, a lei nº 9.605, regente desde 1998, foi alterada, dando origem a lei federal nº 12.305, que trata sobre a regularização do descarte de resíduos eletrônicos e que faz com que seja instituída a Política Nacional de Resíduos Sólidos.",
+      "autor": "Josianne Castro",
+      "width": "1200",
+      "height": "400",
+      "data": "2 de Novembro, 2016",
+      "fonte": "https://blog.amblegis.com.br/meio-ambiente/descarte-de-eletronicos-legislacao-brasileira/",
+      "url": "https://blog.amblegis.com.br/wp-content/uploads/2025/10/descarte-lixo-eletronico-capa-blogpost-1.jpg"
+    },
+    {
+      "id": "2",
+      "titulo": "Como descartar o lixo eletrônico?",
+      "conteudo": "Para garantir o descarte correto de eletrônicos, é fundamental procurar pontos de coleta especializados. Muitas cidades possuem locais específicos onde os cidadãos podem entregar seus dispositivos eletrônicos usados ou quebrados. Além disso, algumas empresas oferecem programas de logística reversa, permitindo que os consumidores devolvam os produtos ao fabricante para reciclagem. Ao optar por esses métodos, contribuímos para a redução do impacto ambiental e promovemos a reutilização de materiais valiosos presentes nos eletrônicos.",
+      "autor": "Aline Oliveira",
+      "width": "1200",
+      "height": "400",
+      "data": "28 de fevereiro, 2024",
+      "fonte": "https://www.cnnbrasil.com.br/tecnologia/como-descartar-o-lixo-eletronico/",
+      "url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/lixos-eletronicos.jpg?w=1200&h=900&crop=0"
+    },
+    {
+      "id": "3",
+      "titulo": "Metais Preciosos Encontrados no Lixo Eletrônico e Como Eles São Reaproveitados",
+      "conteudo": "A tecnologia avança rapidamente, e, com isso, o descarte de dispositivos eletrônicos cresce de forma alarmante. Computadores, celulares, tablets e outros aparelhos que não utilizamos mais podem parecer apenas sucata. No entanto, dentro deles há materiais valiosos que podem ser recuperados e reaproveitados, reduzindo a necessidade de novas extrações minerais. Além dos impactos ambientais causados pelo descarte inadequado, o lixo eletrônico contém metais preciosos que podemos reciclar e reinserir no mercado, reduzindo custos para a indústria e preservando recursos naturais.",
+      "autor": "Empresa Lorene",
+      "width": "1200",
+      "height": "400",
+      "data": "27 de Março, 2025",
+      "fonte": "https://www.lorene.com.br/metais-preciosos-encontrados-no-lixo-eletronico-e-como-eles-sao-reaproveitados/",
+      "url": "https://i0.wp.com/www.lorene.com.br/wp-content/uploads/2024/07/Blog-Lorene-3.png?resize=1024%2C480&ssl=1"
+    },
+    {
+      "id": "4",
+      "titulo": "Descarte inadequado de resíduos eletrônicos afeta meio ambiente e saúde da população",
+      "conteudo": "Compostos com elementos químicos potencialmente tóxicos, os aparelhos eletrônicos precisam de um descarte adequado. No entanto, não é sempre que esses materiais são levados a ecopontos para que esse descarte seja realizado de forma correta, e o resultado é que os aparelhos eletrônicos em lixos comuns causam a poluição da água e do solo, além de prejudicar a saúde da população. Os principais elementos encontrados nos aparelhos eletrônicos que podem causar problemas ambientais e de saúde são os elementos químicos inorgânicos, classificados como metais tóxicos, como chumbo, cádmio e mercúrios, os chamados metais pesados, e outros elementos como cobre, alumínio, selênio, berílio e silício, também metais. Além deles, a professora Alma Blásida Concepción Elizaur Benitez Catirse, docente da Faculdade de Odontologia de Ribeirão Preto (Forp) da USP, e Danilo Vitorino, vice-coordenadora e coordenador do Grupo de Trabalhos Temáticos em Resíduos (GT Resíduos) da Superintendência de Gestão Ambiental (SGA) da USP, respectivamente, lembram que os aparelhos eletrônicos são compostos por diversos tipos de plásticos, que também podem oferecer riscos ambientais. “Embora seja um material inerte, os diversos tipos de plásticos presentes nesses aparelhos são capazes de liberar minúsculas partículas de plástico, chamadas de microplásticos. Eles são responsáveis por grande parte da poluição atual e têm impacto também na saúde da população”, alertam.",
+      "autor": "Mariana",
+      "width": "1200",
+      "height": "400",
+      "data": "15 de outubro, 2024",
+      "fonte": "https://sga.usp.br/descarte-inadequado-de-residuos-eletronicos-afeta-meio-ambiente-e-saude-da-populacao/",
+      "url": "https://jornal.usp.br/wp-content/uploads/2024/10/20241010_residuo-eletronico_plastico-1024x538.jpg"
+    }
+  ],
+
+  "faqs": [
+    {
+      "id": "1",
+      "pergunta": "O que são considerados lixos eletrônicos?",
+      "resposta": "Lixo eletrônico, é todo dispositivo elétrico ou eletrônico que foi descartado, está obsoleto, danificado ou sem possibilidade de uso, como celulares, computadores, televisores, eletrodomésticos, fios, placas de circuito, pilhas e baterias"
+    },
+    {
+      "id": "2",
+      "pergunta": "Quais os impactos que o descarte dos dispositivos reproduz na natureza?",
+      "resposta": "O descarte inadequado de lixo eletrônico gera diversos impactos ambientais e à saúde, tais como: Contaminação do solo e da água, poluição do ar, riscos à saúde humana e a fauna etc."
+    },
+    {
+      "id": "3",
+      "pergunta": "Como posso fazer o descarte adequado de eletrônicos?",
+      "resposta": "Para fazer o descarte adequado de eletrônicos, siga esses passos: separe os dispositivos eletrônicos, apague seus dados pessoais(fotos, contatos, documentos) e entregue em pontos de coleta especializados."
+    },
+    {
+      "id": "4",
+      "pergunta": "Como é feito o descarte de eletrônicos?",
+      "resposta": "Existem diferentes caminhos e práticas para o descarte responsável de eletrônicos. Dentre eles, posso citar: Coleta e pontos de entrega, Logística reversa, Desmontagem e separação, Reciclagem química/física e Disposição final segura."
+    }
+  ],
+  "videos": [
+    {
+      "id": "1",
+      "titulo": "Lixo Eletrônico",
+      "descricao": "Este vídeo explica o que é o lixo eletrônico (ou resíduo eletrônico) e a sua crescente quantidade. Detalha a composição desses resíduos, como TVs e celulares, e o que pode ser reciclado (vidro, ferro, cobre, etc.). Alerta sobre os riscos ambientais de metais pesados contaminando rios e plantações quando o descarte é incorreto, reforçando que o consumidor é responsável pelo destino do que consome e joga fora.",
+      "duracao": "04:30",
+      "canal": "Momento Ambiental",
+      "url": "https://www.youtube.com/embed/YIL4QRPkZU4"
+    },
+    {
+      "id": "2",
+      "titulo": "Reciclagem de Eletroeletrônicos - E-Lixo",
+      "descricao": "Este vídeo define o e-lixo como qualquer equipamento elétrico ou eletrônico em desuso. Ele destaca a baixa taxa de reciclagem no Brasil e alerta sobre os componentes perigosos, como chumbo, cobre, prata e mercúrio, que se descartados incorretamente, poluem solo e águas. O conteúdo enfatiza que o descarte correto transforma esses metais em nova matéria-prima, gerando economia e empregos, e incentiva o uso dos pontos de coleta espalhados pelas cidades.",
+      "duracao": "04:09",
+      "canal": "Recicla Sampa",
+      "url": "https://www.youtube.com/embed/42rzbf_Txug"
+    },
+    {
+      "id": "3",
+      "titulo": "Para onde vai todo o lixo eletrônico? É possível reciclá-lo?",
+      "descricao": "O vídeo explora o conceito de lixo eletrônico e o desafio logístico de dar o destino correto a ele. A reportagem visita uma cooperativa de materiais recicláveis em São Paulo, mostrando como CPUs, fitas VHS e outros eletrônicos são recebidos. Discute a complexidade da desmontagem e a importância da logística reversa para garantir que os materiais tenham um destino ambientalmente seguro, transformando-os em nova matéria-prima.",
+      "duracao": "08:35",
+      "canal": "CNN Soft Business",
+      "url": "https://www.youtube.com/embed/3OfJ2KIRjy0"
+    },
+    {
+      "id": "4",
+      "titulo": "Reciclagem de lixo eletrônico",
+      "descricao": "Este é um segmento do programa Shark Tank Brasil, onde o fundador de uma empresa de reciclagem de lixo eletrônico apresenta seu negócio. O vídeo destaca os três pilares da sustentabilidade (ambiental, econômico e social) na reciclagem de e-lixo. Explica como a desmontagem e a separação dos componentes agregam valor, transformando resíduos em matéria-prima para novos produtos, além de usar sucata em projetos de reuso criativo.",
+      "duracao": "07:37",
+      "canal": "Shark Tank Brasil",
+      "url": "https://www.youtube.com/embed/3AWHWxLd1V0"
+    },
+    {
+      "id": "5",
+      "titulo": "IMPACTO do Lixo Eletrônico no Meio Ambiente",
+      "descricao": "Este vídeo explica o conceito de e-lixo, alertando sobre a presença de materiais tóxicos como chumbo, mercúrio e cádmio, que são perigosos para o meio ambiente e a saúde humana. Destaca a importância da reciclagem para evitar a contaminação do solo e da água. O conteúdo reforça a necessidade de conscientização sobre o descarte correto e seguro de todos os tipos de eletrônicos e eletrodomésticos em geral.",
+      "duracao": "03:00 (Tempo estimado)",
+      "canal": "E.M.I - Educação Ambiental",
+      "url": "https://www.youtube.com/embed/VYLLhCnPnVc"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "nome": "Ana Carla Souza",
+      "e-mail": "aninha@gmail.com",
+      "senha": "12345"
+    },
+    {
+      "id": "2",
+      "nome": "Henrique Silva",
+      "e-mail": "henrique.souza@gmail.com",
+      "senha": "35671"
+    },
+    {
+      "id": "3",
+      "nome": "Kaique Oliveira Prado",
+      "e-mail": "oliveira_Kaique@gmail.com",
+      "senha": "72012"
+    },
+    {
+      "id": "4",
+      "nome": "Patricia Gomes",
+      "e-mail": "santos_patricia@gmail.com",
+      "senha": "38748"
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "teclado",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nome": "telas de celular"
+    },
+    {
+      "id": "4",
+      "nome": "cabos USB"
+    },
+    {
+      "id": "2c3f",
+      "nome": "placas de computador"
+    },
+    {
+      "id": "9291",
+      "nome": "pilhas"
+    }
+  ],
+  "pontos_de_coleta": [
     {
       "id": 1,
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "nome": "Ponto de Coleta de Lixo Eletrônico - PROPAM",
+      "logradouro": "Rua Rad. Ubaldo Ferreira",
+      "numero": 20,
+      "bairro": "Castelo",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "31330-294",
+      "pais": "Brasil",
+      "latitude": -19.86966,
+      "longitude": -43.99367
     },
     {
       "id": 2,
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "nome": "URPV - Unidade de Recebimento de Pequenos Volumes",
+      "logradouro": "Rua flôr de Índio",
+      "numero": 105,
+      "bairro": "Liberdade",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "31270-215",
+      "pais": "Brasil",
+      "latitude": -19.8574,
+      "longitude": -43.95612
     },
     {
-      "login": "rommel",
-      "senha": "123",
-      "nome": "Rommel",
-      "email": "rommel@gmail.com",
-      "id": 3
+      "id": 3,
+      "nome": "MG Recicla Reciclagem de Lixo Eletrônico",
+      "logradouro": "Rua Sasaré",
+      "numero": 47,
+      "bairro": "Jardinópolis",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "30512-010",
+      "pais": "Brasil",
+      "latitude": -19.87895,
+      "longitude": -44.01169
+    },
+    {
+      "id": 4,
+      "nome": "Ecoponto E-MILE de Lixo Eletrônico (CTRL+Play)",
+      "logradouro": "Rua Bernardo Guimarães",
+      "numero": 3000,
+      "bairro": "Santo Agostinho",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "30140-083",
+      "pais": "Brasil",
+      "latitude": -19.87761,
+      "longitude": -43.95658
+    },
+    {
+      "id": "5",
+      "nome": "Lithium Informática - Ecoponto E-MILE - Descarte Lixo Eletrônico",
+      "logradouro": "Rua Padre Eustáquio",
+      "numero": 443,
+      "bairro": "Carlos Prates",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "30710-580",
+      "pais": "Brasil",
+      "latitude": -19.8591,
+      "longitude": -43.95939
     }
   ]
 }
